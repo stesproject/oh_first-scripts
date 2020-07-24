@@ -479,6 +479,47 @@ class Localization
         text.desc = "Two bracelets that will double your ESP and restore your energy!"
       end
 
+    # Skills
+    when "Electric Shock"
+      case $lang
+      when "it"
+        text.name = "Scarica Elettrica"
+        text.desc = "La spada elettrica ti permette di lanciare potenti scariche elettriche contro i nemici!"
+      when "en"
+        text.name = "Electric Shock"
+        text.desc = "The Electric Sword allows you to cast powerful electric shocks against your enemies!"
+      end
+
+    when "Icy Storm"
+      case $lang
+      when "it"
+        text.name = "Tempesta Gelida"
+        text.desc = "La spada ghiacciata ti permette di lanciare devastanti tempeste di ghiaccio!"
+      when "en"
+        text.name = "Icy Storm"
+        text.desc = "The Icy Sword allows you to cast devastating icy storms!"
+      end
+
+    when "Fire Bomb"
+      case $lang
+      when "it"
+        text.name = "Bomba di Fuoco"
+        text.desc = "La spada infuocata ti permette di lanciare distruttive bombe di fuoco!"
+      when "en"
+        text.name = "Fire Bomb"
+        text.desc = "The Fire Sword allows you to cast destructive fire bombs!"
+      end
+
+    when "Magic Attack"
+      case $lang
+      when "it"
+        text.name = "Attacco Magico"
+        text.desc = "Sventola la spada di Bossfinale e lancia potenti attacchi magici!"
+      when "en"
+        text.name = "Magic Attack"
+        text.desc = "Shake the Finalboss Sword and cast powerful magic attacks!"
+      end
+
     end
     return text
 
