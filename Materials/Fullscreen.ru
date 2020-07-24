@@ -1,0 +1,101 @@
+module ADDON
+  ASK_FULLSCREEN = true # if set to false it wont ask you and it'll go straight to # fullscreen
+  CHOICES = ["English", "Italiano"]
+  SETTINGS_FILENAME = "Settings.rvdata"
+end
+
+class Window_Text < Window_Base
+  def initialize(x, y)
+    super(x, y, 544, 64)
+    refresh
+  end
+  def refresh
+    self.contents.clear
+    self.contents.draw_text(0, 0, 544, 32, "Select your language")
+  end
+end
+
+class Scene_Title
+  $lang = ""
+  $fullscreen = false
+  
+  alias main_fullscreen? main
+  def main
+    load_language
+
+    if $fullscreen == false
+      auto
+    end
+
+    if ADDON::ASK_FULLSCREEN && $lang == ""
+      unless $game_started 
+        Graphics.freeze
+        $data_system = load_data('Data/System.rvdata')
+        $game_system = Game_System.new
+        @text_window = Window_Text.new(92, 128)
+        @text_window.back_opacity = 0
+        @text_window.opacity = 0
+        @window = Window_Command.new(96, ADDON::CHOICES)
+        @window.x = 92
+        @window.y = 240 - @window.height / 2
+        @window.opacity = 0
+        Graphics.transition
+        loop do
+          Graphics.update
+          Input.update
+          @window.update
+          update_window
+          break if $game_started
+        end
+        Graphics.freeze
+        @window.dispose
+        @window = nil
+        @text_window.dispose
+        Graphics.transition
+        Graphics.freeze
+      end
+    else
+      $game_started = true
+    end
+    main_fullscreen?
+  end
+  
+  def update_window
+    if Input.trigger?(Input::C)
+      if @window.index == 0
+        Sound.play_decision
+        $lang = "en"
+      else
+        Sound.play_decision
+        $lang = "it"
+      end
+
+      save_language
+      $game_started = true
+    end
+  end
+
+  def auto
+    keybd = Win32API.new 'user32.dll', 'keybd_event', ['i', 'i', 'l', 'l'], 'v'
+    keybd.call(0xA4, 0, 0, 0)
+    keybd.call(13, 0, 0, 0)
+    keybd.call(13, 0, 2, 0)
+    keybd.call(0xA4, 0, 2, 0)
+    $fullscreen = true
+    # $game_started = true
+  end
+
+  def load_language
+    if File.file?(ADDON::SETTINGS_FILENAME)
+      file = File.open(ADDON::SETTINGS_FILENAME, "r")
+      $lang = Marshal.load(file)
+      file.close
+    end
+  end
+
+  def save_language
+    file = File.open(ADDON::SETTINGS_FILENAME, "w")
+    Marshal.dump($lang, file)
+    file.close
+  end
+end
