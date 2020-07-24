@@ -67,183 +67,341 @@ class Localization
 
   end
 
+  class ItemText
+    attr_accessor :name
+    attr_accessor :desc
+  end
+
   def get_item(name)
-    text = nil
+    text = ItemText.new()
 
     case name
-    # Names
+    # Items
     when "Meat"
       case $lang
       when "it"
-        text = "Carne"
+        text.name = "Carne"
+        text.desc = "Mangiala per recuperare tutta la tua energia!"
       when "en"
-        text = name
+        text.name = "Meat"
+        text.desc = "Eat it to recover all your energy!"
       end
 
     when "Regenerator"
       case $lang
       when "it"
-        text = "Rigeneratore"
+        text.name = "Rigeneratore"
+        text.desc = "Questa pozione permette di rigenerare le abilità delle tue armi."
       when "en"
-        text = name
+        text.name = "Regenerator"
+        text.desc = "This potion recharges your Skill Energy!"
       end
 
     when "Small Bridge"
       case $lang
       when "it"
-        text = "Ponticello"
+        text.name = "Ponticello"
+        text.desc = "Un piccolo ponte."
       when "en"
-        text = name
+        text.name = "Small Bridge"
+        text.desc = "A small, portable bridge for crossing gaps."
       end
 
-    when "Key"
+    when "key1"
       case $lang
       when "it"
-        text = "Chiave"
+        text.name = "Chiave"
+        text.desc = "Una chiave trovata nella foresta."
       when "en"
-        text = name
+        text.name = "Key"
+        text.desc = "A key found in the forest."
+      end
+
+    when "key2"
+      case $lang
+      when "it"
+        text.name = "Chiave"
+        text.desc = "Una chiave trovata nel deserto."
+      when "en"
+        text.name = "Key"
+        text.desc = "A key found in the desert."
+      end
+
+    when "key3"
+      case $lang
+      when "it"
+        text.name = "Chiave"
+        text.desc = "La chiave che apre l'ingresso verso la sala di Bossfinale."
+      when "en"
+        text.name = "Key"
+        text.desc = "This key opens the entrance to the Finalboss hall."
       end
 
     when "Book of the Forgotten Crafts"
       case $lang
       when "it"
-        text = "Libro delle Doti Perdute"
+        text.name = "Libro delle Doti Perdute"
+        text.desc = ""
       when "en"
-        text = name
+        text.name = "Book of the Forgotten Crafts"
+        text.desc = ""
       end
 
     when "Controller Crystal"
       case $lang
       when "it"
-        text = "Cristallo Controllore"
+        text.name = "Cristallo Controllore"
+        text.desc = "Un frammento di cristallo in grado di interferire con le capacità dei nemici."
       when "en"
-        text = name
+        text.name = "Controller Crystal"
+        text.desc = "A crystal fragment that can temporarily disrupt weak enemies."
       end
 
     when "Bronze Medal"
       case $lang
       when "it"
-        text = "Medaglia di Bronzo"
+        text.name = "Medaglia di Bronzo"
+        text.desc = "Una medaglia di bronzo ottenuta in arena."
       when "en"
-        text = name
+        text.name = "Bronze Medal"
+        text.desc = "A bronze medal gained in the arena."
       end
 
     when "Silver Medal"
       case $lang
       when "it"
-        text = "Medaglia d'Argento"
+        text.name = "Medaglia d'Argento"
+        text.desc = "Una medaglia d'argento ottenuta in arena."
       when "en"
-        text = name
+        text.name = "Silver Medal"
+        text.desc = "A silver medal gained in the arena."
       end
 
     when "Gold Medal"
       case $lang
       when "it"
-        text = "Medaglia d'oro"
+        text.name = "Medaglia d'Oro"
+        text.desc = "Una medaglia d'oro ottenuta in arena."
       when "en"
-        text = name
+        text.name = "Gold Medal"
+        text.desc = "A golden medal gained in the arena."
       end
 
     when "Secrets Sheet"
       case $lang
       when "it"
-        text = "Foglio dei Segreti"
+        text.name = "Foglio dei Segreti"
+        text.desc = "Immetti un codice per ottenere dei bonus!"
       when "en"
-        text = name
+        text.name = "Secrets Sheet"
+        text.desc = "Enter a code to unlock a bonus!"
       end
 
-    # Descriptions
-    when "desc-meat"
+    # Weapons
+    when "Revolt Sword"
       case $lang
       when "it"
-        text = "Mangiala per recuperare tutta la tua energia!"
+        text.name = "Spada della Rivolta"
+        text.desc = "Una spada distruttiva che ti è stata data dal Re in persona!"
       when "en"
-        text = "Eat it to recover all your energy!"
+        text.name = "Revolt Sword"
+        text.desc = "A destructive sword received from the King himself!"
       end
 
-    when "desc-regenerator"
+    when "Assassin Blade"
       case $lang
       when "it"
-        text = "Questa pozione permette di rigenerare le abilità delle tue armi."
+        text.name = "Lama Assassina"
+        text.desc = "Una potente spada dalla lama... Affilata."
       when "en"
-        text = "This potion recharges your Skill Energy!"
+        text.name = "Assassin Blade"
+        text.desc = "A powerful sword with a sharp blade."
       end
 
-    when "desc-small_bridge"
+    when "Soldier's Sword"
       case $lang
       when "it"
-        text = "Un piccolo ponte."
+        text.name = "Spada del Soldato"
+        text.desc = "La spada comune usata da tutti i soldati del castello."
       when "en"
-        text = "A small, portable bridge for crossing gaps."
+        text.name = "Soldier's Sword"
+        text.desc = "A common sword used by all the soldiers of the castle."
       end
 
-    when "desc-key_forest"
+    when "Sabrelyzer"
       case $lang
       when "it"
-        text = "Una chiave trovata nella foresta."
+        text.name = "Sciabolyzer"
+        text.desc = "Una potente spada decisamente distruttiva!"
       when "en"
-        text = "A key found in the forest."
+        text.name = "Sabrelyzer"
+        text.desc = "A powerful sword with high destructive power!"
       end
 
-    when "desc-key_desert"
+    when "Gelizedor"
       case $lang
       when "it"
-        text = "Una chiave trovata nel deserto."
+        text.name = "Gelizedor"
+        text.desc = "Una spada affilata dalla lama gelida."
       when "en"
-        text = "A key found in the desert."
+        text.name = "Gelizedor"
+        text.desc = "A sharp sword with an icy blade."
       end
 
-    when "desc-key_boss_castle"
+    when "Lollipop"
       case $lang
       when "it"
-        text = "La chiave che apre l'ingresso verso la sala di Bossfinale."
+        text.name = "Lecca-Lecca"
+        text.desc = "Uhm che buono!"
       when "en"
-        text = "This key opens the entrance to the Finalboss hall."
+        text.name = "Lollipop"
+        text.desc = "Mmm, so sweet!"
       end
 
-    when "desc-crystal"
+    when "Electric Sword"
       case $lang
       when "it"
-        text = "Un frammento di cristallo in grado di interferire con le capacità dei nemici."
+        text.name = "Spada Elettrica"
+        text.desc = "Una spada che emette scariche elettriche in continuazione."
       when "en"
-        text = "A crystal fragment that can temporarily disrupt weak enemies."
+        text.name = "Electric Sword"
+        text.desc = "A sword that constantly radiates electric shockwaves."
       end
 
-    when "desc-medal_bronze"
+    when "Revolt Sword II"
       case $lang
       when "it"
-        text = "Una medaglia di bronzo ottenuta in arena."
+        text.name = "Spada della Rivolta II"
+        text.desc = "La Spada della Rivolta potenziata! Ancora più resistente, ancora più distruttiva."
       when "en"
-        text = "A bronze medal gained in the arena."
+        text.name = "Revolt Sword II"
+        text.desc = "The Revolt Sword, now strengthened and empowered!"
       end
 
-    when "desc-medal_silver"
+    when "Zombiesbane"
       case $lang
       when "it"
-        text = "Una medaglia d'argento ottenuta in arena."
+        text.name = "AmmazzaZombie"
+        text.desc = "Una spada superefficace contro qualsiasi morto vivente!"
       when "en"
-        text = "A silver medal gained in the arena."
+        text.name = "Zombiesbane"
+        text.desc = "A sword that's extra effective against undead!"
       end
 
-    when "desc-medal_gold"
+    when "Sword of the Legendary Hero"
       case $lang
       when "it"
-        text = "Una medaglia d'oro ottenuta in arena."
+        text.name = "Spada dell'Eroe Leggendario"
+        text.desc = "Una spada potente. Indistruttibile. Agile. LEGGENDARIA."
       when "en"
-        text = "A golden medal gained in the arena."
+        text.name = "Sword of the Legendary Hero"
+        text.desc = "A mighty sword. Indestructible. Fast. LEGENDARY."
       end
 
-    when "desc-secrets_sheet"
+    when "Electric Guitar"
       case $lang
       when "it"
-        text = "Immetti un codice per ottenere dei bonus!"
+        text.name = "Chitarra Elettrica"
+        text.desc = "Rock and roll baby!"
       when "en"
-        text = "Enter a code to unlock a bonus!"
+        text.name = "Electric Guitar"
+        text.desc = "Rock and roll baby!"
+      end
+
+    when "Icy Sword"
+      case $lang
+      when "it"
+        text.name = "Spada Ghiacciata"
+        text.desc = "Una spada incredibilmente affilata, completamente scalfita nel ghiaccio."
+      when "en"
+        text.name = "Icy Sword"
+        text.desc = "A sharp blade honed from nevermelting ice."
+      end
+
+    when "Flaming Sword"
+      case $lang
+      when "it"
+        text.name = "Spada Infuocata"
+        text.desc = "Una spada che si incendia di continuo non appena viene presa in mano."
+      when "en"
+        text.name = "Flaming Sword"
+        text.desc = "A sword that catches fire as soon as you pick it up."
+      end
+
+    when "Silver Slash"
+      case $lang
+      when "it"
+        text.name = "Silver Slash"
+        text.desc = "Una lama in argento che distrugge i tuoi nemici!"
+      when "en"
+        text.name = "Silver Slash"
+        text.desc = "A silver blade that destroys your enemies!"
+      end
+
+    when "Katana"
+      case $lang
+      when "it"
+        text.name = "Katana"
+        text.desc = "Spada ninja debole, ma con alte probabilità di sferrare colpi critici."
+      when "en"
+        text.name = "Katana"
+        text.desc = "A lightweight ninja weapon with an increased critical hit ratio."
+      end
+
+    when "Final Revolt Sword"
+      case $lang
+      when "it"
+        text.name = "Spada della Rivolta Finale"
+        text.desc = "Il grado più potente della Spada della Rivolta! Spazza via ogni nemico!"
+      when "en"
+        text.name = "Final Revolt Sword"
+        text.desc = "The most powerful Revolt Sword! It wipes out any enemy!"
+      end
+
+    when "Dragon Sword"
+      case $lang
+      when "it"
+        text.name = "Spada del Drago"
+        text.desc = "Una potentissima spada forgiata con scaglie di drago."
+      when "en"
+        text.name = "Dragon Sword"
+        text.desc = "A very mighty sword forged from dragon scales."
+      end
+
+    when "Finalboss Sword"
+      case $lang
+      when "it"
+        text.name = "Spada di Bossfinale"
+        text.desc = "La potente spada dorata di Bossfinale!"
+      when "en"
+        text.name = "Finalboss Sword"
+        text.desc = "The mighty golden sword of Finalboss!"
+      end
+
+    when "Soul Eater"
+      case $lang
+      when "it"
+        text.name = "Divoranime"
+        text.desc = "Colpisci i nemici e mangia le loro anime."
+      when "en"
+        text.name = "Soul Eater"
+        text.desc = "Devours the souls of slain enemies!"
+      end
+
+    # Armors
+    when "Katana"
+      case $lang
+      when "it"
+        text.name = "Katana"
+        text.desc = "Spada ninja debole, ma con alte probabilità di sferrare colpi critici."
+      when "en"
+        text.name = "Katana"
+        text.desc = "A lightweight ninja weapon with an increased critical hit ratio."
       end
 
     end
-
     return text
+
   end
 
   def get_text(name)

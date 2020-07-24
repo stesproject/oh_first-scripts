@@ -115,8 +115,6 @@ class Scene_Title < Scene_Base
     $data_animations    = load_data("Data/BT_Animations.rvdata")
     $data_common_events = load_data("Data/BT_CommonEvents.rvdata")
     $data_system        = load_data("Data/BT_System.rvdata")
-
-    localize_data
   end
   #--------------------------------------------------------------------------
   # * Create Game Objects
@@ -294,8 +292,9 @@ class Scene_Title < Scene_Base
     for i in 1...$data_items.size
       item_name = $data_items[i].name
       item_description = $data_items[i].description
-      $data_items[i].name = $local.get_item(item_name)
-      $data_items[i].description = $local.get_item(item_description)
+      item = $local.get_item(item_name)
+      $data_items[i].name = item.name
+      $data_items[i].description = item.desc
     end
   end
 end
