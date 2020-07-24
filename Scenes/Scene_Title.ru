@@ -96,6 +96,8 @@ class Scene_Title < Scene_Base
     $data_common_events = load_data("Data/CommonEvents.rvdata")
     $data_system        = load_data("Data/System.rvdata")
     $data_areas         = load_data("Data/Areas.rvdata")
+
+    localize_data
   end
   #--------------------------------------------------------------------------
   # * Load Battle Test Database
@@ -113,6 +115,8 @@ class Scene_Title < Scene_Base
     $data_animations    = load_data("Data/BT_Animations.rvdata")
     $data_common_events = load_data("Data/BT_CommonEvents.rvdata")
     $data_system        = load_data("Data/BT_System.rvdata")
+
+    localize_data
   end
   #--------------------------------------------------------------------------
   # * Create Game Objects
@@ -282,5 +286,16 @@ class Scene_Title < Scene_Base
     $game_system.battle_bgm.play
     snapshot_for_background
     $scene = Scene_Battle.new
+  end
+  #--------------------------------------------------------------------------
+  # * Translate data from Database (items, weapons, armors...)
+  #--------------------------------------------------------------------------
+  def localize_data
+    for i in 1...$data_items.size
+      item_name = $data_items[i].name
+      item_description = $data_items[i].description
+      $data_items[i].name = $local.get_item(item_name)
+      $data_items[i].description = $local.get_item(item_description)
+    end
   end
 end

@@ -67,6 +67,185 @@ class Localization
 
   end
 
+  def get_item(name)
+    text = nil
+
+    case name
+    # Names
+    when "Meat"
+      case $lang
+      when "it"
+        text = "Carne"
+      when "en"
+        text = name
+      end
+
+    when "Regenerator"
+      case $lang
+      when "it"
+        text = "Rigeneratore"
+      when "en"
+        text = name
+      end
+
+    when "Small Bridge"
+      case $lang
+      when "it"
+        text = "Ponticello"
+      when "en"
+        text = name
+      end
+
+    when "Key"
+      case $lang
+      when "it"
+        text = "Chiave"
+      when "en"
+        text = name
+      end
+
+    when "Book of the Forgotten Crafts"
+      case $lang
+      when "it"
+        text = "Libro delle Doti Perdute"
+      when "en"
+        text = name
+      end
+
+    when "Controller Crystal"
+      case $lang
+      when "it"
+        text = "Cristallo Controllore"
+      when "en"
+        text = name
+      end
+
+    when "Bronze Medal"
+      case $lang
+      when "it"
+        text = "Medaglia di Bronzo"
+      when "en"
+        text = name
+      end
+
+    when "Silver Medal"
+      case $lang
+      when "it"
+        text = "Medaglia d'Argento"
+      when "en"
+        text = name
+      end
+
+    when "Gold Medal"
+      case $lang
+      when "it"
+        text = "Medaglia d'oro"
+      when "en"
+        text = name
+      end
+
+    when "Secrets Sheet"
+      case $lang
+      when "it"
+        text = "Foglio dei Segreti"
+      when "en"
+        text = name
+      end
+
+    # Descriptions
+    when "desc-meat"
+      case $lang
+      when "it"
+        text = "Mangiala per recuperare tutta la tua energia!"
+      when "en"
+        text = "Eat it to recover all your energy!"
+      end
+
+    when "desc-regenerator"
+      case $lang
+      when "it"
+        text = "Questa pozione permette di rigenerare le abilità delle tue armi."
+      when "en"
+        text = "This potion recharges your Skill Energy!"
+      end
+
+    when "desc-small_bridge"
+      case $lang
+      when "it"
+        text = "Un piccolo ponte."
+      when "en"
+        text = "A small, portable bridge for crossing gaps."
+      end
+
+    when "desc-key_forest"
+      case $lang
+      when "it"
+        text = "Una chiave trovata nella foresta."
+      when "en"
+        text = "A key found in the forest."
+      end
+
+    when "desc-key_desert"
+      case $lang
+      when "it"
+        text = "Una chiave trovata nel deserto."
+      when "en"
+        text = "A key found in the desert."
+      end
+
+    when "desc-key_boss_castle"
+      case $lang
+      when "it"
+        text = "La chiave che apre l'ingresso verso la sala di Bossfinale."
+      when "en"
+        text = "This key opens the entrance to the Finalboss hall."
+      end
+
+    when "desc-crystal"
+      case $lang
+      when "it"
+        text = "Un frammento di cristallo in grado di interferire con le capacità dei nemici."
+      when "en"
+        text = "A crystal fragment that can temporarily disrupt weak enemies."
+      end
+
+    when "desc-medal_bronze"
+      case $lang
+      when "it"
+        text = "Una medaglia di bronzo ottenuta in arena."
+      when "en"
+        text = "A bronze medal gained in the arena."
+      end
+
+    when "desc-medal_silver"
+      case $lang
+      when "it"
+        text = "Una medaglia d'argento ottenuta in arena."
+      when "en"
+        text = "A silver medal gained in the arena."
+      end
+
+    when "desc-medal_gold"
+      case $lang
+      when "it"
+        text = "Una medaglia d'oro ottenuta in arena."
+      when "en"
+        text = "A golden medal gained in the arena."
+      end
+
+    when "desc-secrets_sheet"
+      case $lang
+      when "it"
+        text = "Immetti un codice per ottenere dei bonus!"
+      when "en"
+        text = "Enter a code to unlock a bonus!"
+      end
+
+    end
+
+    return text
+  end
+
   def get_text(name)
     text = nil
 
