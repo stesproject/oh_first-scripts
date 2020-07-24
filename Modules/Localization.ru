@@ -72,7 +72,7 @@ class Localization
     attr_accessor :desc
   end
 
-  def get_item(name)
+  def get_db_object(name)
     text = ItemText.new()
 
     case name
@@ -389,14 +389,94 @@ class Localization
       end
 
     # Armors
-    when "Katana"
+    when "Copper Necklace"
       case $lang
       when "it"
-        text.name = "Katana"
-        text.desc = "Spada ninja debole, ma con alte probabilità di sferrare colpi critici."
+        text.name = "Collana di Rame"
+        text.desc = "Una semplice collana che protegge lievemente dagli attacchi nemici."
       when "en"
-        text.name = "Katana"
-        text.desc = "A lightweight ninja weapon with an increased critical hit ratio."
+        text.name = "Copper Necklace"
+        text.desc = "A simple necklace that slightly protects against enemy attacks."
+      end
+
+    when "Bronze Necklace"
+      case $lang
+      when "it"
+        text.name = "Collana di Bronzo"
+        text.desc = "Questa collana protegge discretamente dai colpi dei nemici."
+      when "en"
+        text.name = "Bronze Necklace"
+        text.desc = "This necklace discreetly protects from enemy attacks."
+      end
+
+    when "Silver Necklace"
+      case $lang
+      when "it"
+        text.name = "Collana d'Argento"
+        text.desc = "Più robusta di alcune collane, è ottima come protezione in una battaglia."
+      when "en"
+        text.name = "Silver Necklace"
+        text.desc = "More robust than some necklaces, it is excellent as protection in a battle."
+      end
+
+    when "Golden Necklace"
+      case $lang
+      when "it"
+        text.name = "Collana d'Oro"
+        text.desc = "Una collana dorata che offre una difesa completa."
+      when "en"
+        text.name = "Golden Necklace"
+        text.desc = "A golden necklace that offers complete defense."
+      end
+
+    when "Sword Case"
+      case $lang
+      when "it"
+        text.name = "Fodera"
+        text.desc = "Qui dentro potrai riporre ogni spada che otterrai durante la tua avventura!"
+      when "en"
+        text.name = "Sword Case"
+        text.desc = "Lets you carry and switch between all of your swords!"
+      end
+
+    when "Strength Necklace"
+      case $lang
+      when "it"
+        text.name = "Collana di Forza"
+        text.desc = "Questa collana aumenta la tua potenza d'attacco."
+      when "en"
+        text.name = "Strength Necklace"
+        text.desc = "This necklace increases your attack power."
+      end
+
+    when "Doubler Bracelet"
+      case $lang
+      when "it"
+        text.name = "Bracciale Doppiatore"
+        text.desc = "Equipaggiando questo bracciale sarà molto più semplice salire di livello!"
+      when "en"
+        text.name = "Doubler Bracelet"
+        text.desc = "Equipping this bracelet lets you level up faster!"
+      end
+
+    when "Healing Bracelet"
+      case $lang
+      when "it"
+        text.name = "Bracciale Energetico"
+        text.desc = "Equipaggiando questo bracciale le tue ferite si cureranno automaticamente."
+      when "en"
+        text.name = "Healing Bracelet"
+        text.desc = "Equipping this bracelet your wounds will heal automatically."
+      end
+
+    when "Rainbow Bracelets"
+      case $lang
+      when "it"
+        text.name = "Bracciali Arcobaleno"
+        text.desc = "Due bracciali che, se equipaggiati, renderanno doppia la tua ESP e ti restituirà energia!"
+      when "en"
+        text.name = "Rainbow Bracelets"
+        text.desc = "Two bracelets that will double your ESP and restore your energy!"
       end
 
     end

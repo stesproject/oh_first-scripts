@@ -292,7 +292,7 @@ class Scene_Title < Scene_Base
     for i in 1...$data_items.size
       item_name = $data_items[i].name
       item_description = $data_items[i].description
-      item = $local.get_item(item_name)
+      item = $local.get_db_object(item_name)
       $data_items[i].name = item.name
       $data_items[i].description = item.desc
     end
