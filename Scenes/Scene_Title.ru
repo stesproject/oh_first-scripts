@@ -97,7 +97,11 @@ class Scene_Title < Scene_Base
     $data_system        = load_data("Data/System.rvdata")
     $data_areas         = load_data("Data/Areas.rvdata")
 
-    localize_data
+    localize_items($data_skills)
+    localize_items($data_items)
+    localize_items($data_weapons)
+    localize_items($data_armors)
+    localize_actors
   end
   #--------------------------------------------------------------------------
   # * Load Battle Test Database
@@ -286,15 +290,29 @@ class Scene_Title < Scene_Base
     $scene = Scene_Battle.new
   end
   #--------------------------------------------------------------------------
-  # * Translate data from Database (items, weapons, armors...)
+  # * Translate data from Database (items, weapons, armors, skills)
   #--------------------------------------------------------------------------
-  def localize_data
-    for i in 1...$data_items.size
-      item_name = $data_items[i].name
-      item_description = $data_items[i].description
+  def localize_items(items)
+    for i in 1...items.size
+      item_name = items[i].name
+      item_description = items[i].description
       item = $local.get_db_object(item_name)
-      $data_items[i].name = item.name
-      $data_items[i].description = item.desc
+      items[i].name = item.name
+      items[i].description = item.desc
+    end
+  end
+  #--------------------------------------------------------------------------
+  # * Translate data from Database (actors, classes)
+  #--------------------------------------------------------------------------
+  def localize_actors
+    for i in 1...$data_actors.size
+      item_name = $data_actors[i].name
+      $data_actors[i].name = $local.get_db_actor(item_name)
+    end
+
+    for i in 1...$data_classes.size
+      item_name = $data_classes[i].name
+      $data_classes[i].name = $local.get_db_actor(item_name)
     end
   end
 end

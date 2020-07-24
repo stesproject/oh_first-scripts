@@ -525,6 +525,31 @@ class Localization
 
   end
 
+  def get_db_actor(name)
+    text = nil
+
+    case name
+    when "Ourhero"
+      case $lang
+      when "it"
+        text = "Nostroeroe"
+      when "en"
+        text = "Ourhero"
+      end
+
+    when "Knight"
+      case $lang
+      when "it"
+        text = "Cavaliere"
+      when "en"
+        text = "Knight"
+      end
+
+    end
+
+    return text
+  end
+
   def get_text(name)
     text = nil
 
