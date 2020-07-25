@@ -10,7 +10,20 @@ class Localization
     64
   ]
 
+  @messages = nil
+
   def initialize
+  end
+
+  def switch_language()
+    case $lang
+    when "it"
+      $lang = "en"
+    when "en"
+      $lang = "it"
+    end
+
+    Scene_Title.new().save_language
   end
 
   def get_name(id)
@@ -31,23 +44,8 @@ class Localization
 
   end
 
-  def switch_language()
-    case $lang
-    when "it"
-      $lang = "en"
-    when "en"
-      $lang = "it"
-    end
-
-    Scene_Title.new().save_language
-  end
-
   def set_msg(index)
-    messages = nil
-
-    for i in 0..3
-      $game_variables[$msg_var[i]] = ""
-    end
+    reset_msg_vars
 
     case $game_map.map_id
     when 93 #map id
@@ -55,12 +53,12 @@ class Localization
       when 1
         case $lang
         when "it"
-          messages = [
+          @messages = [
             "linea 1",
             "linea 2"
           ]
         when "en"
-          messages = [
+          @messages = [
             "line 1\\.",
             "line 2"
           ]
@@ -69,14 +67,14 @@ class Localization
       when 2
         case $lang
         when "it"
-          messages = [
+          @messages = [
             "ciao 1",
             "ciao 2",
             "ciao 3",
             "ciao 4"
           ]
         when "en"
-          messages = [
+          @messages = [
             "hi 1\\|",
             "hi 2",
             "hi 3",
@@ -88,29 +86,22 @@ class Localization
     when 1 #map id
     end
 
-    for i in 0..3
-      $game_variables[$msg_var[i]] = messages[i]
-    end
-
+    set_msg_vars
   end
 
   def set_common_msg(name)
-    messages = nil
-
-    for i in 0..3
-      $game_variables[$msg_var[i]] = ""
-    end
+    reset_msg_vars
 
     case name
     when "skill-electric-1"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "L'eroe ha imparato l'abilità",
           "\\c[2]Scarica Elettrica!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "The hero learned the skill",
           "\\c[2]Electric Shock!"
         ]
@@ -119,12 +110,12 @@ class Localization
     when "skill-electric-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\c[2]Equipaggia la Spada Elettrica per usare",
           "questa abilità!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\c[2]Equip the Electric Sword to use this skill!",
           ""
         ]
@@ -133,12 +124,12 @@ class Localization
     when "skill-ice-1"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "L'eroe ha imparato l'abilità",
           "\\c[2]Tempesta Gelida!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "The hero learned the skill",
           "\\c[2]Icy Storm!"
         ]
@@ -147,12 +138,12 @@ class Localization
     when "skill-ice-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\c[2]Equipaggia la Spada Ghiacciata per usare",
           "questa abilità!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\c[2]Equip the Icy Sword to use this skill!",
           ""
         ]
@@ -161,12 +152,12 @@ class Localization
     when "skill-fire-1"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "L'eroe ha imparato l'abilità",
           "\\c[2]Bomba di Fuoco!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "The hero learned the skill",
           "\\c[2]Fire Bomb!"
         ]
@@ -175,12 +166,12 @@ class Localization
     when "skill-fire-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\c[2]Equipaggia la Spada Infuocata per usare",
           "questa abilità!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\c[2]Equip the Flaming Sword to use this skill!",
           ""
         ]
@@ -189,12 +180,12 @@ class Localization
     when "skill-magic-1"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "L'eroe ha imparato l'abilità",
           "\\c[2]Attacco Magico!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "The hero learned the skill",
           "\\c[2]Magic Attack!"
         ]
@@ -203,12 +194,12 @@ class Localization
     when "skill-magic-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\c[2]Equipaggia la Spada di Bossfinale per usare",
           "questa abilità!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\c[2]Equip the Finalboss Sword to use this skill!",
           ""
         ]
@@ -217,11 +208,11 @@ class Localization
     when "skill-all-1"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "L'eroe ha imparato \\c[2]tutte le abilità!",
         ]
       when "en"
-        messages = [
+        @messages = [
           "The hero learned \\c[2]all the skills!",
         ]
       end
@@ -229,12 +220,12 @@ class Localization
     when "skill-all-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\c[2]Equipaggia la Spada dell'Eroe Leggendario",
           "per usare queste abilità!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\c[2]Equip the Sword of the Legendary Hero to use",
           "these skills!"
         ]
@@ -243,13 +234,13 @@ class Localization
     when "cannot-control"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "Non c'è nessun elemento controllabile in",
           "questo posto o non c'è abbastanza energia per",
           "utilizzare il Cristallo Controllore qui.\\|\\.\\.\\^"
         ]
       when "en"
-        messages = [
+        @messages = [
           "No suitable enemies nearby to control or",
           "not enough energy.\\|\\^",
           ""
@@ -259,12 +250,12 @@ class Localization
     when "end-mission-1"
       case $lang
       when "it"
-        messages = [
-          "\\nb[#{get_name(1)}]Dovrei aver distrutto tutte quante",
-          "le casse in questa foresta!"
+        @messages = [
+          "\\nb[#{get_name(1)}]Dovrei aver distrutto tutte quante le",
+          "casse in questa foresta!"
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\nb[#{get_name(1)}]This should be the last of the crates in",
           "the forest!"
         ]
@@ -273,11 +264,11 @@ class Localization
     when "end-mission-2"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\nb[#{get_name(1)}]Ho eliminato tutti quanti i cattivi!",
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\nb[#{get_name(1)}]I defeated all the baddies!",
         ]
       end
@@ -285,19 +276,61 @@ class Localization
     when "end-mission-3"
       case $lang
       when "it"
-        messages = [
+        @messages = [
           "\\nb[#{get_name(1)}]Ho spento tutte le fiamme!",
         ]
       when "en"
-        messages = [
+        @messages = [
           "\\nb[#{get_name(1)}]I put out all the flames!",
         ]
       end
 
     end
     
+    set_msg_vars
+  end
+
+  def set_action(action, item, value)
+    reset_msg_vars
+
+    case action
+    when "find"
+      case $lang
+      when "it"
+        @messages.push("\\c[6]Trovi")
+      when "en"
+        @messages.push("\\c[6]You find")
+      end
+
+    when "gave"
+      case $lang
+      when "it"
+        @messages.push("\\c[6]Consegni")
+      when "en"
+        @messages.push("\\c[6]You gave away")
+      end
+
+    when "got"
+      case $lang
+      when "it"
+        @messages.push("\\c[6]Ricevi")
+      when "en"
+        @messages.push("\\c[6]You got")
+      end
+    end
+
+    set_msg_vars
+  end
+
+  def reset_msg_vars
     for i in 0..3
-      $game_variables[$msg_var[i]] = messages[i]
+      $game_variables[$msg_var[i]] = ""
+    end
+  end
+
+  def set_msg_vars
+    for i in 0..3
+      $game_variables[$msg_var[i]] = @messages[i]
     end
   end
 
