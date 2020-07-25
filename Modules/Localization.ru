@@ -8,6 +8,24 @@ class Localization
   def initialize
   end
 
+  def get_name(id)
+    text = nil
+
+    case id
+    when 1
+      case $lang
+      when "it"
+        text = "Nostroeroe"
+      when "en"
+        text = "Ourhero"
+      end
+
+    end
+
+    return text.upcase
+
+  end
+
   def switch_language()
     case $lang
     when "it"
@@ -19,8 +37,12 @@ class Localization
     Scene_Title.new().save_language
   end
 
-  def set_message(index)
+  def set_msg(index)
     messages = nil
+
+    for i in 0..3
+      $game_variables[$msg_var[i]] = ""
+    end
 
     case $game_map.map_id
     when 93 #map id
@@ -65,6 +87,133 @@ class Localization
       $game_variables[$msg_var[i]] = messages[i]
     end
 
+  end
+
+  def set_common_msg(name)
+    messages = nil
+
+    for i in 0..3
+      $game_variables[$msg_var[i]] = ""
+    end
+
+    case name
+    when "skill-electric-1"
+      case $lang
+      when "it"
+        messages = [
+          "L'eroe ha imparato l'abilità",
+          "\\c[2]Scarica Elettrica!"
+        ]
+      when "en"
+        messages = [
+          "The hero learned the skill",
+          "\\c[2]Electric Shock!"
+        ]
+      end
+
+    when "skill-electric-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\c[2]Equipaggia la Spada Elettrica per usare",
+          "questa abilità!"
+        ]
+      when "en"
+        messages = [
+          "\\c[2]Equip the Electric Sword to use this skill!",
+          ""
+        ]
+      end
+
+    when "skill-ice-1"
+      case $lang
+      when "it"
+        messages = [
+          "L'eroe ha imparato l'abilità",
+          "\\c[2]Tempesta Gelida!"
+        ]
+      when "en"
+        messages = [
+          "The hero learned the skill",
+          "\\c[2]Icy Storm!"
+        ]
+      end
+
+    when "skill-ice-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\c[2]Equipaggia la Spada Ghiacciata per usare",
+          "questa abilità!"
+        ]
+      when "en"
+        messages = [
+          "\\c[2]Equip the Icy Sword to use this skill!",
+          ""
+        ]
+      end
+
+    when "skill-fire-1"
+      case $lang
+      when "it"
+        messages = [
+          "L'eroe ha imparato l'abilità",
+          "\\c[2]Bomba di Fuoco!"
+        ]
+      when "en"
+        messages = [
+          "The hero learned the skill",
+          "\\c[2]Fire Bomb!"
+        ]
+      end
+
+    when "skill-fire-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\c[2]Equipaggia la Spada Infuocata per usare",
+          "questa abilità!"
+        ]
+      when "en"
+        messages = [
+          "\\c[2]Equip the Flaming Sword to use this skill!",
+          ""
+        ]
+      end
+
+    when "cannot-control"
+      case $lang
+      when "it"
+        messages = [
+          "Non c'è nessun elemento controllabile in",
+          "questo posto o non c'è abbastanza energia per",
+          "utilizzare il Cristallo Controllore qui.\\|\\.\\.\\^"
+        ]
+      when "en"
+        messages = [
+          "No suitable enemies nearby to control or",
+          "not enough energy.\\|\\^",
+          ""
+        ]
+      end
+
+    when "test"
+      case $lang
+      when "it"
+        messages = [
+          "\\nb[#{get_name(1)}]Ciao ragazzi!"
+        ]
+      when "en"
+        messages = [
+          "\\nb[#{get_name(1)}]Ciao ragazzi!"
+        ]
+      end
+
+    end
+    
+    for i in 0..3
+      $game_variables[$msg_var[i]] = messages[i]
+    end
   end
 
   class ItemText

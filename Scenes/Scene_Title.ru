@@ -264,6 +264,7 @@ class Scene_Title < Scene_Base
     $local.switch_language
     dispose_command_window
     create_command_window
+    load_database
   end
   #--------------------------------------------------------------------------
   # * Command: Shutdown
