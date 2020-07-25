@@ -11,8 +11,10 @@ class Localization
   ]
 
   @messages = nil
-
-  def initialize
+  
+  class ItemText
+    attr_accessor :name
+    attr_accessor :desc
   end
 
   def switch_language()
@@ -31,62 +33,20 @@ class Localization
 
     case id
     when 1
+      text = $data_actors[1].name
+
+    when 2
       case $lang
       when "it"
-        text = "Nostroeroe"
+        text = "Re"
       when "en"
-        text = "Ourhero"
+        text = "King"
       end
 
     end
 
     return text.upcase
 
-  end
-
-  def set_msg(index)
-    reset_msg_vars
-
-    case $game_map.map_id
-    when 93 #map id
-      case index
-      when 1
-        case $lang
-        when "it"
-          @messages = [
-            "linea 1",
-            "linea 2"
-          ]
-        when "en"
-          @messages = [
-            "line 1\\.",
-            "line 2"
-          ]
-        end
-
-      when 2
-        case $lang
-        when "it"
-          @messages = [
-            "ciao 1",
-            "ciao 2",
-            "ciao 3",
-            "ciao 4"
-          ]
-        when "en"
-          @messages = [
-            "hi 1\\|",
-            "hi 2",
-            "hi 3",
-            "\\c[3]hi 4"
-          ]
-        end
-      end
-
-    when 1 #map id
-    end
-
-    set_msg_vars
   end
 
   def set_common_msg(name)
@@ -336,11 +296,6 @@ class Localization
     for i in 0..3
       $game_variables[$msg_var[i]] = @messages[i]
     end
-  end
-
-  class ItemText
-    attr_accessor :name
-    attr_accessor :desc
   end
 
   def get_db_object(name)
@@ -1132,6 +1087,170 @@ class Localization
     end
 
     return text
+  end
+
+  def set_msg(map_id, index)
+    reset_msg_vars
+
+    case map_id
+    when 1 #map_id
+
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Mio sireee, mio sireee!"
+          ]
+        when "en"
+          @messages = [
+            "My sireee, my sireee!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Comandi base.\\.",
+            "\\c[2]SHIFT:\\c[0] Corsa."
+          ]
+        when "en"
+          @messages = [
+            "Controls:\\.",
+            "\\c[2]SHIFT:\\c[0] Run."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]S:\\c[0] Attacco!\\|"
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]S:\\c[0] Attack!\\|"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]A:\\c[0] Salto.\\|",
+            "\\c[2]NB: L'eroe può saltare solo durante una battaglia!\\c[0]"
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]A:\\c[0] Jump.\\|",
+            "\\c[2]NOTE: the hero can only jump during battle!\\c[0]"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]INVIO:\\c[0] per interagire durante il gioco.\\|",
+            "\\c[2]ESC:\\c[0] per accedere al menu."
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]ENTER:\\c[0] Interact.\\|",
+            "\\c[2]ESC:\\c[0] Open/close the menu."
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Per salvare la partita seleziona \\c[2]Salva\\c[0]",
+            "dal menu principale.",
+            "\\c[2]NB: l'autosalvataggio è comunque attivo.\\c[0]"
+          ]
+        when "en"
+          @messages = [
+            "To save the game select \\c[2]Save\\c[0] from the",
+            "menu.",
+            "\\c[2]NOTE: autosave is enabled anyway.\\c[0]"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]Interfaccia di gioco.\\c[0]\\.",
+            "In alto a sinistra puoi visualizzare la tua barra",
+            "dell'energia."
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]Game interface:\\c[0]\\.",
+            "In the upper left corner you can see your health bar.",
+            ""
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "La partita termina quando l'eroe perde tutti i",
+            "cuoricini a disposizione."
+          ]
+        when "en"
+          @messages = [
+            "The game ends when the hero loses all the hearts.",
+            ""
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "Premi il tasto \\c[2]D\\c[0] per mangiare la carne e",
+            "recuperare energia.\\|",
+            "PROSEGUI, NOSTROEROE!"
+          ]
+        when "en"
+          @messages = [
+            "Press \\c[2]D\\c[0] to eat meat and recover health.\\|",
+            "GO ON, OURHERO!",
+            ""
+          ]
+        end
+      end #end case index
+
+    when 2 #map_id
+
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "linea",
+            "linea",
+            "linea",
+            "linea"
+          ]
+        when "en"
+          @messages = [
+            "line",
+            "line",
+            "line",
+            "line"
+          ]
+        end
+
+      end #end case index
+
+    end #end case map_id
+
+    set_msg_vars
   end
 
 end
