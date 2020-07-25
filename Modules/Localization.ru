@@ -3,7 +3,12 @@
 # Author: Ste
 #==============================================================================
 class Localization
-  $msg_var = [81,82,83,84]
+  $msg_var = [
+    61,
+    62,
+    63,
+    64
+  ]
 
   def initialize
   end
@@ -181,6 +186,60 @@ class Localization
         ]
       end
 
+    when "skill-magic-1"
+      case $lang
+      when "it"
+        messages = [
+          "L'eroe ha imparato l'abilità",
+          "\\c[2]Attacco Magico!"
+        ]
+      when "en"
+        messages = [
+          "The hero learned the skill",
+          "\\c[2]Magic Attack!"
+        ]
+      end
+
+    when "skill-magic-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\c[2]Equipaggia la Spada di Bossfinale per usare",
+          "questa abilità!"
+        ]
+      when "en"
+        messages = [
+          "\\c[2]Equip the Finalboss Sword to use this skill!",
+          ""
+        ]
+      end
+
+    when "skill-all-1"
+      case $lang
+      when "it"
+        messages = [
+          "L'eroe ha imparato \\c[2]tutte le abilità!",
+        ]
+      when "en"
+        messages = [
+          "The hero learned \\c[2]all the skills!",
+        ]
+      end
+
+    when "skill-all-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\c[2]Equipaggia la Spada dell'Eroe Leggendario",
+          "per usare queste abilità!"
+        ]
+      when "en"
+        messages = [
+          "\\c[2]Equip the Sword of the Legendary Hero to use",
+          "these skills!"
+        ]
+      end
+
     when "cannot-control"
       case $lang
       when "it"
@@ -197,15 +256,41 @@ class Localization
         ]
       end
 
-    when "test"
+    when "end-mission-1"
       case $lang
       when "it"
         messages = [
-          "\\nb[#{get_name(1)}]Ciao ragazzi!"
+          "\\nb[#{get_name(1)}]Dovrei aver distrutto tutte quante",
+          "le casse in questa foresta!"
         ]
       when "en"
         messages = [
-          "\\nb[#{get_name(1)}]Ciao ragazzi!"
+          "\\nb[#{get_name(1)}]This should be the last of the crates in",
+          "the forest!"
+        ]
+      end
+
+    when "end-mission-2"
+      case $lang
+      when "it"
+        messages = [
+          "\\nb[#{get_name(1)}]Ho eliminato tutti quanti i cattivi!",
+        ]
+      when "en"
+        messages = [
+          "\\nb[#{get_name(1)}]I defeated all the baddies!",
+        ]
+      end
+
+    when "end-mission-3"
+      case $lang
+      when "it"
+        messages = [
+          "\\nb[#{get_name(1)}]Ho spento tutte le fiamme!",
+        ]
+      when "en"
+        messages = [
+          "\\nb[#{get_name(1)}]I put out all the flames!",
         ]
       end
 
