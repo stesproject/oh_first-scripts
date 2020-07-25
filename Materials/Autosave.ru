@@ -394,7 +394,7 @@ class Window_NSS_SlotDetail < Window_Base
     save_data['gamemap'].display_y)
       if DRAW_GOLD
         # MOSTRA ORO
-        gold_text = $local.get_text("dindini")
+        gold_text = $local.get_text("currency") + ": "
         gold_textsize = contents.text_size(save_data['gamepar'].gold).width
         goldt_textsize = contents.text_size(gold_text).width
         contents.font.color = system_color
@@ -405,7 +405,7 @@ class Window_NSS_SlotDetail < Window_Base
       end
       if DRAW_PLAYTIME
         # MOSTRA TEMPO DI GIOCO
-        playtime_text = $local.get_text("playtime")
+        playtime_text = $local.get_text("playtime") + ": "
         hour = save_data['total_sec'] / 60 / 60
         min = save_data['total_sec'] / 60 % 60
         sec = save_data['total_sec'] % 60
@@ -420,7 +420,7 @@ class Window_NSS_SlotDetail < Window_Base
       end
       if DRAW_LOCATION
         # MOSTRA LOCAZIONE
-        location_text = $local.get_text("location")
+        location_text = $local.get_text("location") + ": "
         lc_textsize = contents.text_size(location_text).width
         mn_textsize = contents.text_size(save_data['map_name']).width
         contents.font.color = system_color

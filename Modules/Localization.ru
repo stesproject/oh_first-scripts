@@ -292,6 +292,7 @@ class Localization
 
   def set_action(action, item, value)
     reset_msg_vars
+    @messages = []
 
     case action
     when "find"
@@ -318,6 +319,9 @@ class Localization
         @messages.push("\\c[6]You got")
       end
     end
+
+    amount = value > 0 ? value.to_s + " " : ""
+    @messages.push("#{amount}#{item}!")
 
     set_msg_vars
   end
@@ -840,25 +844,25 @@ class Localization
       when "playtime"
         case $lang
         when "it"
-          text = "Tempo di gioco: "
+          text = "Tempo di gioco"
         when "en"
-          text = "Playtime: "
+          text = "Playtime"
         end
 
       when "location"
         case $lang
         when "it"
-          text = "Posizione: "
+          text = "Posizione"
         when "en"
-          text = "Location: "
+          text = "Location"
         end
 
-      when "dindini"
+      when "currency"
         case $lang
         when "it"
-          text = "Dindini: "
+          text = "Dindini"
         when "en"
-          text = "Dindini: "
+          text = "Dindini"
         end
 
       when "ask_overwrite"
