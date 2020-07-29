@@ -291,8 +291,8 @@ class Scene_File < Scene_Base
   
   #Finestra per informare che il giocatore non puo salvare qui
   def saving_not_allowed
+    save_message = $local.get_text("save_message")
     Sound.play_buzzer
-    # cannot_save_msg = $lang == "it" ? "Non puoi salvare in questo slot." : "You can not save in this slot."
     @help_window.set_text($local.get_text("cannot_save"))
     @help_window.update
     Graphics.wait(90)
