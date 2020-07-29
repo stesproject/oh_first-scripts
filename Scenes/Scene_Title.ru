@@ -7,6 +7,20 @@
 WEBSITE_URL = "https://stesproject.com"
 
 class Scene_Title < Scene_Base
+  attr_accessor :title_commands
+  def initialize
+    @title_commands = [
+      Vocab::new_game,
+      Vocab::continue,
+      $local.get_text("website"),
+      $local.get_text("menu_language"),
+      Vocab::shutdown
+    ]
+
+    if ($default_language != "")
+      @title_commands.delete_at(3)
+    end
+  end
   #--------------------------------------------------------------------------
   # * Main Processing
   #--------------------------------------------------------------------------
@@ -70,12 +84,12 @@ class Scene_Title < Scene_Base
         command_new_game
       when 1    # Continue
         command_continue
+      when @title_commands.size - 1    # Shutdown
+        command_shutdown
       when 2    # Website
         command_website
       when 3    # Language
         command_language
-      when 4    # Shutdown
-        command_shutdown
       end
     end
   end
@@ -160,14 +174,9 @@ class Scene_Title < Scene_Base
   # * Create Command Window
   #--------------------------------------------------------------------------
   def create_command_window
-    s1 = Vocab::new_game
-    s2 = Vocab::continue
-    s3 = $local.get_text("website")
-    s4 = $local.get_text("menu_language")
-    s5 = Vocab::shutdown
-    @command_window = Window_Command.new(172, [s1, s2, s3, s4, s5])
+    @command_window = Window_Command.new(172, @title_commands)
     @command_window.x = (744 - @command_window.width) / 2
-    @command_window.y = 248
+    @command_window.y = 348 - (@title_commands.size * 20)
     if @continue_enabled                    # If continue is enabled
       @command_window.index = 1             # Move cursor over command
     else                                    # If disabled

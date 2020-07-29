@@ -1,5 +1,5 @@
 module ADDON
-  ASK_FULLSCREEN = true # if set to false it wont ask you and it'll go straight to # fullscreen
+  ASK_LANGUAGE = $default_language == "" # if set to false it wont ask you and it'll go straight to # fullscreen
   CHOICES = ["English", "Italiano"]
   SETTINGS_FILENAME = "Settings.rvdata"
 end
@@ -16,7 +16,7 @@ class Window_Text < Window_Base
 end
 
 class Scene_Title
-  $lang = ""
+  $lang = $default_language
   $fullscreen = false
   
   alias main_fullscreen? main
@@ -27,7 +27,7 @@ class Scene_Title
       auto
     end
 
-    if ADDON::ASK_FULLSCREEN && $lang == ""
+    if ADDON::ASK_LANGUAGE && $lang == ""
       unless $game_started 
         Graphics.freeze
         $data_system = load_data('Data/System.rvdata')
