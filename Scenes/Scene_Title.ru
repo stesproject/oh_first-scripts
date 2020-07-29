@@ -9,6 +9,10 @@ WEBSITE_URL = "https://stesproject.com"
 class Scene_Title < Scene_Base
   attr_accessor :title_commands
   def initialize
+    initialize_commands
+  end
+
+  def initialize_commands
     @title_commands = [
       Vocab::new_game,
       Vocab::continue,
@@ -174,6 +178,7 @@ class Scene_Title < Scene_Base
   # * Create Command Window
   #--------------------------------------------------------------------------
   def create_command_window
+    initialize_commands
     @command_window = Window_Command.new(172, @title_commands)
     @command_window.x = (744 - @command_window.width) / 2
     @command_window.y = 348 - (@title_commands.size * 20)
