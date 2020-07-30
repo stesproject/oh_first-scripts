@@ -1034,7 +1034,7 @@ class Localization
         when "it"
           text = "Abilità"
         when "en"
-          text = "Skill"
+          text = "Skills"
         end
 
       when "guard"
