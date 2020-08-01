@@ -251,7 +251,7 @@ class Localization
     set_msg_vars
   end
 
-  def set_action(action, item, value)
+  def set_action(action, item, value, item2, value2)
     reset_msg_vars
     @messages = []
 
@@ -283,6 +283,11 @@ class Localization
 
     amount = value > 0 ? value.to_s + " " : ""
     @messages.push("#{amount}#{item}!")
+
+    if (item2 != nil && value2 != nil)
+      amount = value2 > 0 ? value2.to_s + " " : ""
+      @messages.push("#{amount}#{item2}!")
+    end
 
     set_msg_vars
   end
@@ -344,6 +349,10 @@ class Localization
   end
 
   def set_msg_vars
+    if (@messages == nil)
+      return
+    end
+
     for i in 0..3
       $game_variables[$msg_var[i]] = @messages[i]
     end
@@ -1142,6 +1151,8 @@ class Localization
 
   def set_msg(map_id, index)
     reset_msg_vars
+    
+    map_id = map_id == nil ? $game_map.map_id : map_id
 
     case map_id
     when 1 #map_id
@@ -1890,22 +1901,6 @@ class Localization
           ]
         end
 
-      when 2
-        case $lang
-        when "it"
-          @messages = [
-            "\\c[14]Ricevi",
-            "2000 Dindini!",
-            "99 Rigeneratori!"
-          ]
-        when "en"
-          @messages = [
-            "\\c[14]You got",
-            "2000 Dindini!",
-            "99 Regenerators!"
-          ]
-        end
-
       when 3
         case $lang
         when "it"
@@ -1920,19 +1915,670 @@ class Localization
           ]
         end
 
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS CASTELLO",
+            "Chi si crede di essere, era solo il primo boss..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]CASTLE BOSS",
+            "Who does he think he is, he's just the first boss..."
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BRACCIO BOSS FORESTA",
+            "Dato che l'intero boss della foresta era difficile",
+            "da far stare su una casellina, eccovi un suo braccio."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]FOREST BOSS ARM",
+            "The boss of the forest was too big to make a trophy",
+            "of, so here's one of his arms instead."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS VALLE SELVAGGIA",
+            "Sostanza proveniente da una bottiglia di vino.",
+            "Caduta in terra."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]WILD VALLEY BOSS",
+            "This boss was animated from the leftover wine in",
+            "a broken bottle."
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS CITTA' DELL'ACQUA"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]WATER CITY BOSS"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS DESERTO",
+            "Un nemico cybernetico venuto fuori da chissà",
+            "quale magia del Cristallo di Teorhemas."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]DESERT BOSS",
+            "A cybernetic enemy augmented in mysterious ways", 
+            "by the wild energy of the Teorhemas Crystal."
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS VULCANO",
+           "Eccovi una versione ridotta del verme gigante nelle",
+           "Profondità del Vulcano."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]VOLCANO BOSS",
+            "Here we have a smaller version of the giant worm",
+            "from the Volcano Depth."
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS FORESTA OSCURA",
+            "Ed ecco una versione ridotta anche della pianta",
+            "carnivora gigante venuta fuori dall'ennesimo",
+            "sortilegio del Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]DARK FOREST BOSS",
+            "Here we have a smaller version of the carnivorous", 
+            "plant, coming from the n-th spell of the Teorhemas",
+            "Crystal!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSS EVOLUTO",
+            "La versione più evoluta del primo boss!",
+            "Riportato in vita e potenziato con l'incredibile",
+            "potere del Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]EVOLVED BOSS",
+            "The advanced version of the first boss!",
+            "Came back to life and enhanced thanks to the",
+            "unbelievable power of the Teorhemas Crystal!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSSFINALE",
+            "Il tremendo Bossfinale!",
+            "Guarda com'è simpatico... Avreste potuto diventare", 
+            "grandi amici."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]FINALBOSS",
+            "The terrible Finalboss!",
+            "He looks so nice... You could have become",
+            "good friends."
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]BOSSFINALE TRASFORMATO",
+            "Ecco cosa può fare il Cristallo di Teorhemas se non", 
+            "viene usato nel modo corretto..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]TRANSFORMED FINALBOSS",
+            "That's what the Teorhemas Crystal could do",
+            "when it is used in the wrong way..."
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NEMICO 1"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ENEMY 1"
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NEMICO 2"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ENEMY 2"
+          ]
+        end
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NINJA",
+            "Più agili di qualsiasi altro nemico!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]NINJA",
+            "Faster than any other enemy!"
+          ]
+        end
+
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]ZOMBIE",
+            "Solo l'Ammazzazombie può sconfiggerli."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ZOMBIE",
+            "Only the Zombiesbane can defeat them."
+          ]
+        end
+
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NEMICO 3"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ENEMY 3"
+          ]
+        end
+
+      when 20
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NEMICO 4",
+            "Resistenti al fuoco, deboli al ghiaccio."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ENEMY 4",
+            "Resistant to fire, weak to ice."
+          ]
+        end
+
+      when 21
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CARBONELLO",
+            "Questi nemici nascono dalle fiamme dei vulcani, gli",
+            "attacchi di fuoco sono completamente inutili, invece",
+            "il ghiaccio li distrugge."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]CHARCOAL",
+            "An enemy spawned from the core of the Volcanic",
+            "Depths.",
+            "Fire is useless against him, but ice will destroy him."
+          ]
+        end
+
+      when 22
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]GHIACCIOLI",
+            "Questi nemici sono completamente ghiacciati, vivono",
+            "solo nei posti più freddi.",
+            "Il fuoco li distrugge."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ICICLE",
+            "Their bodies are constantly frozen from exposure to",
+            "their icy habitat.",
+            "Fire kills them instantly."
+          ]
+        end
+
+      when 23
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]OMBRA",
+            "Temibili esseri che si aggirano per la Foresta",
+            "Oscura."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SHADOW",
+            "Fearsome creatures that wander around the Dark",
+            "Forest."
+          ]
+        end
+
+      when 24
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NEMICO 5"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]ENEMY 5"
+          ]
+        end
+
+      when 25
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]RE",
+            "Come si farebbe senza di lui..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]KING",
+            "What would we do without him?"
+          ]
+        end
+
+      when 26
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 4",
+            "Vai da lui se credi di aver eliminato un numero",
+            "considerevole di nemici."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 4",
+            "Go to him if you think you have defeated a",
+            "considerable amount of enemies."
+          ]
+        end
+
+      when 27
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 5",
+            "La vorresti una bandana come la sua, eh?!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 5",
+            "You want a bandana like his, don't you?"
+          ]
+        end
+
+      when 28
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 2",
+            "Probabilmente non è in grado di aprire la bocca."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 2",
+            "Probably is not able to open his mouth."
+          ]
+        end
+
+      when 29
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 7",
+            "Cosa c'è da ridere?"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 7",
+            "What's so funny?"
+          ]
+        end
+
+      when 30
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 1"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 1"
+          ]
+        end
+
+      when 31
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 6"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 6"
+          ]
+        end
+
+      when 32
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]CITTADINO 3",
+            "Vi assomigliate un po' troppo..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]PAESANT 3",
+            "He looks like you... too much."
+          ]
+        end
+
+      when 33
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]VENDITORE DI SALUMI",
+            "Grazie a lui e alla sua carne sei riuscito a salvarti",
+            "nelle situazioni più disastrose."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]BUTCHER",
+            "Thanks to him and his meat you managed to save",
+            "yourself in the most dangerous situations."
+          ]
+        end
+
+      when 34
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]TAY",
+            "Sta cercando il suo amico..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]TAY",
+            "He is looking for his friend..."
+          ]
+        end
+
+      when 35
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]NOSTROEROE",
+            "Hey, ci sei pure tu!",
+            "L'eroe numero uno, incontrastato!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]OURHERO",
+            "Hey, here you are!",
+            "Number one hero, unmatched!"
+          ]
+        end
+
+      when 36
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]EROE 2",
+            "Grazie a lui hai ottenuto la tua Spada Elettrica,",
+            "che lancia scariche elettriche!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]HERO 2",
+            "He gave you the Electric Sword and taught you how",
+            "to use the Lightning skill!"
+          ]
+        end
+
+      when 37
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]EROE 3",
+            "Chissà quali ardue imprese hanno affrontato",
+            "questi valorosi eroi...",
+            "Il Cristallo Controllore proviene da lui!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]HERO 3",
+            "Nobody knows how many tough challenges these",
+            "heroes faced...",
+            "The Controller Crystal comes from him!"
+          ]
+        end
+
+      when 38
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]GUARDIA",
+            "Fedele guardia del castello del Re!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]GUARD",
+            "Loyal guard of the King's castle!"
+          ]
+        end
+
+      when 39
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]GUARDIA 2",
+            "Questa guardia si occupa di costruire armi e",
+            "potenziarle quanto più può."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]GUARD 2",
+            "This guard dabbles in blacksmithing.",
+            "He can craft and upgrade weapons!"
+          ]
+        end
+
+      when 40
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]SAGGIO 1",
+            "Alcuni hanno dei dubbi che quella cosa in testa",
+            "sia veramente una bandana."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SAGE 1",
+            "There are rumors that his hat is not actually a hat.",
+            ""
+          ]
+        end
+
+      when 41
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]SAGGIO 2",
+            "Gli piacciono le collane luccicanti..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SAGE 2",
+            "He really likes lavish necklaces..."
+          ]
+        end
+
+      when 42
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]SAGGIO 3",
+            "Ah, i saggi...",
+            "Uno più brutto dell'altro."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SAGE 3",
+            "Ah, the sages...",
+            "So fugly."
+          ]
+        end
+
+      when 43
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]SAGGIO 4",
+            "Brutto come suo fratello."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SAGE 4",
+            "Ugly as his brother."
+          ]
+        end
+
+      when 44
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]SAGGIO 5",
+            "L'ultimo dei cinque saggi.",
+            "E il cancello di Bossfinale si aprì..."
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]SAGE 5",
+            "The last of the five sages.",
+            "And so the Finalboss gate opened..."
+          ]
+        end
+
+      when 45
+        case $lang
+        when "it"
+          @messages = [
+            "Sembra che qualcuno sia arrivato nella foresta..."
+          ]
+        when "en"
+          @messages = [
+            "Looks like someone has arrived in the forest..."
+          ]
+        end
+      end #end case index
+
+    when 27 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Benvenuti in arena."
+          ]
+        when "en"
+          @messages = [
+            "Welcome to the Arena."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[10]L'arena è attualmente chiusa."
+          ]
+        when "en"
+          @messages = [
+            "\\c[10]The Arena is currently closed."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Vuoi accedere all'arena?",
+            "Entra in Arena",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Do you want to enter the Arena?",
+            "Enter the Arena",
+            get_text("cancel")
+          ]
+        end
+
       when 4
         case $lang
         when "it"
           @messages = [
-            "\\c[14]Ricevi",
-            "1000 Dindini!",
-            "99 Carni!"
+            "Uccidi il maggior numero di nemici nel tempo",
+            "limite!"
           ]
         when "en"
           @messages = [
-            "\\c[14]You got",
-            "1000 Dindini!",
-            "99 Meats!"
+            "Kill as many enemies as you can before the time's", 
+            "up!"
           ]
         end
 
@@ -1940,11 +2586,55 @@ class Localization
         case $lang
         when "it"
           @messages = [
-            ""
+            "\\c[6]25 nemici= Medaglia di Bronzo",
+            "50 nemici= Medaglia d'Argento",
+            "75 nemici= Medaglia d'Oro"
           ]
         when "en"
           @messages = [
-            ""
+            "\\c[6]25 enemies = Bronze Medal",
+            "50 enemies = Silver Medal",
+            "75 enemies = Gold Medal"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Tempo scaduto."
+          ]
+        when "en"
+          @messages = [
+            "Time out."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Hai eliminato \\v[21] nemici!"
+          ]
+        when "en"
+          @messages = [
+            "You've killed \\v[21] enemies!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[6]Ricevi",
+            "1 Medaglia d'Oro!",
+            "1000 Dindini!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[6]You got",
+            "1 Gold Medal!",
+            "1000 Dindini!"
           ]
         end
       end #end case index
