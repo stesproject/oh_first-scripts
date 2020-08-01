@@ -47,7 +47,143 @@ class Localization
     end
 
     return text.upcase
+  end
 
+  def get_map_name(name)
+    text = name
+
+    case name
+    when "King's Castle"
+      case $lang
+      when "it"
+        text = "Castello del Re"
+      when "en"
+        text = "King's Castle"
+      end
+
+    when "Throne Room"
+      case $lang
+      when "it"
+        text = "Sala del Trono"
+      when "en"
+        text = "Throne Room"
+      end
+
+    when "Trophy Hall"
+      case $lang
+      when "it"
+        text = "Sala dei Trofei"
+      when "en"
+        text = "Trophy Hall"
+      end
+
+    when "Arena"
+      case $lang
+      when "it"
+        text = "Arena"
+      when "en"
+        text = "Arena"
+      end
+
+    when "Teorhemas Vault"
+      case $lang
+      when "it"
+        text = "Sala del Teorhemas"
+      when "en"
+        text = "Teorhemas Vault"
+      end
+
+    when "Castle Grounds"
+      case $lang
+      when "it"
+        text = "Cortile del Castello"
+      when "en"
+        text = "Castle Grounds"
+      end
+
+    when "Forest of the All-Eye Monster"
+      case $lang
+      when "it"
+        text = "Foresta dell'Occhio Sgorbio"
+      when "en"
+        text = "Forest of the All-Eye Monster"
+      end
+
+    when "Wild Valley"
+      case $lang
+      when "it"
+        text = "Valle Selvaggia"
+      when "en"
+        text = "Wild Valley"
+      end
+
+    when "Water City"
+      case $lang
+      when "it"
+        text = "Città dell'Acqua"
+      when "en"
+        text = "Water City"
+      end
+
+    when "Finalboss Domain"
+      case $lang
+      when "it"
+        text = "Regno di Bossfinale"
+      when "en"
+        text = "Finalboss Domain"
+      end
+
+    when "Foxes Desert"
+      case $lang
+      when "it"
+        text = "Deserto dei Volpini"
+      when "en"
+        text = "Foxes Desert"
+      end
+
+    when "Volcanic Depths"
+      case $lang
+      when "it"
+        text = "Profondità del Vulcano"
+      when "en"
+        text = "Volcanic Depths"
+      end
+
+    when "Eternal Glaciers"
+      case $lang
+      when "it"
+        text = "Ghiacciai Perenni"
+      when "en"
+        text = "Eternal Glaciers"
+      end
+
+    when "Dark Forest"
+      case $lang
+      when "it"
+        text = "Foresta Oscura"
+      when "en"
+        text = "Dark Forest"
+      end
+
+    when "Finalboss Castle"
+      case $lang
+      when "it"
+        text = "Castello di Bossfinale"
+      when "en"
+        text = "Finalboss Castle"
+      end
+
+    when "Celebration Feast"
+      case $lang
+      when "it"
+        text = "Banchetto"
+      when "en"
+        text = "Celebration Feast"
+      end
+
+    end
+
+    return text
   end
 
   def set_common_msg(name)
@@ -302,12 +438,12 @@ class Localization
       when "it"
         @messages = [
           "\\c[14]Atto 1:",
-          "IL CASTELLO"
+          "IL CASTELLO DEL RE"
         ]
       when "en"
         @messages = [
           "\\c[14]Act 1:",
-          "THE CASTLE"
+          "THE KING'S CASTLE"
         ]
       end
 
@@ -2704,7 +2840,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "Welcome to the Arena."
+            "Welcome to the arena."
           ]
         end
 
@@ -2716,7 +2852,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "\\c[10]The Arena is currently closed."
+            "\\c[10]The arena is currently closed."
           ]
         end
 
@@ -2790,21 +2926,6 @@ class Localization
           ]
         end
 
-      when 8
-        case $lang
-        when "it"
-          @messages = [
-            "\\c[6]Ricevi",
-            "1 Medaglia d'Oro!",
-            "1000 Dindini!"
-          ]
-        when "en"
-          @messages = [
-            "\\c[6]You got",
-            "1 Gold Medal!",
-            "1000 Dindini!"
-          ]
-        end
       end #end case index
 
     end #end case map_id

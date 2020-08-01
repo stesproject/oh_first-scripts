@@ -422,13 +422,13 @@ class Window_NSS_SlotDetail < Window_Base
         # MOSTRA LOCAZIONE
         location_text = $local.get_text("location") + ": "
         lc_textsize = contents.text_size(location_text).width
-        mn_textsize = contents.text_size(save_data['map_name']).width
+        mapname = $local.get_map_name(save_data['map_name'])
+        mn_textsize = contents.text_size(mapname).width
         contents.font.color = system_color
         contents.draw_text(0, 190, contents.width,
         WLH, location_text)
         contents.font.color = normal_color
-        contents.draw_text(lc_textsize, 190, contents.width, WLH,
-        save_data['map_name'])
+        contents.draw_text(lc_textsize, 190, contents.width, WLH, mapname)
       end
         # MOSTRA FACCIA & Livello & Nome
         save_data['gamepar'].members.each_index do |i|
