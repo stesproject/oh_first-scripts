@@ -287,6 +287,56 @@ class Localization
     set_msg_vars
   end
 
+  def set_act_completed(index)
+    reset_msg_vars
+    @messages = []
+
+    case index
+    when 1
+      case $lang
+      when "it"
+        @messages = [
+          "\\c[14]Atto 1:",
+          "IL CASTELLO"
+        ]
+      when "en"
+        @messages = [
+          "\\c[14]Act 1:",
+          "THE CASTLE"
+        ]
+      end
+
+    end
+
+    case $lang
+    when "it"
+      @messages.push("\\c[10]Completato!\\|\\|\\|\\|\\|\\^")
+    when "en"
+      @messages.push("\\c[10]Completed!\\|\\|\\|\\|\\|\\^")
+    end
+
+    set_msg_vars
+  end
+
+  def set_weapon_stats(index)
+    reset_msg_vars
+    @messages = []
+
+    weapon = $data_weapons[index]
+    @messages.push("\\c[14]#{weapon.name.upcase}")
+    
+    case $lang
+    when "it"
+      @messages.push("Attacco: #{weapon.atk}")
+      @messages.push("Difesa: #{weapon.def}")
+    when "en"
+      @messages.push("Attack: #{weapon.atk}")
+      @messages.push("Defense: #{weapon.def}")
+    end
+
+    set_msg_vars
+  end
+
   def reset_msg_vars
     for i in 0..3
       $game_variables[$msg_var[i]] = ""
@@ -1095,7 +1145,6 @@ class Localization
 
     case map_id
     when 1 #map_id
-
       case index
       when 1
         case $lang
@@ -1227,7 +1276,6 @@ class Localization
       end #end case index
 
     when 2 #map_id
-
       case index
       when 1
         case $lang
@@ -1765,6 +1813,140 @@ class Localization
           ]
         end
 
+      end #end case index
+
+    when 3 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]E questi tipi chi sono?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Who are these guys?!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sarà meglio che li faccia fuori tutti quanti!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Better take them all out!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Premi \\c[2]S\\c[0] per attaccare!",
+            "\\c[2]SHIFT\\c[0] per correre e \\c[2]A\\c[0] per saltare gli",
+            "ostacoli!"
+          ]
+        when "en"
+          @messages = [
+            "Press \\c[2]S\\c[0] to attack!",
+            "Press \\c[2]SHIFT\\c[0] to run and \\c[2]A\\c[0] to jump over",
+            "obstacles!"
+          ]
+        end
+
+      end #end case index
+
+    when 4 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Devo pensare ad uscire dal castello ora!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I have to get out of the castle now!"
+          ]
+        end
+      end #end case index
+
+    when 44 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]COMPLIMENTI!",
+            "Hai ottenuto tutte le spade presenti nel gioco!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]CONGRATULATIONS!",
+            "You collected all the swords!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]Ricevi",
+            "2000 Dindini!",
+            "99 Rigeneratori!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]You got",
+            "2000 Dindini!",
+            "99 Regenerators!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]COMPLIMENTI!",
+            "Hai completato la Galleria dei Personaggi!\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]CONGRATULATIONS!",
+            "You completed the Characters Gallery!\\|\\|\\^"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[14]Ricevi",
+            "1000 Dindini!",
+            "99 Carni!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[14]You got",
+            "1000 Dindini!",
+            "99 Meats!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            ""
+          ]
+        when "en"
+          @messages = [
+            ""
+          ]
+        end
       end #end case index
 
     end #end case map_id
