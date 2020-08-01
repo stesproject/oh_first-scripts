@@ -8,7 +8,7 @@
 #===============================================================================
 # Free for Commercial & Non-Commercial use. As long as I'm credited.
 #===============================================================================
-$splashDone = false
+$splashDone = $TEST
 
 module R2_Splash
   Splash = "logo" # The Image that'll serve as a splash image
