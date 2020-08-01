@@ -17,7 +17,7 @@ end
 
 class Scene_Title
   $lang = $default_language
-  $fullscreen = false
+  $fullscreen = $TEST
   
   alias main_fullscreen? main
   def main
