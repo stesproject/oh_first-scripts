@@ -1885,6 +1885,174 @@ class Localization
         end
       end #end case index
 
+    when 5 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Queste pozze d'acqua magica permetteranno al tuo",
+            "eroe di saltare anche al di fuori di una battaglia!"
+          ]
+        when "en"
+          @messages = [
+            "These magical puddles let your hero jump even",
+            "out of battle!"
+          ]
+        end
+      end #end case index
+
+    when 6 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cos'è successo qui?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What happened here?"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Buahaha e tu chi saresti?!\\|",
+            "Uno dei tanti poveracci che tentano ancora",
+            "di fermarci?"
+          ]
+        when "en"
+          @messages = [
+            "Buahaha! Who are you?!\\|",
+            "Another one of those guys who thinks can",
+            "defeat us?"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Se è così finirai come loro. \\. Morto!"
+          ]
+        when "en"
+          @messages = [
+            "If so, it will end badly for you, just like them!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "UCCIDETELO!"
+          ]
+        when "en"
+          @messages = [
+            "KILL HIM!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "Buahahah! Non credere sia così semplice sbarazzarti",
+            "di noi!"
+          ]
+        when "en"
+          @messages = [
+            "Buahahah! If you think it will be easy to get rid of us",
+            "you are totally wrong!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Ormai questo è il nostro regno!\\.",
+            "Con il Cristallo di Teorhemas dalla nostra parte,",
+            "in ogni parte del mondo tremeranno di paura",
+            "di fronte a noi!"
+          ]
+        when "en"
+          @messages = [
+            "This is now our Kingdom!\\.",
+            "With the Teorhemas Crystal on our side, everyone in",
+            "the world will be afraid of us!",
+            ""
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Basta, sono stufo di mandarti contro dei buoni",
+            "a nulla!"
+          ]
+        when "en"
+          @messages = [
+            "Enough! No more sending those good-for-nothing",
+            "grunts after you!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "Di certo non sarai più forte di tutti gli altri soldati",
+            "in questo castello!"
+          ]
+        when "en"
+          @messages = [
+            "You'll be a pushover just like every other soldier",
+            "in this castle!"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "Ora te la vedrai con me!"
+          ]
+        when "en"
+          @messages = [
+            "Now you'll get it from me!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\nb[#{get_name(1)}]Ho fatto fuori tutti!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I defeated everyone!"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Però non c'è traccia del cristallo..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]The problem is there's no sign of the crystal..."
+          ]
+        end
+      end #end case index
+
     when 44 #map_id
       case index
       when 1
