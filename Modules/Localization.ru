@@ -387,7 +387,7 @@ class Localization
     set_msg_vars
   end
 
-  def set_action(action, item, value, item2, value2)
+  def set_action(action, item, value, item2 = nil, value2 = nil)
     reset_msg_vars
     @messages = []
 
@@ -1278,6 +1278,46 @@ class Localization
           text = "Lingua: ITA"
         when "en"
           text = "Language: ENG"
+        end
+
+      when "back-king"
+        case $lang
+        when "it"
+          text = "Torna dal Re!"
+        when "en"
+          text = "Go back to the King!"
+        end
+
+      when "go-back"
+        case $lang
+        when "it"
+          text = "Torna indietro!"
+        when "en"
+          text = "Go back!"
+        end
+
+      when "defeat-monster"
+        case $lang
+        when "it"
+          text = "Sconfiggi il mostro!"
+        when "en"
+          text = "Defeat the monster!"
+        end
+
+      when "go-king"
+        case $lang
+        when "it"
+          text = "Vai dal Re!"
+        when "en"
+          text = "Go to the King!"
+        end
+
+      when "find-book"
+        case $lang
+        when "it"
+          text = "Trova il libro!"
+        when "en"
+          text = "Find the book!"
         end
 
     end
