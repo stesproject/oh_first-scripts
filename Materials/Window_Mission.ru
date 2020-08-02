@@ -10,7 +10,7 @@ class Window_Mission < Window_Base
   #     text : text to display
   #--------------------------------------------------------------------------
   def initialize(text)
-    width = 300
+    width = 250
     height = 64
     super(0, 0, width, height)
     self.x = (544 - self.width) / 2 #Center window
