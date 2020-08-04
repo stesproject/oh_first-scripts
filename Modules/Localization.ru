@@ -382,6 +382,18 @@ class Localization
         ]
       end
 
+    when "door-closed"
+      case $lang
+      when "it"
+        @messages = [
+          "La porta è chiusa",
+        ]
+      when "en"
+        @messages = [
+          "The door is closed.",
+        ]
+      end
+
     end
     
     set_msg_vars
@@ -718,6 +730,16 @@ class Localization
       when "en"
         text.name = "Secrets Sheet"
         text.desc = "Enter a code to unlock a bonus!"
+      end
+
+    when "Cute Monster"
+      case $lang
+      when "it"
+        text.name = "Esserino"
+        text.desc = ""
+      when "en"
+        text.name = "Cute Monster"
+        text.desc = ""
       end
 
     # Weapons
@@ -2328,6 +2350,108 @@ class Localization
             "\\nb[#{get_name(1)}]The problem is there's no sign of the crystal..."
           ]
         end
+      end #end case index
+
+    when 7 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Finora hai ucciso \\v[2] nemici."
+          ]
+        when "en"
+          @messages = [
+            "You've killed \\v[2] enemies so far."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Meriti un premio per avere sconfitto tutti questi",
+            "cattivi!"
+          ]
+        when "en"
+          @messages = [
+            "You deserve a reward for having killed all these",
+            "enemies!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Sconfiggi \\v[35] cattivi e ti darò un premio!"
+          ]
+        when "en"
+          @messages = [
+            "Defeat \\v[35] enemies and I will give you a reward!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Incredibile! Meriti il premio!"
+          ]
+        when "en"
+          @messages = [
+            "I can't believe it! You deserve the reward!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "Per guadagnarti l'ultimo premio devi ottenere",
+            "tutti i personaggi nella Galleria dei Personaggi!"
+          ]
+        when "en"
+          @messages = [
+            "To win the last prize you have to unlock all the",
+            "characters in the Characters Gallery!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Per guadagnarti l'ultimo premio devi sconfiggere",
+            "\\v[35] cattivi, completare il gioco e ottenere tutti i",
+            "personaggi nella Galleria dei Personaggi!"
+          ]
+        when "en"
+          @messages = [
+            "To win the last prize you have to kill \\v[35] enemies,",
+            "finish the story and unlock all the characters in",
+            "the Characters Gallery!"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Ragazzo, non ho più premi da darti!",
+            "Ma posso dirti che hai ucciso \\v[2] nemici.",
+            "",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "My friend, I do not have any other rewards left for",
+            "you!",
+            "But I can tell you that you killed \\v[2] enemies",
+            "so far."
+          ]
+        end
+
       end #end case index
 
     when 44 #map_id
