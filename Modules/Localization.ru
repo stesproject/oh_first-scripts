@@ -432,18 +432,119 @@ class Localization
     reset_msg_vars
     @messages = []
 
+    case $lang
+    when "it"
+      @messages.push("\\c[14]Atto \\v[10]:")
+    when "en"
+      @messages.push("\\c[14]Act \\v[10]:")
+    end
+
     case index
     when 1
       case $lang
       when "it"
         @messages = [
-          "\\c[14]Atto 1:",
-          "IL CASTELLO DEL RE"
+          @messages.push("IL CASTELLO DEL RE")
         ]
       when "en"
         @messages = [
-          "\\c[14]Act 1:",
-          "THE KING'S CASTLE"
+          @messages.push("THE KING'S CASTLE")
+        ]
+      end
+
+    when 2
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("LA FORESTA DELL'OCCHIO SGORBIO")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE FOREST OF THE ALL-EYE MONSTER")
+        ]
+      end
+
+    when 3
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("LA VALLE SELVAGGIA")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE WILD VALLEY")
+        ]
+      end
+
+    when 4
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("LA CITTÀ DELL'ACQUA")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE WATER CITY")
+        ]
+      end
+
+    when 5
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("IL DESERTO DEI VOLPINI")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE FOXES DESERT")
+        ]
+      end
+
+    when 6
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("LE PROFONDITÀ DEL VULCANO")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE VOLCANIC DEPTHS")
+        ]
+      end
+
+    when 7
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("I GHIACCIAI PERENNI")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE ETERNAL GLACIERS")
+        ]
+      end
+
+    when 8
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("LA FORESTA OSCURA")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE DARK FOREST")
+        ]
+      end
+
+    when 9
+      case $lang
+      when "it"
+        @messages = [
+          @messages.push("IL CASTELLO DI BOSSFINALE")
+        ]
+      when "en"
+        @messages = [
+          @messages.push("THE FINALBOSS CASTLE")
         ]
       end
 
