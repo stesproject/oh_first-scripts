@@ -2452,6 +2452,402 @@ class Localization
           ]
         end
 
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "Sai cos'è successo nel castello?"
+          ]
+        when "en"
+          @messages = [
+            "Do you know what happened to the castle?"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Hanno rubato il Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Someone stole the Teorhemas Crystal!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "Wooo un potente guerriero!",
+            "Dove hai preso quella spada gigante?"
+          ]
+        when "en"
+          @messages = [
+            "Wow, a mighty warrior!",
+            "Where did you find that huge sword?"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Nei giochi l'eroe non risponde mai a quello",
+            "che gli dice la gente, anche se è lui ad attaccar bottone."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I'm sorry, in a game the hero never replies",
+            "to what the people have to say."
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Che ti ridi?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Why are you laughing?"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "Mi piace correre felice nel giardino del Re!"
+          ]
+        when "en"
+          @messages = [
+            "I'm so happy to run around in the King's courtyard!"
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "Voglio avventurarmi in un un'avventura!"
+          ]
+        when "en"
+          @messages = [
+            "I want to go on an adventure!"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Voglio anch'io una bandana come la tua!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I want a bandana like yours!"
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "Na, è mia."
+          ]
+        when "en"
+          @messages = [
+            "No, it's mine."
+          ]
+        end
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "Hey! Tutto bene?"
+          ]
+        when "en"
+          @messages = [
+            "Hey! Is everything all right?"
+          ]
+        end
+
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sì!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sure!"
+          ]
+        end
+
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "Se vuoi posso venderti qualcosa di interessante..."
+          ]
+        when "en"
+          @messages = [
+            "Let me sell you something interesting..."
+          ]
+        end
+
+      when 20
+        case $lang
+        when "it"
+          @messages = [
+            "Compra qualcosa",
+            "Cerca missione",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Buy something",
+            "Check for quests",
+            get_text("cancel")
+          ]
+        end
+
+      when 21
+        case $lang
+        when "it"
+          @messages = [
+            "Non puoi cominciare una nuova missione se prima",
+            "non completi quella in corso!"
+          ]
+        when "en"
+          @messages = [
+            "You already have a mission in progress, you cannot",
+            "start a new one!"
+          ]
+        end
+
+      when 22
+        case $lang
+        when "it"
+          @messages = [
+            "Avrei un compito da affidarti...\\|",
+            "Nella foresta sono state buttate delle casse che,",
+            "per il Re, rovinano la bellezza del paesaggio...",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "I have a mission for you...\\|",
+            "Someone thought the Forest would make for a good",
+            "garbage dump and threw around a bunch of old",
+            "crates..."
+          ]
+        end
+
+      when 23
+        case $lang
+        when "it"
+          @messages = [
+            "La tua missione è trovarle e distruggerle tutte!",
+            "Non lo sappiamo bene quante siano...",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "Your mission is to find and destroy all these crates!",
+            "The problem is that we don't know exactly how",
+            "many crates there are..."
+          ]
+        end
+
+      when 24
+        case $lang
+        when "it"
+          @messages = [
+            "Accetti la missione?"
+          ]
+        when "en"
+          @messages = [
+            "Do you accept the mission?"
+          ]
+        end
+
+      when 25
+        case $lang
+        when "it"
+          @messages = [
+            "ACCETTA",
+            "RIFIUTA"
+          ]
+        when "en"
+          @messages = [
+            "ACCEPT",
+            "REFUSE"
+          ]
+        end
+
+      when 26
+        case $lang
+        when "it"
+          @messages = [
+            "Perfetto, contiamo su di te, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "Great! We're counting on you, Ourhero!"
+          ]
+        end
+
+      when 27
+        case $lang
+        when "it"
+          @messages = [
+            "Compra qualcosa",
+            "Rapporto missione",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Buy something",
+            "Mission recap",
+            get_text("cancel")
+          ]
+        end
+
+      when 28
+        case $lang
+        when "it"
+          @messages = [
+            "Fin'ora hai distrutto \\v[16] casse su 21."
+          ]
+        when "en"
+          @messages = [
+            "You have destroyed \\v[16] crates out of 21."
+          ]
+        end
+
+      when 29
+        case $lang
+        when "it"
+          @messages = [
+            "Complimenti, hai ripulito la foresta da quelle",
+            "casse, meriti una ricompensa, da parte del re!"
+          ]
+        when "en"
+          @messages = [
+            "Awesome! You got rid of all those crates!",
+            "You deserve a reward, from the King himself!"
+          ]
+        end
+
+      when 30
+        case $lang
+        when "it"
+          @messages = [
+            "Compra qualcosa",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Buy something",
+            get_text("cancel")
+          ]
+        end
+
+      when 31
+        case $lang
+        when "it"
+          @messages = [
+            "Ho una nuova missione da affidarti!\\|",
+            "Nella Valle Selvaggia si aggirano alcuni nemici..."
+          ]
+        when "en"
+          @messages = [
+            "I have a new mission for you!\\|",
+            "There are enemies wandering around the Wild Valley..."
+          ]
+        end
+
+      when 32
+        case $lang
+        when "it"
+          @messages = [
+            "Devi eliminarli tutti quanti!",
+            "Stanno cercando di attaccare il Castello del Re!",
+            "Fermali prima che sia troppo tardi!"
+          ]
+        when "en"
+          @messages = [
+            "You have to kill them all!",
+            "They are trying to assault the King's Castle!",
+            "You have to stop them before it's too late!"
+          ]
+        end
+
+      when 33
+        case $lang
+        when "it"
+          @messages = [
+            "Fin'ora hai eliminato \\v[16] nemici su 29."
+          ]
+        when "en"
+          @messages = [
+            "You have killed \\v[16] enemies out of 29."
+          ]
+        end
+
+      when 34
+        case $lang
+        when "it"
+          @messages = [
+            "Complimenti, hai sconfitto tutti i nemici!",
+            "Eccoti il premio!"
+          ]
+        when "en"
+          @messages = [
+            "Awesome, you have killed all the enemies!",
+            "Here is your reward!"
+          ]
+        end
+
+      when 35
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[VENDITORE DI SALUMI]Vuole acquistare qualcosa?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[BUTCHER]Do you want to buy something?"
+          ]
+        end
+
+      when 36
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[NEGOZIO DI ARMI]Salve, come posso esserle utile?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[WEAPONS SELLER]Good morning, may I help you?"
+          ]
+        end
+
+      when 37
+        @messages = [
+          $get_map_name("Forest of the All-Eye Monster")
+        ]
+
+      when 38
+        @messages = [
+          $get_map_name("Wild Valley")
+        ]
+
       end #end case index
 
     when 44 #map_id
