@@ -2848,6 +2848,555 @@ class Localization
           $get_map_name("Wild Valley")
         ]
 
+      when 39
+        case $lang
+        when "it"
+          @messages = [
+            "Io mi occupo della costruzione di spade e del",
+            "potenziamento di armi di ogni genere."
+          ]
+        when "en"
+          @messages = [
+            "I can smith and enhance all kinds of weapons.",
+            ""
+          ]
+        end
+
+      when 40
+        case $lang
+        when "it"
+          @messages = [
+            "Ma non credo tu ora ne possa avere bisogno..."
+          ]
+        when "en"
+          @messages = [
+            "But I don't think you need this right now."
+          ]
+        end
+
+      when 41
+        case $lang
+        when "it"
+          @messages = [
+            "So che il re ti ha incaricato di distruggere quelle",
+            "rocce che bloccano il passaggio ad est...",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "I heard the path you're supposed to take to continue on",
+            "your quest is blocked by rocks barring the way to",
+            "the East..."
+          ]
+        end
+
+      when 42
+        case $lang
+        when "it"
+          @messages = [
+            "Bè, io forse potrei potenziare la tua Spada della",
+            "Rivolta in modo che tu riesca a spaccare anche delle", 
+            "rocce potenti come quelle!"
+          ]
+        when "en"
+          @messages = [
+            "I'll temper your Revolt Sword. It should make it",
+            "strong enough to break through those rocks!",
+            ""
+          ]
+        end
+
+      when 43
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Fantastico!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Amazing!"
+          ]
+        end
+
+      when 44
+        case $lang
+        when "it"
+          @messages = [
+            "Solo che...\\. Non mi ricordo come si fa."
+          ]
+        when "en"
+          @messages = [
+            "The problem is...\\. I don't remember how to do it."
+          ]
+        end
+
+      when 45
+        case $lang
+        when "it"
+          @messages = [
+            "Ho bisogno di un libro, dove c'è scritto tutto,",
+            "passo passo, su come potenziare la tua spada!"
+          ]
+        when "en"
+          @messages = [
+            "I need a rare book on swordsmithing techniques in",
+            "order to do that."
+          ]
+        end
+
+      when 46
+        case $lang
+        when "it"
+          @messages = [
+            "Si chiama \"Libro delle Doti Perdute\" e dovrebbe",
+            "essere nascosto da qualche parte nella Foresta",
+            "dell'Occhio Sgorbio!"
+          ]
+        when "en"
+          @messages = [
+            "It's called \"Book of the Forgotten Crafts\", and it",
+            "should be hidden somewhere in the Forest of the",
+            "All-Eye Monster!"
+          ]
+        end
+
+      when 47
+        case $lang
+        when "it"
+          @messages = [
+            "Devi trovare il mio Libro delle Doti Perdute!\\.",
+            "Così potrò potenziare la tua spada...\\.",
+            "Si trova nella Foresta dell'Occhio Sgorbio!",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "You have to find the Book of the Forgotten Crafts!\\.",
+            "This way I can upgrade your sword...\\.",
+            "You can find the book in the Forest of the All-Eye", 
+            "Monster!"
+          ]
+        end
+
+      when 48
+        case $lang
+        when "it"
+          @messages = [
+            "Hai trovato il Libro delle Doti Perdute, grande!\\.",
+            "Ora potrò potenziare la tua Spada della",
+            "Rivolta!"
+          ]
+        when "en"
+          @messages = [
+            "You found the Book of the Forgotten Crafts,",
+            "awesome!\\.",
+            "Now I can upgrade your Revolt Sword!"
+          ]
+        end
+
+      when 49
+        case $lang
+        when "it"
+          @messages = [
+            "\\gOra ho solo bisogno di \\v[34] Dindini per le materie",
+            "prime che mi servono per potenziare questa spada!",
+            "Paga \\v[34] Dindini",
+            "Non pagare"
+          ]
+        when "en"
+          @messages = [
+            "\\gNow I only need \\v[34] Dindini for the rest of the",
+            "materials and I can proceed with the upgrade.",
+            "Pay \\v[34] Dindini",
+            "Don't pay"
+          ]
+        end
+
+      when 50
+        case $lang
+        when "it"
+          @messages = [
+            "Perfetto, ecco la tua Spada della Rivolta potenziata!"
+          ]
+        when "en"
+          @messages = [
+            "Here we go, your enhanced Revolt Sword!"
+          ]
+        end
+
+      when 51
+        case $lang
+        when "it"
+          @messages = [
+            "Non hai abbastanza Dindini!\\|",
+            "Vai nella foresta a combattere qualche cattivo,",
+            "così potrai impossessarti dei loro bottini!"
+          ]
+        when "en"
+          @messages = [
+            "You don't have enough Dindini!\\|",
+            "You can go to the forest to fight some baddies,",
+            "so you can get their loots!"
+          ]
+        end
+
+      when 52
+        case $lang
+        when "it"
+          @messages = [
+            "Non hai abbastanza Dindini!"
+          ]
+        when "en"
+          @messages = [
+            "You don't have enough Dindini!"
+          ]
+        end
+
+      when 53
+        case $lang
+        when "it"
+          @messages = [
+            "Non hai una Spada della Rivolta!"
+          ]
+        when "en"
+          @messages = [
+            "You don't have a Revolt Sword!"
+          ]
+        end
+
+      when 54
+        case $lang
+        when "it"
+          @messages = [
+            "Hai una Spada della Rivolta che vuoi potenziare?",
+            "Potenzia spada",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Do you have a Revolt Sword you want to upgrade?",
+            "Upgrade sword",
+            get_text("cancel")
+          ]
+        end
+
+      when 55
+        case $lang
+        when "it"
+          @messages = [
+            "Prova subito la potenza della tua nuova spada!"
+          ]
+        when "en"
+          @messages = [
+            "Go experience the new power of your Revolt Sword!"
+          ]
+        end
+
+      when 56
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Non troverò il cristallo di Teorhemas da",
+            "questa parte..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I won't find the Teorhemas Crystal over here...",
+            ""
+          ]
+        end
+
+      end #end case index
+
+    when 17 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Mi si parla di fronte."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Please address me from the front."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Oh, eccoti Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Oh, here you are Ourhero!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cosa ci fai su un tappeto?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Why are you on a carpet?"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Io non posso non stare su un non tappeto."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]I can't not stay on a carpet."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Eh?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What?"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Cosa?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]What?"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Non ho capito."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I don't get it."
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Dicevamo...\\|",
+            "Le mie guardie hanno visto scappare qualcuno da",
+            "questa parte... Con il Cristallo di Teorhemas in mano!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]As I was saying...\\|",
+            "My soldiers saw someone escaping over there...",
+            "Holding the Teorhemas Crystal!"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Chiunque sia devi raggiungerlo al più",
+            "presto, prima che si allontani troppo con il nostro",
+            "cristallo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Anyway, you have to catch him before he gets",
+            "away with the crystal!",
+            ""
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Però... Hanno bloccato il passaggio",
+            "con queste robustissime rocce...",
+            "Nemmeno la tua Spada della Rivolta può distruggerle!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]The problem is... they blocked the way with",
+            "these heavy rocks...",
+            "Even your Revolt Sword can't destroy them!"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Dovresti potenziare la tua spada.\\.",
+            "I miei armaioli potranno esserti d'aiuto!\\|",
+            "Forza Nostroeroe, contiamo su di te!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]You should upgrade your sword.\\.",
+            "My blacksmiths will be able to assist you!\\|",
+            "Come on Ourhero, we're counting on you!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Se solo trovassi un modo per potenziare",
+            "la tua Spada della Rivolta...",
+            "Saresti poi in grado di distruggere queste rocce",
+            "che bloccano il passaggio!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]If only you could find a way to upgrade your",
+            "Revolt Sword...",
+            "Then you will be able to destroy those rocks which",
+            "block the way!"
+          ]
+        end
+      end #end case index
+
+    when 27 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Benvenuti in arena."
+          ]
+        when "en"
+          @messages = [
+            "Welcome to the arena."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[10]L'arena è attualmente chiusa."
+          ]
+        when "en"
+          @messages = [
+            "\\c[10]The arena is currently closed."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Vuoi accedere all'arena?",
+            "Entra in Arena",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Do you want to enter the Arena?",
+            "Enter the Arena",
+            get_text("cancel")
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Uccidi il maggior numero di nemici nel tempo",
+            "limite!"
+          ]
+        when "en"
+          @messages = [
+            "Kill as many enemies as you can before the time's", 
+            "up!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[6]25 nemici= Medaglia di Bronzo",
+            "50 nemici= Medaglia d'Argento",
+            "75 nemici= Medaglia d'Oro"
+          ]
+        when "en"
+          @messages = [
+            "\\c[6]25 enemies = Bronze Medal",
+            "50 enemies = Silver Medal",
+            "75 enemies = Gold Medal"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Tempo scaduto."
+          ]
+        when "en"
+          @messages = [
+            "Time out."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Hai eliminato \\v[21] nemici!"
+          ]
+        when "en"
+          @messages = [
+            "You've killed \\v[21] enemies!"
+          ]
+        end
+
+      end #end case index
+
+    when 30 #map_id
+      case index
+      when 1
+        @messages = [
+          $get_map_name("Water City")
+        ]
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\>Città dell'Acqua",
+            "\\>Regno di Bossfinale",
+            "\\>Resta qui"
+          ]
+        when "en"
+          @messages = [
+            "\\>Water City",
+            "\\>Finalboss Domain",
+            "\\>Stay here"
+          ]
+        end
       end #end case index
 
     when 44 #map_id
@@ -3489,104 +4038,6 @@ class Localization
             "Looks like someone has arrived in the forest..."
           ]
         end
-      end #end case index
-
-    when 27 #map_id
-      case index
-      when 1
-        case $lang
-        when "it"
-          @messages = [
-            "Benvenuti in arena."
-          ]
-        when "en"
-          @messages = [
-            "Welcome to the arena."
-          ]
-        end
-
-      when 2
-        case $lang
-        when "it"
-          @messages = [
-            "\\c[10]L'arena è attualmente chiusa."
-          ]
-        when "en"
-          @messages = [
-            "\\c[10]The arena is currently closed."
-          ]
-        end
-
-      when 3
-        case $lang
-        when "it"
-          @messages = [
-            "Vuoi accedere all'arena?",
-            "Entra in Arena",
-            get_text("cancel")
-          ]
-        when "en"
-          @messages = [
-            "Do you want to enter the Arena?",
-            "Enter the Arena",
-            get_text("cancel")
-          ]
-        end
-
-      when 4
-        case $lang
-        when "it"
-          @messages = [
-            "Uccidi il maggior numero di nemici nel tempo",
-            "limite!"
-          ]
-        when "en"
-          @messages = [
-            "Kill as many enemies as you can before the time's", 
-            "up!"
-          ]
-        end
-
-      when 5
-        case $lang
-        when "it"
-          @messages = [
-            "\\c[6]25 nemici= Medaglia di Bronzo",
-            "50 nemici= Medaglia d'Argento",
-            "75 nemici= Medaglia d'Oro"
-          ]
-        when "en"
-          @messages = [
-            "\\c[6]25 enemies = Bronze Medal",
-            "50 enemies = Silver Medal",
-            "75 enemies = Gold Medal"
-          ]
-        end
-
-      when 6
-        case $lang
-        when "it"
-          @messages = [
-            "Tempo scaduto."
-          ]
-        when "en"
-          @messages = [
-            "Time out."
-          ]
-        end
-
-      when 7
-        case $lang
-        when "it"
-          @messages = [
-            "Hai eliminato \\v[21] nemici!"
-          ]
-        when "en"
-          @messages = [
-            "You've killed \\v[21] enemies!"
-          ]
-        end
-
       end #end case index
 
     end #end case map_id
