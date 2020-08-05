@@ -386,11 +386,59 @@ class Localization
       case $lang
       when "it"
         @messages = [
-          "La porta è chiusa",
+          "La porta è chiusa.",
         ]
       when "en"
         @messages = [
           "The door is closed.",
+        ]
+      end
+
+    when "door-locked"
+      case $lang
+      when "it"
+        @messages = [
+          "La porta è chiusa a chiave.",
+        ]
+      when "en"
+        @messages = [
+          "The door is locked.",
+        ]
+      end
+
+    when "gate-locked"
+      case $lang
+      when "it"
+        @messages = [
+          "Il cancello è chiuso a chiave.",
+        ]
+      when "en"
+        @messages = [
+          "The gate is locked.",
+        ]
+      end
+
+    when "door-sealed"
+      case $lang
+      when "it"
+        @messages = [
+          "La porta è sigillata.",
+        ]
+      when "en"
+        @messages = [
+          "The door is sealed.",
+        ]
+      end
+
+    when "controlled-enemy"
+      case $lang
+      when "it"
+        @messages = [
+          "\\nb[#{get_name(1)}]Ohi! Sei vivo?",
+        ]
+      when "en"
+        @messages = [
+          "\\nb[#{get_name(1)}]Hey! Are you alive?",
         ]
       end
 
@@ -2840,12 +2888,12 @@ class Localization
 
       when 37
         @messages = [
-          $get_map_name("Forest of the All-Eye Monster")
+          get_map_name("Forest of the All-Eye Monster")
         ]
 
       when 38
         @messages = [
-          $get_map_name("Wild Valley")
+          get_map_name("Wild Valley")
         ]
 
       when 39
@@ -3103,6 +3151,344 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I won't find the Teorhemas Crystal over here...",
             ""
+          ]
+        end
+
+      end #end case index
+
+    when 11 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Tu devi essere Nostroeroe...\\|",
+            "È un po' che ti seguo."
+          ]
+        when "en"
+          @messages = [
+            "You must be Ourhero...\\|",
+            "I've been following you for a while."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Tu chi sei?!\\|",
+            "Perché mi segui?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Who are you?!\\|",
+            "Why are you following me?!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Tranquillo, sono qui per aiutarti!"
+          ]
+        when "en"
+          @messages = [
+            "Don't worry, I'm here to help you!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Se non sbaglio a nord della foresta c'è un",
+            "portale elettrico che ti impedisce di proseguire."
+          ]
+        when "en"
+          @messages = [
+            "If I'm not wrong at the North of the Forest there is",
+            "an electric gate you can't overcome."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "Io so come poterlo distruggere!"
+          ]
+        when "en"
+          @messages = [
+            "I know how you can destroy it!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Oh, fantastico!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Oh, that's good!"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Prendi questa spada!"
+          ]
+        when "en"
+          @messages = [
+            "Take this sword!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "Grazie a questa spada potrai lanciare",
+            "delle potenti scariche elettriche contro il",
+            "portale, fino a farlo sovraccaricare!"
+          ]
+        when "en"
+          @messages = [
+            "Use the electricity in this sword to overload the gate!",
+            "",
+            ""
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Fico!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cool!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "Vai a provare!"
+          ]
+        when "en"
+          @messages = [
+            "Go and try it!"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]Abilità:\\c[0]\\|",
+            "Durante la tua avventura potrai trovare delle",
+            "spade con caratteristiche particolari."
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]Skills:\\c[0]\\|",
+            "During your adventure you can find swords with",
+            "special abilities."
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "Alcune spade, se equipaggiate, insegneranno",
+            "all'eroe delle Abilità!"
+          ]
+        when "en"
+          @messages = [
+            "Some swords, once equipped, will give the hero",
+            "special Skills!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "Per utilizzare l'abilità conferita dalla spada,",
+            "apri il menu, seleziona \\c[2]Abilità\\c[0] e premi sopra",
+            "l'abilità selezionata il tasto \"1\" per assegnare",
+            "l'abilità a quel tasto!"
+          ]
+        when "en"
+          @messages = [
+            "To cast the skill learned from the sword, open the",
+            "Menu, go to \\c[2]Skills\\c[0] and press the \"1\" button to",
+            "assign the skill to that button!",
+            ""
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "Per poi usare l'abilità durante il gioco basterà",
+            "premere il tasto \"1\" e verrà lanciato l'attacco",
+            "contro oggetti o nemici!"
+          ]
+        when "en"
+          @messages = [
+            "To then use the skill you will just have to press",
+            "the button \"1\" and the hero will use the skill",
+            "against obstacles or enemies!"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "Apri menu-> Equipaggia la spada->",
+            "CHIUDI MENU.",
+            "Apri menu-> Assegna l'abilità->",
+            "Chiudi menu."
+          ]
+        when "en"
+          @messages = [
+            "Open menu-> Equip the sword ->",
+            "CLOSE MENU.",
+            "Open menu-> Assign the skill ->",
+            "Close menu."
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[2]Ricorda:\\c[0] lanciare le abilità ha un costo!\\.",
+            "Tieni d'occhio la tua Barra delle Abilità (sotto la tua",
+            "energia). Quando è vuota avrai bisogno di un \\c[2]Rigeneratore\\c[0]",
+            "per ricaricarla."
+          ]
+        when "en"
+          @messages = [
+            "\\c[2]Remember:\\c[0] casting skills has a cost!\\.",
+            "Keep an eye on your Skill Energy (under your",
+            "health bar). When empty you'll need a \\c[2]Regenerator\\c[0]",
+            "to recharge it."
+          ]
+        end
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "Hai provato a distruggere il portale elettrico",
+            "che blocca la strada nella foresta?"
+          ]
+        when "en"
+          @messages = [
+            "Did you try to destroy the electric gate which",
+            "blocks the way in the forest?"
+          ]
+        end
+
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "Tieni, prendi un Rigeneratore."
+          ]
+        when "en"
+          @messages = [
+            "Here, have a Regenerator."
+          ]
+        end
+
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]È impossibile proseguire da questa parte..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]There's no way to go on here..."
+          ]
+        end
+
+      when 20
+        case $lang
+        when "it"
+          @messages = [
+            "Torna nelle zone Boss per trovare sempre nemici",
+            "da sconfiggere e con cui allenarti!"
+          ]
+        when "en"
+          @messages = [
+            "You can refight enemies in the Boss arenas to gain",
+            "money and EXP!"
+          ]
+        end
+
+      when 21
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ciao!\\. Chi sei?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Hi!\\. Who are you?"
+          ]
+        end
+
+      when 22
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[TAY]Il mio nome è Tay.\\.",
+            "Sto cercando il mio amico, Fury..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[TAY]My name is Tay.\\.",
+            "I'm looking for my friend, Fury..."
+          ]
+        end
+
+      when 23
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[10]TAY",
+            "Nuovo personaggio sbloccato nella Galleria dei Personaggi!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[10]TAY",
+            "New character unlocked in the Characters Gallery!"
+          ]
+        end
+
+      when 24
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[TAY]Non può essersi allontanato troppo..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[TAY]He can't be so far..."
           ]
         end
 
@@ -3379,7 +3765,7 @@ class Localization
       case index
       when 1
         @messages = [
-          $get_map_name("Water City")
+          get_map_name("Water City")
         ]
 
       when 2
