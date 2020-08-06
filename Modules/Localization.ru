@@ -671,6 +671,7 @@ class Localization
     end
 
     for i in 0..3
+      @messages[i] = @messages[i] == nil ? "" : @messages[i]
       $game_variables[$msg_var[i]] = @messages[i]
     end
   end
@@ -3657,6 +3658,267 @@ class Localization
             "Revolt Sword...",
             "Then you will be able to destroy those rocks which",
             "block the way!"
+          ]
+        end
+      end #end case index
+
+    when 19 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Dannazione! Perché avete aperto il cancello?!",
+            "PERCHÉ?!"
+          ]
+        when "en"
+          @messages = [
+            "Damn it! Why did you open the gate?!",
+            "WHY?!"
+          ]
+        end
+      end #end case index
+
+    when 25 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Non sappiamo cosa stia succedendo qui...",
+            "Sembra che i soldati caduti in battaglia si",
+            "risveglino... Da morti!"
+          ]
+        when "en"
+          @messages = [
+            "We don't know what is happening here...",
+            "It looks like the dead soldiers... came back to life!",
+            ""
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Più avanti troverai l'entrata sul retro del castello..."
+          ]
+        when "en"
+          @messages = [
+            "This way leads right to the castle's back entrance..."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Chi ha aperto il cancello?!",
+            "Lo avevamo chiuso per evitare che quei mostri",
+            "raggiungessero il castello!"
+          ]
+        when "en"
+          @messages = [
+            "Who opened the gate?!",
+            "We had closed it to prevent those monsters from",
+            "reaching the castle!"
+          ]
+        end
+      end #end case index
+
+    when 26 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]I morti viventi rendono immortale quel mostro!",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]The undead are making the monster impervious",
+            "to your attacks!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Nostroeroe, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ourhero, Ourhero!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Mio sire, mio sire!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]My sire, my sire!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Lui è la causa di tutto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]That guy is the cause of all this!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Il cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]The Teorhemas Crystal!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Gnahahah poveri stolti!",
+            "Il cristallo è mio e nessuno me lo leverà",
+            "dalle grinfie!"
+          ]
+        when "en"
+          @messages = [
+            "Gnahahah poor folks!",
+            "The crystal is now mine and no one will be able",
+            "to take it off from me!"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Nostroeroe, tu non sai qual è l'incredibile",
+            "potere del Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ourhero, I still haven't told you about the real power", 
+            "of the Teorhemas Crystal!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Chiunque possegga il cristallo può dare vita a",
+            "qualsiasi oggetto inanimato!\\.",
+            "Sostanze, oggetti... qualsiasi cosa non vivente, insomma!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]The crystal can bring any inanimated object to life!\\.",
+            "It can control all nonliving matter!",
+            ""
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ora si spiega tutto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]That explains everything!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "Gnahahah guardate cosa posso fare con questo",
+            "fantastico cristallo!"
+          ]
+        when "en"
+          @messages = [
+            "Gnahahah have a look at what I can do with the",
+            "power of this amazing crystal!"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ha creato quel mostro da una bottiglia",
+            "di vino che era caduta in terra!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]He created that monster from a broken bottle",
+            "of wine!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ora sai qual è la potenza del Cristallo di Teorhemas.\\|",
+            "Puoi facilmente capire che non possiamo lasciarlo",
+            "nella mani di quel pazzo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]You know the power of the Teorhemas Crystal now.\\|",
+            "You understand it's far too dangerous to leave the",
+            "crystal in his hands!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "Gnahahah io vi lascio nelle scrimpi del mio mostro!\\.",
+            "Il cristallo è mio.\\.",
+            "Gnahahahaha!!!"
+          ]
+        when "en"
+          @messages = [
+            "Gnahahah I leave you in the cluthces of my monster!\\.",
+            "The crystal is mine.\\.",
+            "Gnahahahaha!!!"
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Nostroeroe, uccidi quel mostro prima che raggiunga",
+            "il mio castello!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ourhero, kill that monster before he can reach",
+            "my castle!"
           ]
         end
       end #end case index
