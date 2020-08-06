@@ -44,6 +44,14 @@ class Localization
         text = "King"
       end
 
+    when 3
+      case $lang
+      when "it"
+        text = "Saggio"
+      when "en"
+        text = "Sage"
+      end
+
     end
 
     return text.upcase
@@ -186,7 +194,7 @@ class Localization
     return text
   end
 
-  def set_common_msg(name)
+  def set_common_msg(name, param = nil)
     reset_msg_vars
 
     case name
@@ -441,6 +449,23 @@ class Localization
           "\\nb[#{get_name(1)}]Hey! Are you alive?",
         ]
       end
+
+    when "no-weapon"
+      case $lang
+      when "it"
+        @messages = [
+          "Non hai una #{param}!"
+        ]
+      when "en"
+        @messages = [
+          "You don't have a #{param}!"
+        ]
+      end
+
+    else
+      @messages = [
+        "#{get_text(name)}",
+      ]
 
     end
     
@@ -1489,6 +1514,18 @@ class Localization
           text = "Trova il libro!"
         when "en"
           text = "Find the book!"
+        end
+
+      when "no-dindini"
+        case $lang
+        when "it"
+          @messages = [
+            "Non hai abbastanza Dindini!",
+          ]
+        when "en"
+          @messages = [
+            "You don't have enough Dindini!",
+          ]
         end
 
     end
@@ -3076,39 +3113,15 @@ class Localization
         case $lang
         when "it"
           @messages = [
-            "Non hai abbastanza Dindini!\\|",
+            "#{get_text("no-dindini")}\\|",
             "Vai nella foresta a combattere qualche cattivo,",
             "così potrai impossessarti dei loro bottini!"
           ]
         when "en"
           @messages = [
-            "You don't have enough Dindini!\\|",
+            "#{get_text("no-dindini")}\\|",
             "You can go to the forest to fight some baddies,",
             "so you can get their loots!"
-          ]
-        end
-
-      when 52
-        case $lang
-        when "it"
-          @messages = [
-            "Non hai abbastanza Dindini!"
-          ]
-        when "en"
-          @messages = [
-            "You don't have enough Dindini!"
-          ]
-        end
-
-      when 53
-        case $lang
-        when "it"
-          @messages = [
-            "Non hai una Spada della Rivolta!"
-          ]
-        when "en"
-          @messages = [
-            "You don't have a Revolt Sword!"
           ]
         end
 
@@ -4424,6 +4437,421 @@ class Localization
             "Looks like someone has arrived in the forest..."
           ]
         end
+      end #end case index
+
+    when 46 #map_id
+      case index
+      when 1
+        get_map_name("Foxes Desert")
+
+      when 2
+        get_map_name("Volcanic Depths")
+
+      when 3
+        get_map_name("Eternal Glaciers")
+
+      when 4
+        get_map_name("Dark Forest")
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Pensa prima a liberare gli altri saggi, non",
+            "sei ancora pronto per entrare nella Foresta Oscura!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Go to free the other sages first, you are not",
+            "ready for the Dark Forest yet!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Sai che con i tuoi spadoni puoi distruggere dei",
+            "piccoli oggetti?"
+          ]
+        when "en"
+          @messages = [
+            "Do you know that with your big swords you can",
+            "destroy small objects?"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Provaci! Magari ci trovi dentro qualcosa!"
+          ]
+        when "en"
+          @messages = [
+            "You should try it! You may find something inside!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Nostroeroe, devi liberare gli altri saggi in",
+            "modo che possano utilizzare la loro magia per",
+            "sbloccare il portale del castello!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Ourhero, you have to free the other sages in",
+            "order to let them use their magic to unlock the gate",
+            "of the castle!"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Forza, ti resta l'ultimo saggio da liberare!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Come on, just one more sage to free!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Fagli vedere quello che sei, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Let's do it, Ourhero!"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Da soli non siamo in grado di aprire il",
+            "portale.",
+            "Serve la forza di tutti i saggi!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]The power of one sage isn't enough to open that",
+            "gate.",
+            "You need to find the rest of us!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Ti resta ancora un saggio!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]One more sage is left!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Siamo tutti con te, forza!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]We're all with you, come on!"
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Forza, piano piano ce la faremo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Come on, step by step we'll do it!"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Vai a liberare l'ultimo di noi saggi!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Find the last sage and set him free!"
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Bossfinale è tutto tuo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Finalboss is all yours!"
+          ]
+        end
+
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]La porta del castello è aperta!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]The castle's gate is open!"
+          ]
+        end
+
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Ed eccomi qui, come promesso!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Here I am, as promised!"
+          ]
+        end
+
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Ormai è fatta!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]We're almost there!"
+          ]
+        end
+
+      when 20
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Riprenditi il Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Go and bring the Teorhemas Crystal back!"
+          ]
+        end
+
+      when 21
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Qui c'è qualcosa che non va."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Something's not right here."
+          ]
+        end
+
+      when 22
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ma non capisco cosa!\\|",
+            "Castello oscuro circondato da lava viola...\\.",
+            "Uhm... Probabilmente è il castello di Bossfinale!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]But I don't know what!\\|",
+            "A dark castle sorrounded by purple lava...\\.",
+            "Uhm... It might be the Finalboss castle!"
+          ]
+        end
+
+      when 23
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Devo capire come entrarci, quel maledetto",
+            "ha il nostro Cristallo di Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I have to find a way to get inside, that",
+            "crook has our Teorhemas Crystal!"
+          ]
+        end
+
+      when 24
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cos'hai in testa?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What is that on your head?"
+          ]
+        end
+
+      when 25
+        case $lang
+        when "it"
+          @messages = [
+            "Una bandana."
+          ]
+        when "en"
+          @messages = [
+            "A hat."
+          ]
+        end
+
+      when 26
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ah, carina!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ah, cute!"
+          ]
+        end
+
+      when 27
+        case $lang
+        when "it"
+          @messages = [
+            "Eheh!"
+          ]
+        when "en"
+          @messages = [
+            "Eheh!"
+          ]
+        end
+
+      when 28
+        case $lang
+        when "it"
+          @messages = [
+            "Guarda!"
+          ]
+        when "en"
+          @messages = [
+            "Look!"
+          ]
+        end
+
+      when 29
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Wow!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Wow!"
+          ]
+        end
+
+      when 30
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]E quindi?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]So... what?"
+          ]
+        end
+
+      when 31
+        case $lang
+        when "it"
+          @messages = [
+            "L'entrata del Castello di Bossfinale è bloccata.\\|",
+            "Ma noi, i Magici Saggi, riuniti con il nostro potere,",
+            "potremmo aprire le porte del castello per farvi",
+            "entrare un valoroso eroe!"
+          ]
+        when "en"
+          @messages = [
+            "The gate to enter the Finalboss Castle is locked.\\|",
+            "But we, the Sages, can combine our powers to",
+            "open the way forward for the hero!",
+            ""
+          ]
+        end
+
+      when 32
+        case $lang
+        when "it"
+          @messages = [
+            "Quell'eroe sei tu!\\|",
+            "Il problema è che il malvagio Bossfinale ha catturato gli",
+            "altri saggi.\\. Tu sei l'unico che può liberarli, Nostroeroe!",
+            ""
+          ]
+        when "en"
+          @messages = [
+            "That hero is you!\\|",
+            "Except that the evil Finalboss kidnapped the other",
+            "sages.\\| You are the only one who can set them",
+            "free, Ourhero!"
+          ]
+        end
+
+      when 33
+        case $lang
+        when "it"
+          @messages = [
+            "Visita ogni parte del regno.\\.",
+            "Qui troverai i saggi che aspettano il tuo aiuto!",
+            "Siamo con te, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "Each Sage is imprisoned in a different region of our",
+            "kingdom, and needs your help!",
+            "Good luck on your quest, Ourhero!"
+          ]
+        end
+
+      when 34
+        case $lang
+        when "it"
+          @messages = [
+            "Hai una Spada della Rivolta II che vuoi potenziare?",
+            "Potenzia spada",
+            get_text("cancel")
+          ]
+        when "en"
+          @messages = [
+            "Do you have a Revolt Sword II you want to upgrade?",
+            "Upgrade sword",
+            get_text("cancel")
+          ]
+        end
+
       end #end case index
 
     end #end case map_id
