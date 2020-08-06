@@ -4,12 +4,7 @@
 #==============================================================================
 class Localization
   $default_language = ""
-  $msg_var = [
-    61,
-    62,
-    63,
-    64
-  ]
+  $msg_var = [61,62,63,64]
 
   @messages = nil
   
@@ -2753,23 +2748,13 @@ class Localization
         case $lang
         when "it"
           @messages = [
-            "Accetti la missione?"
-          ]
-        when "en"
-          @messages = [
-            "Do you accept the mission?"
-          ]
-        end
-
-      when 25
-        case $lang
-        when "it"
-          @messages = [
+            "Accetti la missione?",
             "ACCETTA",
             "RIFIUTA"
           ]
         when "en"
           @messages = [
+            "Do you accept the mission?",
             "ACCEPT",
             "REFUSE"
           ]
@@ -4849,6 +4834,96 @@ class Localization
             "Do you have a Revolt Sword II you want to upgrade?",
             "Upgrade sword",
             get_text("cancel")
+          ]
+        end
+
+      when 35
+        case $lang
+        when "it"
+          @messages = [
+            "Grazie ancora per avermi liberato!"
+          ]
+        when "en"
+          @messages = [
+            "Thank you again for freeing me!"
+          ]
+        end
+        
+      when 36
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Grazie a te per Cristallo Controllore!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Thanks to you for the Controller Crystal!"
+          ]
+        end
+
+      when 37
+        case $lang
+        when "it"
+          @messages = [
+            "Se vuoi posso venderti qualcosa di molto utile!"
+          ]
+        when "en"
+          @messages = [
+            "If you like, I can sell you something really useful!"
+          ]
+        end
+
+      when 38
+        case $lang
+        when "it"
+          @messages = [
+            "Una missione? Ti posso dire che le profondità del vulcano",
+            "stanno andando a fuoco..."
+          ]
+        when "en"
+          @messages = [
+            "A mission? Sure, the Volcanic Depths are burning",
+            "right now..."
+          ]
+        end
+
+      when 39
+        case $lang
+        when "it"
+          @messages = [
+            "Se tu spegnessi tutte le fiamme con una spada di",
+            "ghiaccio, potrei darti un'adeguata ricompensa!"
+          ]
+        when "en"
+          @messages = [
+            "If you could put the flames out with an icy sword,",
+            "I would be very glad to give you a proper reward!"
+          ]
+        end
+
+      when 40
+        case $lang
+        when "it"
+          @messages = [
+            "Fin'ora hai spento \\v[16] fiamme su 28."
+          ]
+        when "en"
+          @messages = [
+            "You put out \\v[16] flames out of 28."
+          ]
+        end
+
+      when 41
+        case $lang
+        when "it"
+          @messages = [
+            "Complimenti, hai spento tutte le fiamme accese",
+            "nelle Profondità del Vulcano!"
+          ]
+        when "en"
+          @messages = [
+            "Awesome, you put out all the flames in the",
+            "Volcanic Depths!"
           ]
         end
 
