@@ -43,6 +43,7 @@ class Boss_HUD < Sprite
     show_bar(Enemy_Hud::Bar_X,Enemy_Hud::Bar_Y,@enemy.enemy_called.hp,@enemy.enemy_called.maxhp)
   end
   def show_bar(x,y,hp,max)
+    $boss_hp = [hp, max]
     base = Cache.system(Enemy_Hud::Base)
     cw2 = base.width
     ch2 = base.height
