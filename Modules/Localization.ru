@@ -5945,6 +5945,414 @@ class Localization
 
       end #end case index
 
+    when 68 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Solamente una spada dal fuoco perenne può",
+            "frantumare queste gelide rocce."
+          ]
+        when "en"
+          @messages = [
+            "Only the sword of everlasting flame can destroy",
+            "frozen rocks."
+          ]
+        end
+      end #end case index
+
+    when 73 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Tu cosa ci fai qui?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Why are you here?!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Stavo uscendo."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]I was just leaving back to town."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Quindi ho dovuto distruggere quel mostro",
+            "senza alcun motivo."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]So I killed that monster for nothing at all?"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Eh sì, sono riuscito a scappare da solo..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Yes, I managed to escape by myself..."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Vai subito dagli altri saggi. ADESSO!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Go back to the town with the other sages. NOW!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Sai che sono il fratello del Saggio della",
+            "Lava?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]You know, the Lava Sage is my brother."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]VAI!!!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]GO! NOW!!!"
+          ]
+        end
+      end #end case index
+
+    when 74 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Fa troppo freddo qui!",
+            "Il freddo ha rallentato i tuoi movimenti e non",
+            "riesci più a saltare!"
+          ]
+        when "en"
+          @messages = [
+            "It is so cold here!",
+            "Your movement speed is reduced and you cannot",
+            "jump!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Il calore ha fatto sciogliere il mostro!"
+          ]
+        when "en"
+          @messages = [
+            "The warmth melted the monster into nothingness!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Dov'è il saggio?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Where is the sage?"
+          ]
+        end
+      end #end case index
+
+    when 81 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Tu cosa ci fai qui?!\\|",
+            "Non dovresti essere dentro al tuo castello?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What are you doing here?!\\|",
+            "Shouldn't you be holed up in your castle?"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Vuol dire che ho liberato tutti i saggi",
+            "per nulla?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Does that mean I rescued all the sages for",
+            "nothing?!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "No, adesso ci vado, non ti preocc...\\|...\\|",
+            "COSA?!"
+          ]
+        when "en"
+          @messages = [
+            "No, I'm going to the castle right n...\\|...\\|",
+            "WHAT?!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Hai liberato gli altri saggi?!\\|",
+            "Maledizione! Non ti lascerò liberare anche l'ultimo!"
+          ]
+        when "en"
+          @messages = [
+            "You have rescued the other sages?!\\|",
+            "Damn you! You won't be rescuing this last one!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "Gnahahahahahahahah!"
+          ]
+        when "en"
+          @messages = [
+            "Gnahahahahahahahah!"
+          ]
+        end
+      end #end case index
+
+    when 83 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Questo altare rende quelle ombre invincibili!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]This altar makes those shadow invincible!"
+          ]
+        end
+      end #end case index
+
+    when 85 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Ahah! Stupido eroe! Ci si rivede!"
+          ]
+        when "en"
+          @messages = [
+            "Ahah! Stupid hero! We meet again!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Io ti avevo fatto fuori!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Didn't I defeat you already?",
+            "You should be dead!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Purtroppo per te non puoi eliminare nessuno finchè",
+            "il Cristallo di Teorhemas è nelle nostre mani!"
+          ]
+        when "en"
+          @messages = [
+            "As long as we have the Teorhemas Crystal, we won't",
+            "stay that way for long!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Bossfinale mi ha riportato in vita, ed ora sono",
+            "più forte che mai!\\|",
+            "Fatti sotto, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "Finalboss brought me back better than I've ever",
+            "been!\\|",
+            "Stap up and face me, Ourhero!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Devi prima sconfiggere il boss!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]You have to kill the boss first!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Hey! Ti piace il mio colorito fatato?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Hey! Do you like my whimsy color scheme?"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sì, molto carino!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Yes, it's very nice!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cosa tieni lì in mano?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What are you keeping in your hand?"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]È una bacchetta magica!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]It's a staff!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Hai mai visto un saggio senza la sua bacchetta",
+            "magica?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Have you ever seen a sage without a magic staff?"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sì"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Yes."
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Eheh, gli altri saggi senza bacchetta",
+            "magica ti starebbero aspettando per aprire il",
+            "portale del Castello di Bossfinale..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]The other sages are trying to open the gate to",
+            "Finalboss Castle, but they're a bit, well,",
+            "understaffed."
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Li raggiungo subito!\\.",
+            "Ci vediamo là davanti al castello!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]I'm joining them right now!\\.",
+            "We'll see each other in front of the castle!"
+          ]
+        end
+      end #end case index
+
     end #end case map_id
 
     set_msg_vars
