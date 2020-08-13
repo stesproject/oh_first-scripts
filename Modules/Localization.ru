@@ -47,6 +47,14 @@ class Localization
         text = "Sage"
       end
 
+    when 4
+      case $lang
+      when "it"
+        text = "Saggi"
+      when "en"
+        text = "Sages"
+      end
+
     end
 
     return text.upcase
@@ -118,6 +126,14 @@ class Localization
         text = "Valle Selvaggia"
       when "en"
         text = "Wild Valley"
+      end
+
+    when "Mistery Cave"
+      case $lang
+      when "it"
+        text = "Grotta dei Misteri"
+      when "en"
+        text = "Mistery Cave"
       end
 
     when "Water City"
@@ -505,6 +521,8 @@ class Localization
       @messages.push("#{amount}#{item2}!")
     end
 
+    $msg_params = ["normal", "bottom"]
+
     set_msg_vars
   end
 
@@ -637,6 +655,8 @@ class Localization
       @messages.push("\\c[10]Completed!\\|\\|\\|\\|\\|\\^")
     end
 
+    $msg_params = ["transparent", "middle"]
+
     set_msg_vars
   end
 
@@ -655,6 +675,8 @@ class Localization
       @messages.push("Attack: #{weapon.atk}")
       @messages.push("Defense: #{weapon.def}")
     end
+
+    $msg_params = ["dark", "middle"]
 
     set_msg_vars
   end
@@ -3491,6 +3513,20 @@ class Localization
           ]
         end
 
+      when 25
+        case $lang
+        when "it"
+          @messages = [
+            "Il Ponticello è troppo pesante,",
+            "non riesci a saltare!"
+          ]
+        when "en"
+          @messages = [
+            "The Small Bridge is too heavy,",
+            "you can't jump!"
+          ]
+        end
+
       end #end case index
 
     when 17 #map_id
@@ -3675,6 +3711,40 @@ class Localization
           @messages = [
             "Damn it! Why did you open the gate?!",
             "WHY?!"
+          ]
+        end
+      end #end case index
+
+    when 21 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Questo portale elettrico è troppo potente!\\.",
+            "Ma se questi zombie ci finissero contro..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]This electric gate is too powerful!\\.",
+            "I wonder what could happen if one of these zombies",
+            "crashes on the gate..."
+          ]
+        end
+      end #end case index
+
+    when 24 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Meglio non saltare qui, è troppo",
+            "rischioso."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Better not to jump here, it's too risky."
           ]
         end
       end #end case index
@@ -4021,6 +4091,89 @@ class Localization
 
       end #end case index
 
+    when 28 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Solo un soldato potrà proseguire verso il tesoro."
+          ]
+        when "en"
+          @messages = [
+            "Only a soldier will be able to go towards the",
+            "treasure."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Solo un guerriero dallo spirito elettrizzante saprà",
+            "come proseguire verso il tesoro."
+          ]
+        when "en"
+          @messages = [
+            "Only a warrior with an electric spirit will be able to",
+            "go towards the treasure."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "Una spada potentissima, evoluzione della sua",
+            "versione precedente."
+          ]
+        when "en"
+          @messages = [
+            "A mighty sword, evolution of its previous version."
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "Il soldato che riuscì ad ammazzare i morti viventi",
+            "diventò leggenda."
+          ]
+        when "en"
+          @messages = [
+            "The soldier who managed to kill the undeads became",
+            "legend."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "La magica lucentezza dei ghiacciai potrà aprire",
+            "molte strade verso il tesoro."
+          ]
+        when "en"
+          @messages = [
+            "The magic shine of the glaciers can open",
+            "the path towards the treasure."
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "Il resto è illeggibile."
+          ]
+        when "en"
+          @messages = [
+            "The rest is illegible."
+          ]
+        end
+      end #end case index
+
     when 30 #map_id
       case index
       when 1
@@ -4041,6 +4194,344 @@ class Localization
             "\\>Water City",
             "\\>Finalboss Domain",
             "\\>Stay here"
+          ]
+        end
+      end #end case index
+
+    when 38 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Aiuto, aiuto!!!"
+          ]
+        when "en"
+          @messages = [
+            "Help, help!!!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Hey! A qualcuno serve una mano!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Hey! Someone needs help!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]La voce proveniva da qui dietro!\\.",
+            "Ci deve essere un bottone che apre il cancello qui da",
+            "qualche parte..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]The voice came from here!\\.",
+            "There should be a button that opens this door",
+            "around here..."
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cosa ci facevi chiuso lì dentro?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Why were you trapped here?"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "Mi hanno catturato! Quei maledetti scagnozzi di",
+            "Bossfinale!"
+          ]
+        when "en"
+          @messages = [
+            "The minions of the bloody Finalboss kidnapped me!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Bossfinale?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Finalboss?"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Sì, quello che ha rubato il Cristallo di Teorhemas!\\|",
+            "La notizia ormai circola per tutto il regno!"
+          ]
+        when "en"
+          @messages = [
+            "Yeah, the one who stole the Teorhemas Crystal!\\|",
+            "Everyone knows him by now!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Perché ti hanno imprigionato?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Why did they lock you up?"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "Perchè io conosco il loro punto debole!"
+          ]
+        when "en"
+          @messages = [
+            "Because I know their weakness!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "Devi sapere che gli scagnozzi di Bossfinale sono",
+            "solo degli esseri privi di qualsiasi capacità",
+            "intellettiva! Non sanno pensare, parlare, ragionare..."
+          ]
+        when "en"
+          @messages = [
+            "You must be aware that the Finalboss henchmen are",
+            "just living beings without any IQ!",
+            "They can't think, speak or rationalize..."
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "Anche loro sono esseri riportati in vita dal magico",
+            "e portentoso stratosferico Cristallo di Teorhemas!\\|",
+            "Seguono solo lo scopo per cui sono stati riportati",
+            "in vita... Uccidere!"
+          ]
+        when "en"
+          @messages = [
+            "They are living beings brought to life thanks to the",
+            "amazing and magical power of the Teorhemas",
+            "Crystal!\\|",
+            "They exist with only one purpose... TO KILL!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "Ma... Se si interferisse con il Cristallo di Teorhemas,",
+            "ovvero la fonte di tutti i loro comandi, questi esseri",
+            "diventerebbero ancora più stupidi di quello",
+            "che sono!"
+          ]
+        when "en"
+          @messages = [
+            "But if you could interfere with the Teorhemas",
+            "Crystal, the source of all their knowledge, those", 
+            "beings would become even stupider than they",
+            "already are!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "Neppure guidati dal loro scopo principale.",
+            "Corpi morti, ma in vita, che seguono le mosse",
+            "di qualsiasi cosa gli si trovi davanti."
+          ]
+        when "en"
+          @messages = [
+            "They would even stop obeying orders!",
+            "They would be shambling dead incapable of doing",
+            "anything but mimic the movement of anything they",
+            "see."
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Wow! E come posso interferire con",
+            "il Cristallo di Teorhemas?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Wow! And how can I interfere with the",
+            "Teorhemas Crystal?"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "In questo momento farlo direttamente è impossibile,",
+            "dato che il cristallo non è nelle nostre mani."
+          ]
+        when "en"
+          @messages = [
+            "At the moment is not possible, due to the fact that",
+            "the crystal is not in our hands."
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "Ma questo frammento di Cristallo Controllore",
+            "fa al caso nostro!"
+          ]
+        when "en"
+          @messages = [
+            "But this fragment of Controller Crystal is everything",
+            "we need!"
+          ]
+        end
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "Per farlo funzionare hai solo bisogno di una piccola",
+            "fonte di energia..."
+          ]
+        when "en"
+          @messages = [
+            "Just a small amount of energy is enough to activate",
+            "it..."
+          ]
+        end
+
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "Ecco! Quelle lucine sono perfette!",
+            "Prova ad attivare il frammento vicino ad una di",
+            "quelle lucine, dove ci sia anche un nemico, e vedrai",
+            "il suo incredibile potere!"
+          ]
+        when "en"
+          @messages = [
+            "There! Those little lights are perfect!",
+            "Try to activate the fragment I gave you close to one",
+            "of those lights, with an enemy nearby, and you will",
+            "see its astonishing power!"
+          ]
+        end
+
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "Prova ad attivare il frammento vicino ad una di",
+            "quelle lucine, dove ci sia anche un nemico, e vedrai",
+            "il suo incredibile potere!"
+          ]
+        when "en"
+          @messages = [
+            "Try to activate the fragment I gave you close to one",
+            "of those lights, with an enemy nearby, and you will",
+            "see its astonishing power!"
+          ]
+        end
+
+      end #end case index
+
+    when 40 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Accidenti... Questo laser dev'essere",
+            "controllato da quel terminale...",
+            "Ma non posso raggiungerlo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Damn it... this laser must be controlled from",
+            "that terminal...",
+            "But I can't reach it!"
+          ]
+        end
+      end #end case index
+
+    when 43 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Credo voglia farmi fuori."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I think he wants to take me down."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]È un osso duro!\\. Sembra che i miei",
+            "attacchi non avranno più effetto su di lui!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]He looks even tougher than before!\\.",
+            "My attacks aren't even scratching him!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ok, fatti sotto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]All right, let's do this!"
           ]
         end
       end #end case index
@@ -5186,6 +5677,269 @@ class Localization
           @messages = [
             "Awesome, you put out all the flames in the",
             "Volcanic Depths!"
+          ]
+        end
+
+      when 42
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(4)}]La porta è aperta!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(4)}]The gate is open!"
+          ]
+        end
+      end #end case index
+
+    when 54 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Questa struttura mi impedisce di",
+            "proseguire!",
+            "Ci sarà un modo per aggirarla..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]This building blocks the way!",
+            "There should be a way to remove it..."
+          ]
+        end
+      end #end case index
+
+    when 56 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Lì dentro è imprigionato uno dei",
+            "Magici Saggi!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]The one imprisoned over there must be one",
+            "of the Sages!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Ahahah! Stupido eroe!\\|",
+            "Al piccolo saggio ci bado io! Di te non abbiamo",
+            "bisogno, grazie!"
+          ]
+        when "en"
+          @messages = [
+            "Ahahah! Stupid hero!\\|",
+            "No need to worry about your friend!",
+            "We're taking reeeeally good care of him!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Vai prima ad uccidere quel terribile mostro!" 
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]You should destroy that horrible monster first!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Oh, finalmente! Ce l'hai fatta!\\|",
+            "Quel tizio mi aveva catturato e rinchiuso qui",
+            "dentro... Non so proprio il perché!" 
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Oh, finally! You did it!\\|",
+            "That guy kidnapped me and locked me in here...",
+            "I don't know why, seriously!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Forse perché..." 
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Maybe because..."
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Bene, ora posso andare a completare la mia opera",
+            "che ci permetterà di eliminare i cattivi e distruggere",
+            "per sempre le forze del male!" 
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Alright, time to fulfill my duty and accomplish our",
+            "final mission to crush the baddies and defeat the",
+            "forces of Evil forever!"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ecco, forse per quello."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]That's it, that's probably the reason."
+          ]
+        end
+
+      end #end case index
+
+    when 60 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Dell'energia si è dispersa nell'aria..."
+          ]
+        when "en"
+          @messages = [
+            "The electric gate dissipated into thin air..."
+          ]
+        end
+      end #end case index
+
+    when 62 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Queste pozze d'acqua magica si asciugheranno",
+            "per la temperatura troppo elevata che c'è qui.",
+            "Dovrai aspettare un po' per poterle riutilizzare."
+          ]
+        when "en"
+          @messages = [
+            "The magical puddles here will evaporate from the",
+            "heat after using them.",
+            "You'll have to wait for them to refill."
+          ]
+        end
+      end #end case index
+
+    when 65 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Quel vermone gigante è troppo alto!",
+            "Devo trovare il suo punto debole per sconfiggerlo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]That giant worm is too tall!",
+            "I have to find its weak point to defeat it!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Vai prima ad eliminare quel vermone",
+            "gigante!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Kill that gigantic worm first of all!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Non sei tanto carino, eh."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]You don't look so cool, to be honest."
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]E poi cos'è quella roba che hai addosso?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]And what's that thing you are wearing?"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]È una fantastica armatura!\\|",
+            "Ti piace, eh? Eh? Eh???"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]It's body armor!\\|",
+            "That IS cool, right? Right?"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]È l'ultima cosa che vorrei al mondo."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I wouldn't wear it if it was the last thing in the",
+            "world."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Bene, mi hai salvato!",
+            "Aiuterò gli altri saggi ad aprire il portale del",
+            "Castello di Bossfinale!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Good, you saved me!",
+            "I will help the other sages to open the gate of the",
+            "Finalboss Castle!"
           ]
         end
 

@@ -207,9 +207,9 @@ class Window_Base
     "transparent" => 2
   }
   $msg_position = {
-    "bottom"   => 0,
-    "middle" => 1,
-    "top"     => 2
+    "bottom"   => 2,
+    "middle"   => 1,
+    "top"      => 0
   }
   
   #---------------------------------
@@ -1026,8 +1026,8 @@ class Game_Interpreter
       $game_message.event_id = @event_id
       $game_message.face_name = @params[0]
       $game_message.face_index = @params[1]
-      $game_message.background = $msg_params[0] ? $msg_background[$msg_params[0]] : @params[2]
-      $game_message.position = $msg_params[1] ? $msg_position[$msg_params[1]] : @params[3]
+      $game_message.background = $msg_params ? $msg_background[$msg_params[0]] : @params[2]
+      $game_message.position = $msg_params ? $msg_position[$msg_params[1]] : @params[3]
       @index += 1
       while @list[@index].code == 401
         $game_message.texts.push(@list[@index].parameters[0])
