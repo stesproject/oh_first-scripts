@@ -240,8 +240,7 @@ class Localization
         ]
       when "en"
         @messages = [
-          "\\c[2]Equip the Electric Sword to use this skill!",
-          ""
+          "\\c[2]Equip the Electric Sword to use this skill!"
         ]
       end
 
@@ -268,8 +267,7 @@ class Localization
         ]
       when "en"
         @messages = [
-          "\\c[2]Equip the Icy Sword to use this skill!",
-          ""
+          "\\c[2]Equip the Icy Sword to use this skill!"
         ]
       end
 
@@ -296,8 +294,7 @@ class Localization
         ]
       when "en"
         @messages = [
-          "\\c[2]Equip the Flaming Sword to use this skill!",
-          ""
+          "\\c[2]Equip the Flaming Sword to use this skill!"
         ]
       end
 
@@ -324,8 +321,7 @@ class Localization
         ]
       when "en"
         @messages = [
-          "\\c[2]Equip the Finalboss Sword to use this skill!",
-          ""
+          "\\c[2]Equip the Finalboss Sword to use this skill!"
         ]
       end
 
@@ -366,8 +362,7 @@ class Localization
       when "en"
         @messages = [
           "No suitable enemies nearby to control or",
-          "not enough energy.\\|\\^",
-          ""
+          "not enough energy.\\|\\^"
         ]
       end
 
@@ -1660,8 +1655,7 @@ class Localization
         when "en"
           @messages = [
             "\\c[2]Game interface:\\c[0]\\.",
-            "In the upper left corner you can see your health bar.",
-            ""
+            "In the upper left corner you can see your health bar."
           ]
         end
 
@@ -1674,8 +1668,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "The game ends when the hero loses all the hearts.",
-            ""
+            "The game ends when the hero loses all the hearts."
           ]
         end
 
@@ -1690,8 +1683,7 @@ class Localization
         when "en"
           @messages = [
             "Press \\c[2]D\\c[0] to eat meat and recover health.\\|",
-            "GO ON, OURHERO!",
-            ""
+            "GO ON, OURHERO!"
           ]
         end
       end #end case index
@@ -1879,8 +1871,7 @@ class Localization
         when "it"
           @messages = [
             "\\nb[#{get_name(2)}]Sì, forse... Può essere anche per quello...\\|",
-            "Vai, combatti i nemici, va'!",
-            ""
+            "Vai, combatti i nemici, va'!"
           ]
         when "en"
           @messages = [
@@ -1965,8 +1956,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "\\nb[#{get_name(2)}]Uhm, then go find them and get the crystal back!",
-            ""
+            "\\nb[#{get_name(2)}]Uhm, then go find them and get the crystal back!"
           ]
         end
 
@@ -2051,8 +2041,7 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Take this Sword Case. It lets you carry and switch",
             "between any sword you find on our journey!\\|",
-            "Good luck!",
-            ""
+            "Good luck!"
           ]
         end
 
@@ -2129,8 +2118,7 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]You have to stop him! The villagers have spotted",
             "him fleeing through the Water City!",
-            "He left a lot of goons in his wake, so be careful!",
-            ""
+            "He left a lot of goons in his wake, so be careful!"
           ]
         end
 
@@ -2196,8 +2184,7 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Dei saggi riuscirebbero ad aprire la porta",
             "del castello di Bossfinale?",
-            "Non l'avrei mai detto! Bene, fatti aiutare da loro!",
-            ""
+            "Non l'avrei mai detto! Bene, fatti aiutare da loro!"
           ]
         when "en"
           @messages = [
@@ -2393,8 +2380,7 @@ class Localization
           @messages = [
             "This is now our Kingdom!\\.",
             "With the Teorhemas Crystal on our side, everyone in",
-            "the world will be afraid of us!",
-            ""
+            "the world will be afraid of us!"
           ]
         end
 
@@ -2550,9 +2536,7 @@ class Localization
         when "it"
           @messages = [
             "Ragazzo, non ho più premi da darti!",
-            "Ma posso dirti che hai ucciso \\v[2] nemici.",
-            "",
-            ""
+            "Ma posso dirti che hai ucciso \\v[2] nemici."
           ]
         when "en"
           @messages = [
@@ -2747,8 +2731,7 @@ class Localization
           @messages = [
             "Avrei un compito da affidarti...\\|",
             "Nella foresta sono state buttate delle casse che,",
-            "per il Re, rovinano la bellezza del paesaggio...",
-            ""
+            "per il Re, rovinano la bellezza del paesaggio..."
           ]
         when "en"
           @messages = [
@@ -2764,8 +2747,7 @@ class Localization
         when "it"
           @messages = [
             "La tua missione è trovarle e distruggerle tutte!",
-            "Non lo sappiamo bene quante siano...",
-            ""
+            "Non lo sappiamo bene quante siano..."
           ]
         when "en"
           @messages = [
@@ -2958,8 +2940,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "I can smith and enhance all kinds of weapons.",
-            ""
+            "I can smith and enhance all kinds of weapons."
           ]
         end
 
@@ -2980,8 +2961,7 @@ class Localization
         when "it"
           @messages = [
             "So che il re ti ha incaricato di distruggere quelle",
-            "rocce che bloccano il passaggio ad est...",
-            ""
+            "rocce che bloccano il passaggio ad est..."
           ]
         when "en"
           @messages = [
@@ -3002,8 +2982,7 @@ class Localization
         when "en"
           @messages = [
             "I'll temper your Revolt Sword. It should make it",
-            "strong enough to break through those rocks!",
-            ""
+            "strong enough to break through those rocks!"
           ]
         end
 
@@ -3067,8 +3046,7 @@ class Localization
           @messages = [
             "Devi trovare il mio Libro delle Doti Perdute!\\.",
             "Così potrò potenziare la tua spada...\\.",
-            "Si trova nella Foresta dell'Occhio Sgorbio!",
-            ""
+            "Si trova nella Foresta dell'Occhio Sgorbio!"
           ]
         when "en"
           @messages = [
@@ -3178,8 +3156,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "\\nb[#{get_name(1)}]I won't find the Teorhemas Crystal over here...",
-            ""
+            "\\nb[#{get_name(1)}]I won't find the Teorhemas Crystal over here..."
           ]
         end
 
@@ -3287,9 +3264,7 @@ class Localization
           ]
         when "en"
           @messages = [
-            "Use the electricity in this sword to overload the gate!",
-            "",
-            ""
+            "Use the electricity in this sword to overload the gate!"
           ]
         end
 
@@ -3360,8 +3335,7 @@ class Localization
           @messages = [
             "To cast the skill learned from the sword, open the",
             "Menu, go to \\c[2]Skills\\c[0] and press the \"1\" button to",
-            "assign the skill to that button!",
-            ""
+            "assign the skill to that button!"
           ]
         end
 
@@ -3650,8 +3624,7 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Anyway, you have to catch him before he gets",
-            "away with the crystal!",
-            ""
+            "away with the crystal!"
           ]
         end
 
@@ -3770,8 +3743,7 @@ class Localization
         when "en"
           @messages = [
             "We don't know what is happening here...",
-            "It looks like the dead soldiers... came back to life!",
-            ""
+            "It looks like the dead soldiers... came back to life!"
           ]
         end
 
@@ -3810,8 +3782,7 @@ class Localization
         case $lang
         when "it"
           @messages = [
-            "\\nb[#{get_name(2)}]I morti viventi rendono immortale quel mostro!",
-            ""
+            "\\nb[#{get_name(2)}]I morti viventi rendono immortale quel mostro!"
           ]
         when "en"
           @messages = [
@@ -3909,8 +3880,7 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]The crystal can bring any inanimated object to life!\\.",
-            "It can control all nonliving matter!",
-            ""
+            "It can control all nonliving matter!"
           ]
         end
 
@@ -5107,8 +5077,7 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]SAGE 1",
-            "There are rumors that his hat is not actually a hat.",
-            ""
+            "There are rumors that his hat is not actually a hat."
           ]
         end
 
@@ -5543,8 +5512,7 @@ class Localization
           @messages = [
             "The gate to enter the Finalboss Castle is locked.\\|",
             "But we, the Sages, can combine our powers to",
-            "open the way forward for the hero!",
-            ""
+            "open the way forward for the hero!"
           ]
         end
 
@@ -5554,8 +5522,7 @@ class Localization
           @messages = [
             "Quell'eroe sei tu!\\|",
             "Il problema è che il malvagio Bossfinale ha catturato gli",
-            "altri saggi.\\. Tu sei l'unico che può liberarli, Nostroeroe!",
-            ""
+            "altri saggi.\\. Tu sei l'unico che può liberarli, Nostroeroe!"
           ]
         when "en"
           @messages = [
