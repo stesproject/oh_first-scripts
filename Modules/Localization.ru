@@ -6917,16 +6917,369 @@ class Localization
         case $lang
         when "it"
           @messages = [
-            "Quante cose buone!"
+            "\\nb[#{get_name(2)}]Cittadini, un attimo di attenzione!"
           ]
         when "en"
           @messages = [
-            "So much delicious food!"
+            "\\nb[#{get_name(2)}]People, a moment of attention please!"
           ]
         end
 
-      end #end case index
+      when 18
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ecco a voi il nostro eroe!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Here is our hero!"
+          ]
+        end
 
+      when 19
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Colui che ha sconfitto milioni di nemici e",
+            "mostri giganti fino ad eliminare Bossfinale e",
+            "riportare qui al castello il Cristallo di",
+            "Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]The one who defeated millions of enemies and huge",
+            "monsters until he opened the way to Finalboss and",
+            "wrested the Teorhemas Crystal back from him!"
+          ]
+        end
+
+      when 20
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Adoratelo!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Adore him!"
+          ]
+        end
+
+      when 21
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Riprendete a mangiare."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]You can go back to feasting now."
+          ]
+        end
+
+      when 22
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Grazie, mio sire!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Thank you, my sire!"
+          ]
+        end
+
+      when 23
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Voglio donarti una ricompensa per ciò che",
+            "hai fatto. Accettala."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]I want to give you a reward for what you've done.",
+            "Please, accept it."
+          ]
+        end
+
+      when 24
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Per ogni nemico che hai sconfitto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]For every enemy you defeated!"
+          ]
+        end
+
+      when 25
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]E ora va, va! Ricomincia la tua avventura!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]And now go, go! Resume your adventure!"
+          ]
+        end
+
+      when 26
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]Grazie per aver giocato.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]Thanks for playing.\\|\\|\\^"
+          ]
+        end
+
+      when 27
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]In memoria di",
+            "Zio Michele.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]In memory of",
+            "Zio Michele.\\|\\|\\^"
+          ]
+        end
+
+      when 28
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]Un gioco creato da Stefano Mercadante.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]A game created by Stefano Mercadante.\\|\\|\\^"
+          ]
+        end
+
+      when 29
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]Con il grande aiuto di...\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]With the great help of...\\|\\|\\^"
+          ]
+        end
+
+      when 30
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]ARES VAIARELLI",
+            "per la revisione dei testi in inglese.\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]ARES VAIARELLI",
+            "for English translation review.\\|\\|\\|\\^"
+          ]
+        end
+
+      when 31
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]NERGHRAY",
+            "per la traccia:",
+            "Title.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]NERGHRAY",
+            "for the track:",
+            "Title.\\|\\|\\^"
+          ]
+        end
+
+      when 32
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]RAFFAELE MURRI",
+            "per le tracce:",
+            "Castle, Battle.\\|\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]RAFFAELE MURRI",
+            "for the tracks:",
+            "Castle, Battle.\\|\\|\\|\\|\\^"
+          ]
+        end
+
+      when 33
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]JOHN LEONARD FRENCH",
+            "per le tracce:",
+            "Desert, Volcano, Water City, Finalboss Domain.\\|\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]JOHN LEONARD FRENCH",
+            "for the tracks:",
+            "Desert, Volcano, Water City, Finalboss Domain.\\|\\|\\|\\|\\^"
+          ]
+        end
+
+      when 34
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]RPG MAKER 3 MUSIC PACK",
+            "per le tracce:",
+            "Forest, Wild Valley, Finalboss Battle 2.\\|\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]RPG MAKER 3 MUSIC PACK",
+            "for the tracks:",
+            "Forest, Wild Valley, Finalboss Battle 2.\\|\\|\\|\\|\\^"
+          ]
+        end
+
+      when 35
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]DIBUR",
+            "per la traccia:",
+            "Finalboss Battle 1.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]DIBUR",
+            "for the track:",
+            "Finalboss Battle 1.\\|\\|\\^"
+          ]
+        end
+
+      when 36
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]RECLAIMEDGLORY",
+            "per la traccia:",
+            "Victory.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]RECLAIMEDGLORY",
+            "for the track:",
+            "Victory.\\|\\|\\^"
+          ]
+        end
+
+      when 37
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]AUDIONAUTIX",
+            "per la traccia:",
+            "Glaciers.\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]AUDIONAUTIX",
+            "for the track:",
+            "Glaciers.\\|\\|\\^"
+          ]
+        end
+
+      when 38
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]NERGHRAY, DIAMOND, POLAKKO,",
+            "AKM, RETURNOFHYLIAN,",
+            "GUARDIAN OF IRAEL, UCA",
+            "per avere betatestato il gioco.\\|\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]NERGHRAY, DIAMOND, POLAKKO,",
+            "AKM, RETURNOFHYLIAN,",
+            "GUARDIAN OF IRAEL, UCA",
+            "for beta testing the game.\\|\\|\\|\\|\\^"
+          ]
+        end
+
+      when 39
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]A TE",
+            "Per aver giocato Our Hero!\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]TO YOU",
+            "For playing Our Hero!\\|\\|\\^"
+          ]
+        end
+
+      when 40
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]Prova a sbloccare tutti i personaggi nella",
+            "Galleria dei Personaggi e ad ottenere tutte le armi",
+            "del gioco per completare il gioco al 100%!\\|\\|\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]Try to unlock all the characters in the Characters",
+            "Gallery and to obtain all the weapons to complete",
+            "the 100% of the game!\\|\\|\\|\\|\\^"
+          ]
+        end
+
+      when 41
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[9]A presto...\\|\\|\\^"
+          ]
+        when "en"
+          @messages = [
+            "\\c[9]See you soon...\\|\\|\\^"
+          ]
+        end
+
+      when 42
+        case $lang
+        when "it"
+          @messages = [
+            "\\c[10]\\>                        Hai sbloccato la modalità",
+            "\\>                          BATTAGLIA IN ARENA",
+            "\\>                            nel Castello del Re!"
+          ]
+        when "en"
+          @messages = [
+            "\\c[10]\\>                        You have unlocked the",
+            "\\>                              ARENA MODE",
+            "\\>                          in the King's Castle!"
+          ]
+        end
+      end #end case index
     end #end case map_id
 
     set_msg_vars
