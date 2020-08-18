@@ -55,6 +55,14 @@ class Localization
         text = "Sages"
       end
 
+    when 5
+      case $lang
+      when "it"
+        text = "Bossfinale"
+      when "en"
+        text = "Finalboss"
+      end
+
     end
 
     return text.upcase
@@ -6351,6 +6359,572 @@ class Localization
             "We'll see each other in front of the castle!"
           ]
         end
+      end #end case index
+
+    when 88 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Vuoi salvare la partita in un altro slot prima di",
+            "continuare?",
+            "Salva partita",
+            "Continua senza salvare"
+          ]
+        when "en"
+          @messages = [
+            "Do you want to save the game on a different slot",
+            "before continuing?",
+            "Save game",
+            "Continue without saving"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "Sei pronto per proseguire?",
+            "Avanti!",
+            "No"
+          ]
+        when "en"
+          @messages = [
+            "Are you ready to proceed?",
+            "Come on!",
+            "No"
+          ]
+        end
+      end #end case index
+
+    when 89 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Ahah! Farabutto!\|
+            Ti stavo aspettando."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]Ahah! Hooligan!\\|",
+            "I was waiting for you."
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Scommetto che fino a un attimo fa stavi ancora",
+            "sperando che io non riuscissi a liberare",
+            "l'ultimo dei saggi."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I bet you weren't counting on me rescuing the sages",
+            "and changed your plans last minute, didn't you."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Proprio così."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]That's right."
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Ma ora siamo qui, uno contro l'altro,",
+            "in lotta per il Cristallo di Teorhemas."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]But now we are here, against each other,",
+            "fighting for the Teorhemas Crystal."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Il cristallo è là."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]The crystal is over there."
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Facciamo che chi vince se lo prende, ci stai?"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]Winner takes all. Is it okay for you?"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Mi pare ovvio che si debba fare così.\\|",
+            "Non mi sfuggi, ho la vittoria in pugno!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]It looks obvious to me we have to do in this way.\\|",
+            "You can't escape me now, victory is mine!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]La vittoria si trasfomerà presto in disperazione."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]That bravado will turn into despair soon enough."
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Dove credi di andare...\\. Hanf..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]Where are you going...\\. Hanf..."
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Ho vinto io!\\|",
+            "Il Cristallo di Teorhemas è mio.\\|",
+            "Me lo riprendo."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]I won!\\|",
+            "The Teorhemas Crystal is mine.\\|",
+            "I'll take it back."
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Nostroeroe, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Ourhero, Ourhero!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Forza, riprendi il Cristallo di Teorhemas,",
+            "ce l'hai fatta!\\.",
+            "Hai sconfitto quel cattivone!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]Come on, take the Teorhemas Crystal, you did it!\\.",
+            "You defeated that villain!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]NOOO! Idiota!\\| Il Cristallo di Teorhemas",
+            "non va usato così!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]NOOO! Idiot!\\| The Teorhemas Crystal should",
+            "not be used in that way!"
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Guarirò le mie ferite\\|...\\|"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]I will heal my wounds\\|...\\|"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Può essere usato solo su cose MORTE!\\|",
+            "Tu ancora non sei morto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]It only works on the DEAD!\\|",
+            "You are not dead yet!"
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Questa volta saprò sconfiggerti.\\|",
+            "Anche l'essere più supremo dovrà avere paura di me!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]This time I'll destroy you.\\|",
+            "Even the mightiest will fear me!"
+          ]
+        end
+      end #end case index
+
+    when 90 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cos'è diventato?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What has it become?!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Devi farlo fuori!\\. Questa piattaforma non",
+            "reggerà il suo peso ancora per molto!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]You have to destroy him!\\. This platform won't hold",
+            "his weight for much longer!"
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(5)}]Il cristallo!\\. Fonte di potenza senza limiti!\\|",
+            "Guarda cosa sono diventato!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(5)}]The crystal!\\. Source of power with no limits!\\|",
+            "Look what I've become!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Mi fai schifo."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]You disgust me."
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]È fatta! Nostroeroe! Prendi il Teorhemas!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]It's done! Ourhero! Take the Teorhemas!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Sì, mio sire!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]Yes, my sire!"
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(2)}]Prende energia dal Cristallo di Teorhemas!",
+            "È l'unica cosa che ormai lo tiene in vita!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(2)}]He is taking energy from the Teorhemas Crystal!",
+            "It's the only thing keeping him alive!"
+          ]
+        end
+      end #end case index
+
+    when 91 #map_id
+      case index
+      when 1
+        case $lang
+        when "it"
+          @messages = [
+            "Gustatevi il banchetto!"
+          ]
+        when "en"
+          @messages = [
+            "Enjoy the feast!"
+          ]
+        end
+
+      when 2
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Oh, Nostroeroe..."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Oh, Ourhero..."
+          ]
+        end
+
+      when 3
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Te la sei cavata bene!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]You did pretty good!"
+          ]
+        end
+
+      when 4
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Sapevamo di poter contare su di te!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]We knew we could counting on you!"
+          ]
+        end
+
+      when 5
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Senza di te quel pazzo avrebbe preso il",
+            "controllo del mondo intero!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]Without you that scoundrel would have taken control",
+            "of the whole world!"
+          ]
+        end
+
+      when 6
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(3)}]Uno scontro eccezionale!...\\|",
+            "Mi hanno detto che è stato."
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(3)}]An awesome fight!...\\|",
+            "They told me has been."
+          ]
+        end
+
+      when 7
+        case $lang
+        when "it"
+          @messages = [
+            "Grazie Nostroeroe, grazie!"
+          ]
+        when "en"
+          @messages = [
+            "Thank you Ourhero, thank you!"
+          ]
+        end
+
+      when 8
+        case $lang
+        when "it"
+          @messages = [
+            "\\nb[#{get_name(1)}]Cosa c'è da ridere?!"
+          ]
+        when "en"
+          @messages = [
+            "\\nb[#{get_name(1)}]What's so funny?!"
+          ]
+        end
+
+      when 9
+        case $lang
+        when "it"
+          @messages = [
+            "Mi hanno detto che lo scontro contro Bossfinale",
+            "è stato più epico che mai!"
+          ]
+        when "en"
+          @messages = [
+            "They say the fight against Finalboss was truly epic!"
+          ]
+        end
+
+      when 10
+        case $lang
+        when "it"
+          @messages = [
+            "Eccezionale! Come avremmo fatto senza di te?"
+          ]
+        when "en"
+          @messages = [
+            "Amazing! What would we do without you?"
+          ]
+        end
+
+      when 11
+        case $lang
+        when "it"
+          @messages = [
+            "Siamo tutti fieri di te, Nostroeroe!"
+          ]
+        when "en"
+          @messages = [
+            "We are all proud of you, Ourhero!"
+          ]
+        end
+
+      when 12
+        case $lang
+        when "it"
+          @messages = [
+            "Non pensare ai nemici uccisi per una volta e",
+            "goditi il pranzo!"
+          ]
+        when "en"
+          @messages = [
+            "Don't worry about the enemies you killed for once",
+            "and enjoy the meal!"
+          ]
+        end
+
+      when 13
+        case $lang
+        when "it"
+          @messages = [
+            "Complimenti Nostroeroe, veramente un ottimo lavoro."
+          ]
+        when "en"
+          @messages = [
+            "Congratulations Ourhero, you did a very nice job."
+          ]
+        end
+
+      when 14
+        case $lang
+        when "it"
+          @messages = [
+            "Vuoi della carne?",
+            "15 Dindini per allungarmi e prenderla dal tavolo",
+            "di fronte a me!"
+          ]
+        when "en"
+          @messages = [
+            "Do you want some meat?",
+            "I'm eating it right now, but I can make it 15 Dindini",
+            "for you!"
+          ]
+        end
+
+      when 15
+        case $lang
+        when "it"
+          @messages = [
+            "Quanto avrei voluto assistere alla battaglia!"
+          ]
+        when "en"
+          @messages = [
+            "I wish I was there to see the battle!"
+          ]
+        end
+
+      when 16
+        case $lang
+        when "it"
+          @messages = [
+            "Quante cose buone!"
+          ]
+        when "en"
+          @messages = [
+            "So much delicious food!"
+          ]
+        end
+
+      when 17
+        case $lang
+        when "it"
+          @messages = [
+            "Quante cose buone!"
+          ]
+        when "en"
+          @messages = [
+            "So much delicious food!"
+          ]
+        end
+
       end #end case index
 
     end #end case map_id
