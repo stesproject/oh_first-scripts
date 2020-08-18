@@ -37,6 +37,8 @@ class Localization
         text = "Re"
       when "en"
         text = "King"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when 3
@@ -45,6 +47,8 @@ class Localization
         text = "Saggio"
       when "en"
         text = "Sage"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when 4
@@ -53,6 +57,8 @@ class Localization
         text = "Saggi"
       when "en"
         text = "Sages"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when 5
@@ -61,6 +67,8 @@ class Localization
         text = "Bossfinale"
       when "en"
         text = "Finalboss"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     end
@@ -78,6 +86,8 @@ class Localization
         text = "Castello del Re"
       when "en"
         text = "King's Castle"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Throne Room"
@@ -86,6 +96,8 @@ class Localization
         text = "Sala del Trono"
       when "en"
         text = "Throne Room"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Trophy Hall"
@@ -94,6 +106,8 @@ class Localization
         text = "Sala dei Trofei"
       when "en"
         text = "Trophy Hall"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Arena"
@@ -102,6 +116,8 @@ class Localization
         text = "Arena"
       when "en"
         text = "Arena"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Teorhemas Vault"
@@ -110,6 +126,8 @@ class Localization
         text = "Sala del Teorhemas"
       when "en"
         text = "Teorhemas Vault"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Castle Grounds"
@@ -118,6 +136,8 @@ class Localization
         text = "Cortile del Castello"
       when "en"
         text = "Castle Grounds"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Forest of the All-Eye Monster"
@@ -126,6 +146,8 @@ class Localization
         text = "Foresta dell'Occhio Sgorbio"
       when "en"
         text = "Forest of the All-Eye Monster"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Wild Valley"
@@ -134,6 +156,8 @@ class Localization
         text = "Valle Selvaggia"
       when "en"
         text = "Wild Valley"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Mistery Cave"
@@ -142,6 +166,8 @@ class Localization
         text = "Grotta dei Misteri"
       when "en"
         text = "Mistery Cave"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Water City"
@@ -150,6 +176,8 @@ class Localization
         text = "Città dell'Acqua"
       when "en"
         text = "Water City"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Finalboss Domain"
@@ -158,6 +186,8 @@ class Localization
         text = "Regno di Bossfinale"
       when "en"
         text = "Finalboss Domain"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Foxes Desert"
@@ -166,6 +196,8 @@ class Localization
         text = "Deserto dei Volpini"
       when "en"
         text = "Foxes Desert"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Volcanic Depths"
@@ -174,6 +206,8 @@ class Localization
         text = "Profondità del Vulcano"
       when "en"
         text = "Volcanic Depths"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Eternal Glaciers"
@@ -182,6 +216,8 @@ class Localization
         text = "Ghiacciai Perenni"
       when "en"
         text = "Eternal Glaciers"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Dark Forest"
@@ -190,6 +226,8 @@ class Localization
         text = "Foresta Oscura"
       when "en"
         text = "Dark Forest"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Finalboss Castle"
@@ -198,6 +236,8 @@ class Localization
         text = "Castello di Bossfinale"
       when "en"
         text = "Finalboss Castle"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Celebration Feast"
@@ -206,6 +246,8 @@ class Localization
         text = "Banchetto"
       when "en"
         text = "Celebration Feast"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     end
@@ -229,6 +271,10 @@ class Localization
           "The hero learned the skill",
           "\\c[2]Electric Shock!"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "skill-electric-2"
@@ -241,6 +287,10 @@ class Localization
       when "en"
         @messages = [
           "\\c[2]Equip the Electric Sword to use this skill!"
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -256,6 +306,10 @@ class Localization
           "The hero learned the skill",
           "\\c[2]Icy Storm!"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "skill-ice-2"
@@ -268,6 +322,10 @@ class Localization
       when "en"
         @messages = [
           "\\c[2]Equip the Icy Sword to use this skill!"
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -282,6 +340,10 @@ class Localization
         @messages = [
           "The hero learned the skill",
           "\\c[2]Fire Bomb!"
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -310,6 +372,10 @@ class Localization
           "The hero learned the skill",
           "\\c[2]Magic Attack!"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "skill-magic-2"
@@ -323,6 +389,10 @@ class Localization
         @messages = [
           "\\c[2]Equip the Finalboss Sword to use this skill!"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "skill-all-1"
@@ -334,6 +404,10 @@ class Localization
       when "en"
         @messages = [
           "The hero learned \\c[2]all the skills!",
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -348,6 +422,10 @@ class Localization
         @messages = [
           "\\c[2]Equip the Sword of the Legendary Hero to use",
           "these skills!"
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -364,6 +442,10 @@ class Localization
           "No suitable enemies nearby to control or",
           "not enough energy.\\|\\^"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "end-mission-1"
@@ -378,6 +460,10 @@ class Localization
           "\\nb[#{get_name(1)}]This should be the last of the crates in",
           "the forest!"
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "end-mission-2"
@@ -389,6 +475,10 @@ class Localization
       when "en"
         @messages = [
           "\\nb[#{get_name(1)}]I defeated all the baddies!",
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -402,6 +492,10 @@ class Localization
         @messages = [
           "\\nb[#{get_name(1)}]I put out all the flames!",
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "door-closed"
@@ -413,6 +507,10 @@ class Localization
       when "en"
         @messages = [
           "The door is closed.",
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -426,6 +524,10 @@ class Localization
         @messages = [
           "The door is locked.",
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "gate-locked"
@@ -437,6 +539,10 @@ class Localization
       when "en"
         @messages = [
           "The gate is locked.",
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -450,6 +556,10 @@ class Localization
         @messages = [
           "The door is sealed.",
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "controlled-enemy"
@@ -462,6 +572,10 @@ class Localization
         @messages = [
           "\\nb[#{get_name(1)}]Hey! Are you alive?",
         ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
+        ]
       end
 
     when "no-weapon"
@@ -473,6 +587,10 @@ class Localization
       when "en"
         @messages = [
           "You don't have a #{param}!"
+        ]
+      when "es"
+        @messages = [
+          "TRADUCCIÓN"
         ]
       end
 
@@ -497,6 +615,8 @@ class Localization
         @messages.push("\\c[6]Trovi")
       when "en"
         @messages.push("\\c[6]You find")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when "gave"
@@ -505,6 +625,8 @@ class Localization
         @messages.push("\\c[6]Consegni")
       when "en"
         @messages.push("\\c[6]You gave away")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when "got"
@@ -513,6 +635,8 @@ class Localization
         @messages.push("\\c[6]Ricevi")
       when "en"
         @messages.push("\\c[6]You got")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
     end
 
@@ -538,115 +662,99 @@ class Localization
       @messages.push("\\c[14]Atto \\v[10]:")
     when "en"
       @messages.push("\\c[14]Act \\v[10]:")
+    when "es"
+      @messages.push("TRADUCCIÓN")
     end
 
     case index
     when 1
       case $lang
       when "it"
-        @messages = [
-          @messages.push("IL CASTELLO DEL RE")
-        ]
+        @messages.push("IL CASTELLO DEL RE")
       when "en"
-        @messages = [
-          @messages.push("THE KING'S CASTLE")
-        ]
+        @messages.push("THE KING'S CASTLE")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 2
       case $lang
       when "it"
-        @messages = [
-          @messages.push("LA FORESTA DELL'OCCHIO SGORBIO")
-        ]
+        @messages.push("LA FORESTA DELL'OCCHIO SGORBIO")
       when "en"
-        @messages = [
-          @messages.push("THE FOREST OF THE ALL-EYE MONSTER")
-        ]
+        @messages.push("THE FOREST OF THE ALL-EYE MONSTER")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 3
       case $lang
       when "it"
-        @messages = [
-          @messages.push("LA VALLE SELVAGGIA")
-        ]
+        @messages.push("LA VALLE SELVAGGIA")
       when "en"
-        @messages = [
-          @messages.push("THE WILD VALLEY")
-        ]
+        @messages.push("THE WILD VALLEY")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 4
       case $lang
       when "it"
-        @messages = [
-          @messages.push("LA CITTÀ DELL'ACQUA")
-        ]
+        @messages.push("LA CITTÀ DELL'ACQUA")
       when "en"
-        @messages = [
-          @messages.push("THE WATER CITY")
-        ]
+        @messages.push("THE WATER CITY")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 5
       case $lang
       when "it"
-        @messages = [
-          @messages.push("IL DESERTO DEI VOLPINI")
-        ]
+        @messages.push("IL DESERTO DEI VOLPINI")
       when "en"
-        @messages = [
-          @messages.push("THE FOXES DESERT")
-        ]
+        @messages.push("THE FOXES DESERT")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 6
       case $lang
       when "it"
-        @messages = [
-          @messages.push("LE PROFONDITÀ DEL VULCANO")
-        ]
+        @messages.push("LE PROFONDITÀ DEL VULCANO")
       when "en"
-        @messages = [
-          @messages.push("THE VOLCANIC DEPTHS")
-        ]
+        @messages.push("THE VOLCANIC DEPTHS")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 7
       case $lang
       when "it"
-        @messages = [
-          @messages.push("I GHIACCIAI PERENNI")
-        ]
+        @messages.push("I GHIACCIAI PERENNI")
       when "en"
-        @messages = [
-          @messages.push("THE ETERNAL GLACIERS")
-        ]
+        @messages.push("THE ETERNAL GLACIERS")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 8
       case $lang
       when "it"
-        @messages = [
-          @messages.push("LA FORESTA OSCURA")
-        ]
+        @messages.push("LA FORESTA OSCURA")
       when "en"
-        @messages = [
-          @messages.push("THE DARK FOREST")
-        ]
+        @messages.push("THE DARK FOREST")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     when 9
       case $lang
       when "it"
-        @messages = [
-          @messages.push("IL CASTELLO DI BOSSFINALE")
-        ]
+        @messages.push("IL CASTELLO DI BOSSFINALE")
       when "en"
-        @messages = [
-          @messages.push("THE FINALBOSS CASTLE")
-        ]
+        @messages.push("THE FINALBOSS CASTLE")
+      when "es"
+        @messages.push("TRADUCCIÓN")
       end
 
     end
@@ -656,6 +764,8 @@ class Localization
       @messages.push("\\c[10]Completato!\\|\\|\\|\\|\\|\\^")
     when "en"
       @messages.push("\\c[10]Completed!\\|\\|\\|\\|\\|\\^")
+    when "es"
+      @messages.push("TRADUCCIÓN")
     end
 
     $msg_params = ["transparent", "middle"]
@@ -677,6 +787,9 @@ class Localization
     when "en"
       @messages.push("Attack: #{weapon.atk}")
       @messages.push("Defense: #{weapon.def}")
+    when "es"
+      @messages.push("TRADUCCIÓN")
+      @messages.push("TRADUCCIÓN")
     end
 
     $msg_params = ["dark", "middle"]
@@ -714,6 +827,9 @@ class Localization
       when "en"
         text.name = "Meat"
         text.desc = "Eat it to recover all your energy!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Regenerator"
@@ -724,6 +840,9 @@ class Localization
       when "en"
         text.name = "Regenerator"
         text.desc = "This potion recharges your Skill Energy!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Small Bridge"
@@ -734,6 +853,9 @@ class Localization
       when "en"
         text.name = "Small Bridge"
         text.desc = "A small, portable bridge for crossing gaps."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "key1"
@@ -744,6 +866,9 @@ class Localization
       when "en"
         text.name = "Key"
         text.desc = "A key found in the forest."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "key2"
@@ -754,6 +879,9 @@ class Localization
       when "en"
         text.name = "Key"
         text.desc = "A key found in the desert."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "key3"
@@ -764,6 +892,9 @@ class Localization
       when "en"
         text.name = "Key"
         text.desc = "This key opens the entrance to the Finalboss hall."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Book of the Forgotten Crafts"
@@ -774,6 +905,9 @@ class Localization
       when "en"
         text.name = "Book of the Forgotten Crafts"
         text.desc = ""
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Controller Crystal"
@@ -784,6 +918,9 @@ class Localization
       when "en"
         text.name = "Controller Crystal"
         text.desc = "A crystal fragment that can temporarily disrupt weak enemies."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Bronze Medal"
@@ -794,6 +931,9 @@ class Localization
       when "en"
         text.name = "Bronze Medal"
         text.desc = "A bronze medal gained in the arena."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Silver Medal"
@@ -804,6 +944,9 @@ class Localization
       when "en"
         text.name = "Silver Medal"
         text.desc = "A silver medal gained in the arena."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Gold Medal"
@@ -814,6 +957,9 @@ class Localization
       when "en"
         text.name = "Gold Medal"
         text.desc = "A golden medal gained in the arena."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Secrets Sheet"
@@ -824,6 +970,9 @@ class Localization
       when "en"
         text.name = "Secrets Sheet"
         text.desc = "Enter a code to unlock a bonus!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Cute Monster"
@@ -834,6 +983,9 @@ class Localization
       when "en"
         text.name = "Cute Monster"
         text.desc = ""
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     # Weapons
@@ -845,6 +997,9 @@ class Localization
       when "en"
         text.name = "Revolt Sword"
         text.desc = "A destructive sword received from the King himself!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Assassin Blade"
@@ -855,6 +1010,9 @@ class Localization
       when "en"
         text.name = "Assassin Blade"
         text.desc = "A powerful sword with a sharp blade."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Soldier's Sword"
@@ -865,6 +1023,9 @@ class Localization
       when "en"
         text.name = "Soldier's Sword"
         text.desc = "A common sword used by all the soldiers of the castle."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Sabrelyzer"
@@ -875,6 +1036,9 @@ class Localization
       when "en"
         text.name = "Sabrelyzer"
         text.desc = "A powerful sword with high destructive power!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Gelizedor"
@@ -885,6 +1049,9 @@ class Localization
       when "en"
         text.name = "Gelizedor"
         text.desc = "A sharp sword with an icy blade."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Lollipop"
@@ -895,6 +1062,9 @@ class Localization
       when "en"
         text.name = "Lollipop"
         text.desc = "Mmm, so sweet!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Electric Sword"
@@ -905,6 +1075,9 @@ class Localization
       when "en"
         text.name = "Electric Sword"
         text.desc = "A sword that constantly radiates electric shockwaves."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Revolt Sword II"
@@ -915,6 +1088,9 @@ class Localization
       when "en"
         text.name = "Revolt Sword II"
         text.desc = "The Revolt Sword, now strengthened and empowered!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Zombiesbane"
@@ -925,6 +1101,9 @@ class Localization
       when "en"
         text.name = "Zombiesbane"
         text.desc = "A sword that's extra effective against undead!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Sword of the Legendary Hero"
@@ -935,6 +1114,9 @@ class Localization
       when "en"
         text.name = "Sword of the Legendary Hero"
         text.desc = "A mighty sword. Indestructible. Fast. LEGENDARY."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Electric Guitar"
@@ -945,6 +1127,9 @@ class Localization
       when "en"
         text.name = "Electric Guitar"
         text.desc = "Rock and roll baby!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Icy Sword"
@@ -955,6 +1140,9 @@ class Localization
       when "en"
         text.name = "Icy Sword"
         text.desc = "A sharp blade honed from nevermelting ice."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Flaming Sword"
@@ -965,6 +1153,9 @@ class Localization
       when "en"
         text.name = "Flaming Sword"
         text.desc = "A sword that catches fire as soon as you pick it up."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Silver Slash"
@@ -975,6 +1166,9 @@ class Localization
       when "en"
         text.name = "Silver Slash"
         text.desc = "A silver blade that destroys your enemies!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Katana"
@@ -985,6 +1179,9 @@ class Localization
       when "en"
         text.name = "Katana"
         text.desc = "A lightweight ninja weapon with an increased critical hit ratio."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Final Revolt Sword"
@@ -995,6 +1192,9 @@ class Localization
       when "en"
         text.name = "Final Revolt Sword"
         text.desc = "The most powerful Revolt Sword! It wipes out any enemy!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Dragon Sword"
@@ -1005,6 +1205,9 @@ class Localization
       when "en"
         text.name = "Dragon Sword"
         text.desc = "A very mighty sword forged from dragon scales."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Finalboss Sword"
@@ -1015,6 +1218,9 @@ class Localization
       when "en"
         text.name = "Finalboss Sword"
         text.desc = "The mighty golden sword of Finalboss!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Soul Eater"
@@ -1025,6 +1231,9 @@ class Localization
       when "en"
         text.name = "Soul Eater"
         text.desc = "Devours the souls of slain enemies!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     # Armors
@@ -1036,6 +1245,9 @@ class Localization
       when "en"
         text.name = "Copper Necklace"
         text.desc = "A simple necklace that slightly protects against enemy attacks."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Bronze Necklace"
@@ -1046,6 +1258,9 @@ class Localization
       when "en"
         text.name = "Bronze Necklace"
         text.desc = "This necklace discreetly protects from enemy attacks."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Silver Necklace"
@@ -1056,6 +1271,9 @@ class Localization
       when "en"
         text.name = "Silver Necklace"
         text.desc = "More robust than some necklaces, it is excellent as protection in a battle."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Golden Necklace"
@@ -1066,6 +1284,9 @@ class Localization
       when "en"
         text.name = "Golden Necklace"
         text.desc = "A golden necklace that offers complete defense."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Sword Case"
@@ -1076,6 +1297,9 @@ class Localization
       when "en"
         text.name = "Sword Case"
         text.desc = "Lets you carry and switch between all of your swords!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Strength Necklace"
@@ -1086,6 +1310,9 @@ class Localization
       when "en"
         text.name = "Strength Necklace"
         text.desc = "This necklace increases your attack power."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Doubler Bracelet"
@@ -1096,6 +1323,9 @@ class Localization
       when "en"
         text.name = "Doubler Bracelet"
         text.desc = "Equipping this bracelet lets you level up faster!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Healing Bracelet"
@@ -1106,6 +1336,9 @@ class Localization
       when "en"
         text.name = "Healing Bracelet"
         text.desc = "Equipping this bracelet your wounds will heal automatically."
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Rainbow Bracelets"
@@ -1116,6 +1349,9 @@ class Localization
       when "en"
         text.name = "Rainbow Bracelets"
         text.desc = "Two bracelets that will double your ESP and restore your energy!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     # Skills
@@ -1127,6 +1363,9 @@ class Localization
       when "en"
         text.name = "Electric Shock"
         text.desc = "The Electric Sword allows you to cast powerful electric shocks against your enemies!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Icy Storm"
@@ -1137,6 +1376,9 @@ class Localization
       when "en"
         text.name = "Icy Storm"
         text.desc = "The Icy Sword allows you to cast devastating icy storms!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Fire Bomb"
@@ -1147,6 +1389,9 @@ class Localization
       when "en"
         text.name = "Fire Bomb"
         text.desc = "The Fire Sword allows you to cast destructive fire bombs!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     when "Magic Attack"
@@ -1157,6 +1402,9 @@ class Localization
       when "en"
         text.name = "Magic Attack"
         text.desc = "Shake the Finalboss Sword and cast powerful magic attacks!"
+      when "es"
+        text.name = "TRADUCCIÓN"
+        text.desc = "TRADUCCIÓN"
       end
 
     end
@@ -1174,6 +1422,8 @@ class Localization
         text = "Nostroeroe"
       when "en"
         text = "Ourhero"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     when "Knight"
@@ -1182,6 +1432,8 @@ class Localization
         text = "Cavaliere"
       when "en"
         text = "Knight"
+      when "es"
+        text = "TRADUCCIÓN"
       end
 
     end
@@ -1199,6 +1451,8 @@ class Localization
           text = "Non puoi salvare in questo slot."
         when "en"
           text = "You can not save in this slot."
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "empty"
@@ -1207,6 +1461,8 @@ class Localization
           text = "-Vuoto-"
         when "en"
           text = "-Empty-"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "playtime"
@@ -1215,6 +1471,8 @@ class Localization
           text = "Tempo di gioco"
         when "en"
           text = "Playtime"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "location"
@@ -1223,6 +1481,8 @@ class Localization
           text = "Posizione"
         when "en"
           text = "Location"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "currency"
@@ -1231,6 +1491,8 @@ class Localization
           text = "Dindini"
         when "en"
           text = "Dindini"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "ask_overwrite"
@@ -1239,6 +1501,8 @@ class Localization
           text = "Sovrascrivere il file?"
         when "en"
           text = "Overwrite the file?"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "cancel"
@@ -1247,6 +1511,8 @@ class Localization
           text = "Annulla"
         when "en"
           text = "Cancel"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "save_message"
@@ -1255,6 +1521,8 @@ class Localization
           text = "Scegli uno slot in cui salvare la partita."
         when "en"
           text = "Choose a slot to save the game."
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "load_message"
@@ -1263,6 +1531,8 @@ class Localization
           text = "Scegli una partita da caricare."
         when "en"
           text = "Choose a slot to load the game."
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "possession"
@@ -1271,6 +1541,8 @@ class Localization
           text = "Ne hai"
         when "en"
           text = "Owned"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "shop_buy"
@@ -1279,6 +1551,8 @@ class Localization
           text = "Compra"
         when "en"
           text = "Buy"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "shop_sell"
@@ -1287,6 +1561,8 @@ class Localization
           text = "Vendi"
         when "en"
           text = "Sell"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "shop_cancel"
@@ -1295,6 +1571,8 @@ class Localization
           text = "Ciao..."
         when "en"
           text = "Bye..."
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "new_game"
@@ -1303,6 +1581,8 @@ class Localization
           text = "Nuovo Gioco"
         when "en"
           text = "New Game"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "continue"
@@ -1311,6 +1591,8 @@ class Localization
           text = "Continua"
         when "en"
           text = "Continue"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "shutdown"
@@ -1319,6 +1601,8 @@ class Localization
           text = "Chiudi il gioco"
         when "en"
           text = "Quit the game"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "game_end"
@@ -1327,6 +1611,8 @@ class Localization
           text = "Chiudi il gioco"
         when "en"
           text = "Quit the game"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "to_title"
@@ -1335,6 +1621,8 @@ class Localization
           text = "Torna ai Titoli"
         when "en"
           text = "Back to Title"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "save"
@@ -1343,6 +1631,8 @@ class Localization
           text = "Salva"
         when "en"
           text = "Save"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "item"
@@ -1351,6 +1641,8 @@ class Localization
           text = "Oggetti"
         when "en"
           text = "Items"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "equip"
@@ -1359,6 +1651,8 @@ class Localization
           text = "Equip"
         when "en"
           text = "Equip"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "level"
@@ -1367,6 +1661,8 @@ class Localization
           text = "Livello"
         when "en"
           text = "Level"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "hp"
@@ -1375,6 +1671,8 @@ class Localization
           text = "PV"
         when "en"
           text = "HP"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "mp"
@@ -1383,6 +1681,8 @@ class Localization
           text = "PM"
         when "en"
           text = "MP"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "atk"
@@ -1391,6 +1691,8 @@ class Localization
           text = "PM"
         when "en"
           text = "MP"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "weapon"
@@ -1399,6 +1701,8 @@ class Localization
           text = "Arma"
         when "en"
           text = "Weapon"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "armor1"
@@ -1407,6 +1711,8 @@ class Localization
           text = "Acc. di Difesa"
         when "en"
           text = "Guard Accessory"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "armor2"
@@ -1415,6 +1721,8 @@ class Localization
           text = "Acc. d'Attacco"
         when "en"
           text = "Attack Accessory"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "armor3"
@@ -1423,6 +1731,8 @@ class Localization
           text = "Special"
         when "en"
           text = "Special"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "armor4"
@@ -1431,6 +1741,8 @@ class Localization
           text = "Oggetto"
         when "en"
           text = "Item"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "attack"
@@ -1439,6 +1751,8 @@ class Localization
           text = "Attacco"
         when "en"
           text = "Attack"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "skill"
@@ -1447,6 +1761,8 @@ class Localization
           text = "Abilità"
         when "en"
           text = "Skills"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "guard"
@@ -1455,6 +1771,8 @@ class Localization
           text = "Difesa"
         when "en"
           text = "Guard"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "quit"
@@ -1463,6 +1781,8 @@ class Localization
           text = "Esci"
         when "en"
           text = "Exit"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "exp_next"
@@ -1471,6 +1791,8 @@ class Localization
           text = "Prossimo Lv"
         when "en"
           text = "Next Level"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "exp_total"
@@ -1479,6 +1801,8 @@ class Localization
           text = "Esperienza"
         when "en"
           text = "Experience"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "website"
@@ -1487,6 +1811,8 @@ class Localization
           text = "Sito Web"
         when "en"
           text = "Website"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "menu_language"
@@ -1495,6 +1821,8 @@ class Localization
           text = "Lingua: ITA"
         when "en"
           text = "Language: ENG"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "back-king"
@@ -1503,6 +1831,8 @@ class Localization
           text = "Torna dal Re!"
         when "en"
           text = "Go back to the King!"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "go-back"
@@ -1511,6 +1841,8 @@ class Localization
           text = "Torna indietro!"
         when "en"
           text = "Go back!"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "defeat-monster"
@@ -1519,6 +1851,8 @@ class Localization
           text = "Sconfiggi il mostro!"
         when "en"
           text = "Defeat the monster!"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "go-king"
@@ -1527,6 +1861,8 @@ class Localization
           text = "Vai dal Re!"
         when "en"
           text = "Go to the King!"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "find-book"
@@ -1535,6 +1871,8 @@ class Localization
           text = "Trova il libro!"
         when "en"
           text = "Find the book!"
+        when "es"
+          text = "TRADUCCIÓN"
         end
 
       when "no-dindini"
@@ -1546,6 +1884,10 @@ class Localization
         when "en"
           @messages = [
             "You don't have enough Dindini!",
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1572,6 +1914,10 @@ class Localization
           @messages = [
             "My sireee, my sireee!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -1586,6 +1932,10 @@ class Localization
             "Controls:\\.",
             "\\c[2]SHIFT:\\c[0] Run."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -1597,6 +1947,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[2]S:\\c[0] Attack!\\|"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1612,6 +1966,10 @@ class Localization
             "\\c[2]A:\\c[0] Jump.\\|",
             "\\c[2]NOTE: the hero can only jump during battle!\\c[0]"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -1625,6 +1983,10 @@ class Localization
           @messages = [
             "\\c[2]ENTER:\\c[0] Interact.\\|",
             "\\c[2]ESC:\\c[0] Open/close the menu."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1642,6 +2004,10 @@ class Localization
             "menu.",
             "\\c[2]NOTE: autosave is enabled anyway.\\c[0]"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -1657,6 +2023,10 @@ class Localization
             "\\c[2]Game interface:\\c[0]\\.",
             "In the upper left corner you can see your health bar."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -1669,6 +2039,10 @@ class Localization
         when "en"
           @messages = [
             "The game ends when the hero loses all the hearts."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1685,6 +2059,10 @@ class Localization
             "Press \\c[2]D\\c[0] to eat meat and recover health.\\|",
             "GO ON, OURHERO!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -1700,6 +2078,10 @@ class Localization
           @messages = [
             "My sireee, my sireee!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -1711,6 +2093,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Tell me, paesant."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1726,6 +2112,10 @@ class Localization
             "The...\\| the precious Teorhemas Crystal!\\|",
             "It's been... \\|it's been stolen!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -1739,6 +2129,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Oh, blabbering blithering beavers!",
             "Tell me, peasant, what happened?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1754,6 +2148,10 @@ class Localization
             "I came to the castle for an audience, my sire,",
             "and the crystal... it wasn't there anymore!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -1766,6 +2164,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Knight him!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -1777,6 +2179,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Give him the Revolt Sword!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1796,6 +2202,10 @@ class Localization
             "it back to us safe and sound.\\|",
             "You, Ourhero, will save the world!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -1807,6 +2217,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]But my name is..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1826,6 +2240,10 @@ class Localization
             "With the Revolt Sword with you there's no one",
             "that can hurt you, don't worry!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -1838,6 +2256,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]How do I use it though?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -1849,6 +2271,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Just point it at the enemy... \\|sharp end first..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1863,6 +2289,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I thought the word \"revolt\" was for something",
             "more epic and powerful..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1879,6 +2309,10 @@ class Localization
             "this...\\|",
             "Go, fight the enemies, go!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 15
@@ -1890,6 +2324,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Yes sire!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1905,6 +2343,10 @@ class Localization
             "\\c[9]STE'S PROJECT",
             "presents...\\|\\|\\^",
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 17
@@ -1917,6 +2359,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]My sireee, my sireee!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
         
       when 18
@@ -1928,6 +2374,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Tell me, Ourhero..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1945,6 +2395,10 @@ class Localization
             "They must be the ones who stole the Teorhemas",
             "Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 20
@@ -1957,6 +2411,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Uhm, then go find them and get the crystal back!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -1974,6 +2432,10 @@ class Localization
             "Our Kingdom has been entrusted to guard and",
             "protect the crystal..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 22
@@ -1988,6 +2450,10 @@ class Localization
             "\\nb[#{get_name(2)}]Do you know what would happen if it fell in",
             "the wrong hands?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 23
@@ -2000,6 +2466,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]No."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 24
@@ -2011,6 +2481,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Great."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2025,6 +2499,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Go, Ourhero, get out of my castle and start",
             "your adventure!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2043,6 +2521,10 @@ class Localization
             "between any sword you find on our journey!\\|",
             "Good luck!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 27
@@ -2059,6 +2541,10 @@ class Localization
             "That villain has made off with our precious",
             "Teorhemas Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 28
@@ -2073,6 +2559,10 @@ class Localization
             "\\nb[#{get_name(2)}]I know why he was here!",
             "He wanted to kill me, to kill me!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 29
@@ -2086,6 +2576,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]So that he would wrest control of the kingdom",
             "from me, and then move on to the entire world!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2102,6 +2596,10 @@ class Localization
             "\\nb[#{get_name(2)}]Right now he must be in hiding, raising another",
             "army and bolstering his forces for an ever bigger",
             "attack!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2120,6 +2618,10 @@ class Localization
             "him fleeing through the Water City!",
             "He left a lot of goons in his wake, so be careful!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 32
@@ -2134,6 +2636,10 @@ class Localization
             "\\nb[#{get_name(1)}]I'll be careful.\\. Any chance I can get another",
             "weapon or upgrade for my trouble?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 33
@@ -2145,6 +2651,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Here, have a slab of meat."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2162,6 +2672,10 @@ class Localization
             "Ourhero!",
             "Go, you have to retrieve the Teorhemas Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when "king2"
@@ -2175,6 +2689,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]You have to go through the Water City to",
             "chase that guy!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2193,6 +2711,10 @@ class Localization
             "I would never have said that! Well, get help",
             "from them!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when "king4"
@@ -2207,6 +2729,10 @@ class Localization
             "\\nb[#{get_name(2)}]Well done, Ourhero!",
             "We are all proud of you!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when "cit1"
@@ -2218,6 +2744,10 @@ class Localization
         when "en"
           @messages = [
             "OURHERO! OURHERO!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2235,6 +2765,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Who are these guys?!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -2246,6 +2780,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Better take them all out!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2263,6 +2801,10 @@ class Localization
             "Press \\c[2]SHIFT\\c[0] to run and \\c[2]A\\c[0] to jump over",
             "obstacles!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       end #end case index
@@ -2278,6 +2820,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]I have to get out of the castle now!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -2296,6 +2842,10 @@ class Localization
             "These magical puddles let your hero jump even",
             "out of battle!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -2310,6 +2860,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]What happened here?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2327,6 +2881,10 @@ class Localization
             "Another one of those guys who thinks can",
             "defeat us?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -2339,6 +2897,10 @@ class Localization
           @messages = [
             "If so, it will end badly for you, just like them!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -2350,6 +2912,10 @@ class Localization
         when "en"
           @messages = [
             "KILL HIM!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2364,6 +2930,10 @@ class Localization
           @messages = [
             "Buahahah! If you think it will be easy to get rid of us",
             "you are totally wrong!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2382,6 +2952,10 @@ class Localization
             "With the Teorhemas Crystal on our side, everyone in",
             "the world will be afraid of us!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -2395,6 +2969,10 @@ class Localization
           @messages = [
             "Enough! No more sending those good-for-nothing",
             "grunts after you!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2410,6 +2988,10 @@ class Localization
             "You'll be a pushover just like every other soldier",
             "in this castle!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -2421,6 +3003,10 @@ class Localization
         when "en"
           @messages = [
             "Now you'll get it from me!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2434,6 +3020,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I defeated everyone!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -2445,6 +3035,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]The problem is there's no sign of the crystal..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -2461,6 +3055,10 @@ class Localization
           @messages = [
             "You've killed \\v[2] enemies so far."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -2475,6 +3073,10 @@ class Localization
             "You deserve a reward for having killed all these",
             "enemies!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -2487,6 +3089,10 @@ class Localization
           @messages = [
             "Defeat \\v[35] enemies and I will give you a reward!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -2498,6 +3104,10 @@ class Localization
         when "en"
           @messages = [
             "I can't believe it! You deserve the reward!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2512,6 +3122,10 @@ class Localization
           @messages = [
             "To win the last prize you have to unlock all the",
             "characters in the Characters Gallery!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2529,6 +3143,10 @@ class Localization
             "finish the story and unlock all the characters in",
             "the Characters Gallery!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -2545,6 +3163,10 @@ class Localization
             "But I can tell you that you killed \\v[2] enemies",
             "so far."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -2557,6 +3179,10 @@ class Localization
           @messages = [
             "Do you know what happened to the castle?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -2568,6 +3194,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Someone stole the Teorhemas Crystal!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2583,6 +3213,10 @@ class Localization
             "Wow, a mighty warrior!",
             "Where did you find that huge sword?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -2597,6 +3231,10 @@ class Localization
             "\\nb[#{get_name(1)}]I'm sorry, in a game the hero never replies",
             "to what the people have to say."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -2608,6 +3246,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Why are you laughing?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2621,6 +3263,10 @@ class Localization
           @messages = [
             "I'm so happy to run around in the King's courtyard!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -2632,6 +3278,10 @@ class Localization
         when "en"
           @messages = [
             "I want to go on an adventure!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2645,6 +3295,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I want a bandana like yours!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -2656,6 +3310,10 @@ class Localization
         when "en"
           @messages = [
             "No, it's mine."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2669,6 +3327,10 @@ class Localization
           @messages = [
             "Hey! Is everything all right?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 18
@@ -2681,6 +3343,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Sure!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 19
@@ -2692,6 +3358,10 @@ class Localization
         when "en"
           @messages = [
             "Let me sell you something interesting..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2709,6 +3379,10 @@ class Localization
             "Check for quests",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 21
@@ -2722,6 +3396,10 @@ class Localization
           @messages = [
             "You already have a mission in progress, you cannot",
             "start a new one!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2740,6 +3418,10 @@ class Localization
             "garbage dump and threw around a bunch of old",
             "crates..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 23
@@ -2754,6 +3436,10 @@ class Localization
             "Your mission is to find and destroy all these crates!",
             "The problem is that we don't know exactly how",
             "many crates there are..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2771,6 +3457,10 @@ class Localization
             "ACCEPT",
             "REFUSE"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 26
@@ -2782,6 +3472,10 @@ class Localization
         when "en"
           @messages = [
             "Great! We're counting on you, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2799,6 +3493,10 @@ class Localization
             "Mission recap",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 28
@@ -2810,6 +3508,10 @@ class Localization
         when "en"
           @messages = [
             "You have destroyed \\v[16] crates out of 21."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2825,6 +3527,10 @@ class Localization
             "Awesome! You got rid of all those crates!",
             "You deserve a reward, from the King himself!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 30
@@ -2839,6 +3545,10 @@ class Localization
             "Buy something",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 31
@@ -2852,6 +3562,10 @@ class Localization
           @messages = [
             "I have a new mission for you!\\|",
             "There are enemies wandering around the Wild Valley..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2869,6 +3583,10 @@ class Localization
             "They are trying to assault the King's Castle!",
             "You have to stop them before it's too late!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 33
@@ -2880,6 +3598,10 @@ class Localization
         when "en"
           @messages = [
             "You have killed \\v[16] enemies out of 29."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2895,6 +3617,10 @@ class Localization
             "Awesome, you have killed all the enemies!",
             "Here is your reward!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 35
@@ -2907,6 +3633,10 @@ class Localization
           @messages = [
             "\\nb[BUTCHER]Do you want to buy something?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 36
@@ -2918,6 +3648,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[WEAPONS SELLER]Good morning, may I help you?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2942,6 +3676,10 @@ class Localization
           @messages = [
             "I can smith and enhance all kinds of weapons."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 40
@@ -2953,6 +3691,10 @@ class Localization
         when "en"
           @messages = [
             "But I don't think you need this right now."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -2969,6 +3711,10 @@ class Localization
             "your quest is blocked by rocks barring the way to",
             "the East..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 42
@@ -2984,6 +3730,10 @@ class Localization
             "I'll temper your Revolt Sword. It should make it",
             "strong enough to break through those rocks!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 43
@@ -2996,6 +3746,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Amazing!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 44
@@ -3007,6 +3761,10 @@ class Localization
         when "en"
           @messages = [
             "The problem is...\\. I don't remember how to do it."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3021,6 +3779,10 @@ class Localization
           @messages = [
             "I need a rare book on swordsmithing techniques in",
             "order to do that."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3037,6 +3799,10 @@ class Localization
             "It's called \"Book of the Forgotten Crafts\", and it",
             "should be hidden somewhere in the Forest of the",
             "All-Eye Monster!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3055,6 +3821,10 @@ class Localization
             "You can find the book in the Forest of the All-Eye", 
             "Monster!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 48
@@ -3070,6 +3840,10 @@ class Localization
             "You found the Book of the Forgotten Crafts,",
             "awesome!\\.",
             "Now I can upgrade your Revolt Sword!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3089,6 +3863,10 @@ class Localization
             "Pay \\v[34] Dindini",
             "Don't pay"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 50
@@ -3100,6 +3878,10 @@ class Localization
         when "en"
           @messages = [
             "Here we go, your enhanced Revolt Sword!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3117,6 +3899,10 @@ class Localization
             "You can go to the forest to fight some baddies,",
             "so you can get their loots!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 54
@@ -3133,6 +3919,10 @@ class Localization
             "Upgrade sword",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 55
@@ -3144,6 +3934,10 @@ class Localization
         when "en"
           @messages = [
             "Go experience the new power of your Revolt Sword!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3157,6 +3951,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]I won't find the Teorhemas Crystal over here..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3176,6 +3974,10 @@ class Localization
             "You must be Ourhero...\\|",
             "I've been following you for a while."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -3190,6 +3992,10 @@ class Localization
             "\\nb[#{get_name(1)}]Who are you?!\\|",
             "Why are you following me?!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -3201,6 +4007,10 @@ class Localization
         when "en"
           @messages = [
             "Don't worry, I'm here to help you!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3216,6 +4026,10 @@ class Localization
             "If I'm not wrong at the North of the Forest there is",
             "an electric gate you can't overcome."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -3227,6 +4041,10 @@ class Localization
         when "en"
           @messages = [
             "I know how you can destroy it!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3240,6 +4058,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Oh, that's good!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -3251,6 +4073,10 @@ class Localization
         when "en"
           @messages = [
             "Take this sword!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3266,6 +4092,10 @@ class Localization
           @messages = [
             "Use the electricity in this sword to overload the gate!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -3278,6 +4108,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Cool!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 10
@@ -3289,6 +4123,10 @@ class Localization
         when "en"
           @messages = [
             "Go and try it!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3306,6 +4144,10 @@ class Localization
             "During your adventure you can find swords with",
             "special abilities."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -3319,6 +4161,10 @@ class Localization
           @messages = [
             "Some swords, once equipped, will give the hero",
             "special Skills!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3337,6 +4183,10 @@ class Localization
             "Menu, go to \\c[2]Skills\\c[0] and press the \"1\" button to",
             "assign the skill to that button!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -3352,6 +4202,10 @@ class Localization
             "To then use the skill you will just have to press",
             "the button \"1\" and the hero will use the skill",
             "against obstacles or enemies!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3371,6 +4225,10 @@ class Localization
             "Open menu-> Assign the skill ->",
             "Close menu."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -3389,6 +4247,10 @@ class Localization
             "health bar). When empty you'll need a \\c[2]Regenerator\\c[0]",
             "to recharge it."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 17
@@ -3403,6 +4265,10 @@ class Localization
             "Did you try to destroy the electric gate which",
             "blocks the way in the forest?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 18
@@ -3415,6 +4281,10 @@ class Localization
           @messages = [
             "Here, have a Regenerator."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 19
@@ -3426,6 +4296,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]There's no way to go on here..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3441,6 +4315,10 @@ class Localization
             "You can refight enemies in the Boss arenas to gain",
             "money and EXP!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 21
@@ -3452,6 +4330,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Hi!\\. Who are you?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3467,6 +4349,10 @@ class Localization
             "\\nb[TAY]My name is Tay.\\.",
             "I'm looking for my friend, Fury..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 23
@@ -3481,6 +4367,10 @@ class Localization
             "\\c[10]TAY",
             "New character unlocked in the Characters Gallery!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 24
@@ -3492,6 +4382,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[TAY]He can't be so far..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3506,6 +4400,10 @@ class Localization
           @messages = [
             "The Small Bridge is too heavy,",
             "you can't jump!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3523,6 +4421,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Please address me from the front."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -3534,6 +4436,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Oh, here you are Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3547,6 +4453,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Why are you on a carpet?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -3558,6 +4468,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]I can't not stay on a carpet."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3571,6 +4485,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]What?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -3583,6 +4501,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]What?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -3594,6 +4516,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]I don't get it."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3611,6 +4537,10 @@ class Localization
             "My soldiers saw someone escaping over there...",
             "Holding the Teorhemas Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -3625,6 +4555,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Anyway, you have to catch him before he gets",
             "away with the crystal!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3642,6 +4576,10 @@ class Localization
             "these heavy rocks...",
             "Even your Revolt Sword can't destroy them!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -3657,6 +4595,10 @@ class Localization
             "\\nb[#{get_name(2)}]You should upgrade your sword.\\.",
             "My blacksmiths will be able to assist you!\\|",
             "Come on Ourhero, we're counting on you!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3676,6 +4618,10 @@ class Localization
             "Then you will be able to destroy those rocks which",
             "block the way!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -3692,6 +4638,10 @@ class Localization
           @messages = [
             "Damn it! Why did you open the gate?!",
             "WHY?!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -3711,6 +4661,10 @@ class Localization
             "I wonder what could happen if one of these zombies",
             "crashes on the gate..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -3726,6 +4680,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Better not to jump here, it's too risky."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -3745,6 +4703,10 @@ class Localization
             "We don't know what is happening here...",
             "It looks like the dead soldiers... came back to life!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -3756,6 +4718,10 @@ class Localization
         when "en"
           @messages = [
             "This way leads right to the castle's back entrance..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3773,6 +4739,10 @@ class Localization
             "We had closed it to prevent those monsters from",
             "reaching the castle!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -3789,6 +4759,10 @@ class Localization
             "\\nb[#{get_name(2)}]The undead are making the monster impervious",
             "to your attacks!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -3800,6 +4774,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Ourhero, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3813,6 +4791,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]My sire, my sire!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -3825,6 +4807,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]That guy is the cause of all this!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -3836,6 +4822,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]The Teorhemas Crystal!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3853,6 +4843,10 @@ class Localization
             "The crystal is now mine and no one will be able",
             "to take it off from me!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -3866,6 +4860,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Ourhero, I still haven't told you about the real power", 
             "of the Teorhemas Crystal!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3882,6 +4880,10 @@ class Localization
             "\\nb[#{get_name(2)}]The crystal can bring any inanimated object to life!\\.",
             "It can control all nonliving matter!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -3893,6 +4895,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]That explains everything!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3908,6 +4914,10 @@ class Localization
             "Gnahahah have a look at what I can do with the",
             "power of this amazing crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -3921,6 +4931,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]He created that monster from a broken bottle",
             "of wine!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -3938,6 +4952,10 @@ class Localization
             "You understand it's far too dangerous to leave the",
             "crystal in his hands!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 13
@@ -3954,6 +4972,10 @@ class Localization
             "The crystal is mine.\\.",
             "Gnahahahaha!!!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -3967,6 +4989,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]Ourhero, kill that monster before he can reach",
             "my castle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -3983,6 +5009,10 @@ class Localization
           @messages = [
             "Welcome to the arena."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -3994,6 +5024,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[10]The arena is currently closed."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4011,6 +5045,10 @@ class Localization
             "Enter the Arena",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -4025,21 +5063,29 @@ class Localization
             "Kill as many enemies as you can before the time's", 
             "up!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
         case $lang
         when "it"
           @messages = [
-            "\\c[6]25 nemici= Medaglia di Bronzo",
-            "50 nemici= Medaglia d'Argento",
-            "75 nemici= Medaglia d'Oro"
+            "\\c[6]25 nemici = Medaglia di Bronzo",
+            "50 nemici = Medaglia d'Argento",
+            "75 nemici = Medaglia d'Oro"
           ]
         when "en"
           @messages = [
             "\\c[6]25 enemies = Bronze Medal",
             "50 enemies = Silver Medal",
             "75 enemies = Gold Medal"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4053,6 +5099,10 @@ class Localization
           @messages = [
             "Time out."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -4064,6 +5114,10 @@ class Localization
         when "en"
           @messages = [
             "You've killed \\v[21] enemies!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4082,6 +5136,10 @@ class Localization
             "Only a soldier will be able to go towards the",
             "treasure."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -4096,6 +5154,10 @@ class Localization
             "Only a warrior with an electric spirit will be able to",
             "go towards the treasure."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -4108,6 +5170,10 @@ class Localization
         when "en"
           @messages = [
             "A mighty sword, evolution of its previous version."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4123,6 +5189,10 @@ class Localization
             "The soldier who managed to kill the undeads became",
             "legend."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -4137,6 +5207,10 @@ class Localization
             "The magic shine of the glaciers can open",
             "the path towards the treasure."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -4148,6 +5222,10 @@ class Localization
         when "en"
           @messages = [
             "The rest is illegible."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -4173,6 +5251,10 @@ class Localization
             "\\>Finalboss Domain",
             "\\>Stay here"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -4188,6 +5270,10 @@ class Localization
           @messages = [
             "Help, help!!!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -4199,6 +5285,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Hey! Someone needs help!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4216,6 +5306,10 @@ class Localization
             "There should be a button that opens this door",
             "around here..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -4227,6 +5321,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Why were you trapped here?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4241,6 +5339,10 @@ class Localization
           @messages = [
             "The minions of the bloody Finalboss kidnapped me!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -4252,6 +5354,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Finalboss?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4267,6 +5373,10 @@ class Localization
             "Yeah, the one who stole the Teorhemas Crystal!\\|",
             "Everyone knows him by now!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -4279,6 +5389,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Why did they lock you up?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -4290,6 +5404,10 @@ class Localization
         when "en"
           @messages = [
             "Because I know their weakness!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4306,6 +5424,10 @@ class Localization
             "You must be aware that the Finalboss henchmen are",
             "just living beings without any IQ!",
             "They can't think, speak or rationalize..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4325,6 +5447,10 @@ class Localization
             "Crystal!\\|",
             "They exist with only one purpose... TO KILL!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -4343,6 +5469,10 @@ class Localization
             "beings would become even stupider than they",
             "already are!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 13
@@ -4360,6 +5490,10 @@ class Localization
             "anything but mimic the movement of anything they",
             "see."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -4373,6 +5507,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Wow! And how can I interfere with the",
             "Teorhemas Crystal?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4388,6 +5526,10 @@ class Localization
             "At the moment is not possible, due to the fact that",
             "the crystal is not in our hands."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -4402,6 +5544,10 @@ class Localization
             "But this fragment of Controller Crystal is everything",
             "we need!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 17
@@ -4415,6 +5561,10 @@ class Localization
           @messages = [
             "Just a small amount of energy is enough to activate",
             "it..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4434,6 +5584,10 @@ class Localization
             "of those lights, with an enemy nearby, and you will",
             "see its astonishing power!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 19
@@ -4449,6 +5603,10 @@ class Localization
             "Try to activate the fragment I gave you close to one",
             "of those lights, with an enemy nearby, and you will",
             "see its astonishing power!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4470,6 +5628,10 @@ class Localization
             "that terminal...",
             "But I can't reach it!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -4485,6 +5647,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I think he wants to take me down."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -4499,6 +5665,10 @@ class Localization
             "\\nb[#{get_name(1)}]He looks even tougher than before!\\.",
             "My attacks aren't even scratching him!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -4510,6 +5680,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]All right, let's do this!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -4528,6 +5702,10 @@ class Localization
             "\\c[14]CONGRATULATIONS!",
             "You collected all the swords!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -4542,6 +5720,10 @@ class Localization
             "\\c[14]CONGRATULATIONS!",
             "You completed the Characters Gallery!\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -4555,6 +5737,10 @@ class Localization
           @messages = [
             "\\c[14]CASTLE BOSS",
             "Who does he think he is, he's just the first boss..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4572,6 +5758,10 @@ class Localization
             "The boss of the forest was too big to make a trophy",
             "of, so here's one of his arms instead."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -4588,6 +5778,10 @@ class Localization
             "This boss was animated from the leftover wine in",
             "a broken bottle."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -4599,6 +5793,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]WATER CITY BOSS"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4616,6 +5814,10 @@ class Localization
             "A cybernetic enemy augmented in mysterious ways", 
             "by the wild energy of the Teorhemas Crystal."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 10
@@ -4631,6 +5833,10 @@ class Localization
             "\\c[14]VOLCANO BOSS",
             "Here we have a smaller version of the giant worm",
             "from the Volcano Depth."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4650,6 +5856,10 @@ class Localization
             "plant, coming from the n-th spell of the Teorhemas",
             "Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -4667,6 +5877,10 @@ class Localization
             "The advanced version of the first boss!",
             "Came back to life and enhanced thanks to the",
             "unbelievable power of the Teorhemas Crystal!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4686,6 +5900,10 @@ class Localization
             "He looks so nice... You could have become",
             "good friends."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -4702,6 +5920,10 @@ class Localization
             "That's what the Teorhemas Crystal could do",
             "when it is used in the wrong way..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 15
@@ -4714,6 +5936,10 @@ class Localization
           @messages = [
             "\\c[14]ENEMY 1"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -4725,6 +5951,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]ENEMY 2"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4740,6 +5970,10 @@ class Localization
             "\\c[14]NINJA",
             "Faster than any other enemy!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 18
@@ -4754,6 +5988,10 @@ class Localization
             "\\c[14]ZOMBIE",
             "Only the Zombiesbane can defeat them."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 19
@@ -4765,6 +6003,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]ENEMY 3"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4779,6 +6021,10 @@ class Localization
           @messages = [
             "\\c[14]ENEMY 4",
             "Resistant to fire, weak to ice."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4798,6 +6044,10 @@ class Localization
             "Depths.",
             "Fire is useless against him, but ice will destroy him."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 22
@@ -4816,6 +6066,10 @@ class Localization
             "their icy habitat.",
             "Fire kills them instantly."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 23
@@ -4832,6 +6086,10 @@ class Localization
             "Fearsome creatures that wander around the Dark",
             "Forest."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 24
@@ -4843,6 +6101,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]ENEMY 5"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4857,6 +6119,10 @@ class Localization
           @messages = [
             "\\c[14]KING",
             "What would we do without him?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4874,6 +6140,10 @@ class Localization
             "Go to him if you think you have defeated a",
             "considerable amount of enemies."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 27
@@ -4887,6 +6157,10 @@ class Localization
           @messages = [
             "\\c[14]PAESANT 5",
             "You want a bandana like his, don't you?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4902,6 +6176,10 @@ class Localization
             "\\c[14]PAESANT 2",
             "Probably is not able to open his mouth."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 29
@@ -4916,6 +6194,10 @@ class Localization
             "\\c[14]PAESANT 7",
             "What's so funny?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 30
@@ -4928,6 +6210,10 @@ class Localization
           @messages = [
             "\\c[14]PAESANT 1"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 31
@@ -4939,6 +6225,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[14]PAESANT 6"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4953,6 +6243,10 @@ class Localization
           @messages = [
             "\\c[14]PAESANT 3",
             "He looks like you... too much."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -4970,6 +6264,10 @@ class Localization
             "Thanks to him and his meat you managed to save",
             "yourself in the most dangerous situations."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 34
@@ -4983,6 +6281,10 @@ class Localization
           @messages = [
             "\\c[14]TAY",
             "He is looking for his friend..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5000,6 +6302,10 @@ class Localization
             "Hey, here you are!",
             "Number one hero, unmatched!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 36
@@ -5015,6 +6321,10 @@ class Localization
             "\\c[14]HERO 2",
             "He gave you the Electric Sword and taught you how",
             "to use the Lightning skill!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5034,6 +6344,10 @@ class Localization
             "heroes faced...",
             "The Controller Crystal comes from him!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 38
@@ -5047,6 +6361,10 @@ class Localization
           @messages = [
             "\\c[14]GUARD",
             "Loyal guard of the King's castle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5064,6 +6382,10 @@ class Localization
             "This guard dabbles in blacksmithing.",
             "He can craft and upgrade weapons!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 40
@@ -5079,6 +6401,10 @@ class Localization
             "\\c[14]SAGE 1",
             "There are rumors that his hat is not actually a hat."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 41
@@ -5092,6 +6418,10 @@ class Localization
           @messages = [
             "\\c[14]SAGE 2",
             "He really likes lavish necklaces..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5109,6 +6439,10 @@ class Localization
             "Ah, the sages...",
             "So fugly."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 43
@@ -5122,6 +6456,10 @@ class Localization
           @messages = [
             "\\c[14]SAGE 4",
             "Ugly as his brother."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5139,6 +6477,10 @@ class Localization
             "The last of the five sages.",
             "And so the Finalboss gate opened..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 45
@@ -5150,6 +6492,10 @@ class Localization
         when "en"
           @messages = [
             "Looks like someone has arrived in the forest..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -5180,6 +6526,10 @@ class Localization
             "\\nb[#{get_name(3)}]Go to free the other sages first, you are not",
             "ready for the Dark Forest yet!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -5194,6 +6544,10 @@ class Localization
             "Do you know that with your big swords you can",
             "destroy small objects?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -5205,6 +6559,10 @@ class Localization
         when "en"
           @messages = [
             "You should try it! You may find something inside!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5222,6 +6580,10 @@ class Localization
             "order to let them use their magic to unlock the gate",
             "of the castle!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -5234,6 +6596,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Come on, just one more sage to free!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 10
@@ -5245,6 +6611,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]Let's do it, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5262,6 +6632,10 @@ class Localization
             "gate.",
             "You need to find the rest of us!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 12
@@ -5273,6 +6647,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]One more sage is left!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5286,6 +6664,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]We're all with you, come on!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -5297,6 +6679,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]Come on, step by step we'll do it!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5310,6 +6696,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Find the last sage and set him free!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -5321,6 +6711,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]Finalboss is all yours!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5335,6 +6729,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]The castle's gate is open!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 18
@@ -5346,6 +6744,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]Here I am, as promised!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5359,6 +6761,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]We're almost there!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 20
@@ -5371,6 +6777,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Go and bring the Teorhemas Crystal back!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 21
@@ -5382,6 +6792,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Something's not right here."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5399,6 +6813,10 @@ class Localization
             "A dark castle sorrounded by purple lava...\\.",
             "Uhm... It might be the Finalboss castle!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 23
@@ -5413,6 +6831,10 @@ class Localization
             "\\nb[#{get_name(1)}]I have to find a way to get inside, that",
             "crook has our Teorhemas Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 24
@@ -5424,6 +6846,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]What is that on your head?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5437,6 +6863,10 @@ class Localization
           @messages = [
             "A hat."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 26
@@ -5448,6 +6878,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Ah, cute!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5461,6 +6895,10 @@ class Localization
           @messages = [
             "Eheh!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 28
@@ -5472,6 +6910,10 @@ class Localization
         when "en"
           @messages = [
             "Look!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5485,6 +6927,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Wow!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 30
@@ -5496,6 +6942,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]So... what?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5514,6 +6964,10 @@ class Localization
             "But we, the Sages, can combine our powers to",
             "open the way forward for the hero!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 32
@@ -5531,6 +6985,10 @@ class Localization
             "sages.\\| You are the only one who can set them",
             "free, Ourhero!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 33
@@ -5546,6 +7004,10 @@ class Localization
             "Each Sage is imprisoned in a different region of our",
             "kingdom, and needs your help!",
             "Good luck on your quest, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5563,6 +7025,10 @@ class Localization
             "Upgrade sword",
             get_text("cancel")
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 35
@@ -5574,6 +7040,10 @@ class Localization
         when "en"
           @messages = [
             "Thank you again for freeing me!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
         
@@ -5587,6 +7057,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Thanks to you for the Controller Crystal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 37
@@ -5598,6 +7072,10 @@ class Localization
         when "en"
           @messages = [
             "If you like, I can sell you something really useful!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5613,6 +7091,10 @@ class Localization
             "A mission? Sure, the Volcanic Depths are burning",
             "right now..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 39
@@ -5627,6 +7109,10 @@ class Localization
             "If you could put the flames out with an icy sword,",
             "I would be very glad to give you a proper reward!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 40
@@ -5638,6 +7124,10 @@ class Localization
         when "en"
           @messages = [
             "You put out \\v[16] flames out of 28."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5653,6 +7143,10 @@ class Localization
             "Awesome, you put out all the flames in the",
             "Volcanic Depths!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 42
@@ -5664,6 +7158,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(4)}]The gate is open!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -5683,6 +7181,10 @@ class Localization
             "\\nb[#{get_name(1)}]This building blocks the way!",
             "There should be a way to remove it..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -5700,6 +7202,10 @@ class Localization
             "\\nb[#{get_name(1)}]The one imprisoned over there must be one",
             "of the Sages!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -5716,6 +7222,10 @@ class Localization
             "No need to worry about your friend!",
             "We're taking reeeeally good care of him!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -5727,6 +7237,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]You should destroy that horrible monster first!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5744,6 +7258,10 @@ class Localization
             "That guy kidnapped me and locked me in here...",
             "I don't know why, seriously!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -5755,6 +7273,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Maybe because..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5772,6 +7294,10 @@ class Localization
             "final mission to crush the baddies and defeat the",
             "forces of Evil forever!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -5783,6 +7309,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]That's it, that's probably the reason."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5799,6 +7329,10 @@ class Localization
         when "en"
           @messages = [
             "The electric gate dissipated into thin air..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -5819,6 +7353,10 @@ class Localization
             "heat after using them.",
             "You'll have to wait for them to refill."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -5836,6 +7374,10 @@ class Localization
             "\\nb[#{get_name(1)}]That giant worm is too tall!",
             "I have to find its weak point to defeat it!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -5850,6 +7392,10 @@ class Localization
             "\\nb[#{get_name(3)}]Kill that gigantic worm first of all!"
           ]
         end
+      when "es"
+        @messages = [
+          "TRADUCCIÓN",
+        ]
 
       when 3
         case $lang
@@ -5860,6 +7406,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]You don't look so cool, to be honest."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5872,6 +7422,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]And what's that thing you are wearing?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5887,6 +7441,10 @@ class Localization
             "\\nb[#{get_name(3)}]It's body armor!\\|",
             "That IS cool, right? Right?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -5899,6 +7457,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]I wouldn't wear it if it was the last thing in the",
             "world."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5915,6 +7477,10 @@ class Localization
             "\\nb[#{get_name(3)}]Good, you saved me!",
             "I will help the other sages to open the gate of the",
             "Finalboss Castle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5934,6 +7500,10 @@ class Localization
             "Only the sword of everlasting flame can destroy",
             "frozen rocks."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -5949,6 +7519,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Why are you here?!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -5960,6 +7534,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]I was just leaving back to town."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -5974,6 +7552,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]So I killed that monster for nothing at all?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -5986,6 +7568,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Yes, I managed to escape by myself..."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -5997,6 +7583,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Go back to the town with the other sages. NOW!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6011,6 +7601,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]You know, the Lava Sage is my brother."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -6022,6 +7616,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]GO! NOW!!!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6042,6 +7640,10 @@ class Localization
             "Your movement speed is reduced and you cannot",
             "jump!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6054,6 +7656,10 @@ class Localization
           @messages = [
             "The warmth melted the monster into nothingness!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -6065,6 +7671,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Where is the sage?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6083,6 +7693,10 @@ class Localization
             "\\nb[#{get_name(1)}]What are you doing here?!\\|",
             "Shouldn't you be holed up in your castle?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6096,6 +7710,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Does that mean I rescued all the sages for",
             "nothing?!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6111,6 +7729,10 @@ class Localization
             "No, I'm going to the castle right n...\\|...\\|",
             "WHAT?!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -6125,6 +7747,10 @@ class Localization
             "You have rescued the other sages?!\\|",
             "Damn you! You won't be rescuing this last one!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -6136,6 +7762,10 @@ class Localization
         when "en"
           @messages = [
             "Gnahahahahahahahah!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6152,6 +7782,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]This altar makes those shadow invincible!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
       end #end case index
 
@@ -6167,6 +7801,10 @@ class Localization
           @messages = [
             "Ahah! Stupid hero! We meet again!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6179,6 +7817,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]Didn't I defeat you already?",
             "You should be dead!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6193,6 +7835,10 @@ class Localization
           @messages = [
             "As long as we have the Teorhemas Crystal, we won't",
             "stay that way for long!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6210,6 +7856,10 @@ class Localization
             "been!\\|",
             "Stap up and face me, Ourhero!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -6221,6 +7871,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]You have to kill the boss first!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6234,6 +7888,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Hey! Do you like my whimsy color scheme?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -6245,6 +7903,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Yes, it's very nice!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6258,6 +7920,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]What are you keeping in your hand?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -6269,6 +7935,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]It's a staff!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6283,6 +7953,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]Have you ever seen a sage without a magic staff?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -6294,6 +7968,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Yes."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6311,6 +7989,10 @@ class Localization
             "Finalboss Castle, but they're a bit, well,",
             "understaffed."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 13
@@ -6324,6 +8006,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]I'm joining them right now!\\.",
             "We'll see each other in front of the castle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6346,6 +8032,10 @@ class Localization
             "Save game",
             "Continue without saving"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6361,6 +8051,10 @@ class Localization
             "Are you ready to proceed?",
             "Come on!",
             "No"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6379,6 +8073,10 @@ class Localization
             "\\nb[#{get_name(5)}]Ahah! Hooligan!\\|",
             "I was waiting for you."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6394,6 +8092,10 @@ class Localization
             "\\nb[#{get_name(1)}]I bet you weren't counting on me rescuing the sages",
             "and changed your plans last minute, didn't you."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 3
@@ -6405,6 +8107,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(5)}]That's right."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6420,6 +8126,10 @@ class Localization
             "\\nb[#{get_name(5)}]But now we are here, against each other,",
             "fighting for the Teorhemas Crystal."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 5
@@ -6432,6 +8142,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(5)}]The crystal is over there."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -6443,6 +8157,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(5)}]Winner takes all. Is it okay for you?"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6458,6 +8176,10 @@ class Localization
             "\\nb[#{get_name(1)}]It looks obvious to me we have to do in this way.\\|",
             "You can't escape me now, victory is mine!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -6470,6 +8192,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(5)}]That bravado will turn into despair soon enough."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 9
@@ -6481,6 +8207,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(5)}]Where are you going...\\. Hanf..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6498,6 +8228,10 @@ class Localization
             "The Teorhemas Crystal is mine.\\|",
             "I'll take it back."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -6509,6 +8243,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Ourhero, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6525,6 +8263,10 @@ class Localization
             "\\nb[#{get_name(2)}]Come on, take the Teorhemas Crystal, you did it!\\.",
             "You defeated that villain!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 13
@@ -6539,6 +8281,10 @@ class Localization
             "\\nb[#{get_name(2)}]NOOO! Idiot!\\| The Teorhemas Crystal should",
             "not be used in that way!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 14
@@ -6550,6 +8296,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(5)}]I will heal my wounds\\|...\\|"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6565,6 +8315,10 @@ class Localization
             "\\nb[#{get_name(2)}]It only works on the DEAD!\\|",
             "You are not dead yet!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 16
@@ -6578,6 +8332,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(5)}]This time I'll destroy you.\\|",
             "Even the mightiest will fear me!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6594,6 +8352,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(1)}]What has it become?!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6607,6 +8369,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]You have to destroy him!\\. This platform won't hold",
             "his weight for much longer!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6622,6 +8388,10 @@ class Localization
             "\\nb[#{get_name(5)}]The crystal!\\. Source of power with no limits!\\|",
             "Look what I've become!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -6633,6 +8403,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]You disgust me."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6646,6 +8420,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]It's done! Ourhero! Take the Teorhemas!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -6657,6 +8435,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Yes, my sire!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6671,6 +8453,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]He is taking energy from the Teorhemas Crystal!",
             "It's the only thing keeping him alive!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
@@ -6687,6 +8473,10 @@ class Localization
           @messages = [
             "Enjoy the feast!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 2
@@ -6698,6 +8488,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]Oh, Ourhero..."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6711,6 +8505,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(3)}]You did pretty good!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 4
@@ -6722,6 +8520,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(3)}]We knew we could counting on you!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6737,6 +8539,10 @@ class Localization
             "\\nb[#{get_name(3)}]Without you that scoundrel would have taken control",
             "of the whole world!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 6
@@ -6751,6 +8557,10 @@ class Localization
             "\\nb[#{get_name(3)}]An awesome fight!...\\|",
             "They told me has been."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 7
@@ -6763,6 +8573,10 @@ class Localization
           @messages = [
             "Thank you Ourhero, thank you!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 8
@@ -6774,6 +8588,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]What's so funny?!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6788,6 +8606,10 @@ class Localization
           @messages = [
             "They say the fight against Finalboss was truly epic!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 10
@@ -6800,6 +8622,10 @@ class Localization
           @messages = [
             "Amazing! What would we do without you?"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 11
@@ -6811,6 +8637,10 @@ class Localization
         when "en"
           @messages = [
             "We are all proud of you, Ourhero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6826,6 +8656,10 @@ class Localization
             "Don't worry about the enemies you killed for once",
             "and enjoy the meal!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 13
@@ -6837,6 +8671,10 @@ class Localization
         when "en"
           @messages = [
             "Congratulations Ourhero, you did a very nice job."
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6854,6 +8692,10 @@ class Localization
             "I'm eating it right now, but I can make it 15 Dindini",
             "for you!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 15
@@ -6865,6 +8707,10 @@ class Localization
         when "en"
           @messages = [
             "I wish I was there to see the battle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6878,6 +8724,10 @@ class Localization
           @messages = [
             "So much delicious food!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 17
@@ -6890,6 +8740,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]People, a moment of attention please!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 18
@@ -6901,6 +8755,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Here is our hero!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6919,6 +8777,10 @@ class Localization
             "monsters until he opened the way to Finalboss and",
             "wrested the Teorhemas Crystal back from him!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 20
@@ -6930,6 +8792,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]Adore him!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6943,6 +8809,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]You can go back to feasting now."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 22
@@ -6954,6 +8824,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(1)}]Thank you, my sire!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6969,6 +8843,10 @@ class Localization
             "\\nb[#{get_name(2)}]I want to give you a reward for what you've done.",
             "Please, accept it."
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 24
@@ -6980,6 +8858,10 @@ class Localization
         when "en"
           @messages = [
             "\\nb[#{get_name(2)}]For every enemy you defeated!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -6993,6 +8875,10 @@ class Localization
           @messages = [
             "\\nb[#{get_name(2)}]And now go, go! Resume your adventure!"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 26
@@ -7004,6 +8890,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[9]Thanks for playing.\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7019,17 +8909,25 @@ class Localization
             "\\c[9]In memory of",
             "Zio Michele.\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 28
         case $lang
         when "it"
           @messages = [
-            "\\c[9]Un gioco creato da Stefano Mercadante.\\|\\|\\^"
+            "\\c[9]Un gioco realizzato da Stefano Mercadante.\\|\\|\\^"
           ]
         when "en"
           @messages = [
             "\\c[9]A game created by Stefano Mercadante.\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7042,6 +8940,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[9]With the great help of...\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7056,6 +8958,10 @@ class Localization
           @messages = [
             "\\c[9]ARES VAIARELLI",
             "for English translation review.\\|\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7073,6 +8979,10 @@ class Localization
             "for the track:",
             "Title.\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 32
@@ -7088,6 +8998,10 @@ class Localization
             "\\c[9]RAFFAELE MURRI",
             "for the tracks:",
             "Castle, Battle.\\|\\|\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7105,6 +9019,10 @@ class Localization
             "for the tracks:",
             "Desert, Volcano, Water City, Finalboss Domain.\\|\\|\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 34
@@ -7120,6 +9038,10 @@ class Localization
             "\\c[9]RPG MAKER 3 MUSIC PACK",
             "for the tracks:",
             "Forest, Wild Valley, Finalboss Battle 2.\\|\\|\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7137,6 +9059,10 @@ class Localization
             "for the track:",
             "Finalboss Battle 1.\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 36
@@ -7153,6 +9079,10 @@ class Localization
             "for the track:",
             "Victory.\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 37
@@ -7168,6 +9098,10 @@ class Localization
             "\\c[9]AUDIONAUTIX",
             "for the track:",
             "Glaciers.\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7187,6 +9121,10 @@ class Localization
             "GUARDIAN OF IRAEL, UCA",
             "for beta testing the game.\\|\\|\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 39
@@ -7200,6 +9138,10 @@ class Localization
           @messages = [
             "\\c[9]TO YOU",
             "For playing Our Hero!\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7217,6 +9159,10 @@ class Localization
             "Gallery and to obtain all the weapons to complete",
             "the 100% of the game!\\|\\|\\|\\|\\^"
           ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
+          ]
         end
 
       when 41
@@ -7228,6 +9174,10 @@ class Localization
         when "en"
           @messages = [
             "\\c[9]See you soon...\\|\\|\\^"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
 
@@ -7244,6 +9194,10 @@ class Localization
             "\\c[10]\\>                        You have unlocked the",
             "\\>                              ARENA MODE",
             "\\>                          in the King's Castle!"
+          ]
+        when "es"
+          @messages = [
+            "TRADUCCIÓN",
           ]
         end
       end #end case index
