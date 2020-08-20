@@ -1,7 +1,6 @@
 module ADDON
   ASK_LANGUAGE = $default_language == "" # if set to false it wont ask you and it'll go straight to # fullscreen
   CHOICES = ["English", "Italiano"]
-  SETTINGS_FILENAME = "Settings.rvdata"
 end
 
 class Window_Text < Window_Base
@@ -21,8 +20,7 @@ class Scene_Title
   
   alias main_fullscreen? main
   def main
-    load_language
-
+    $locale.load_language
     if $fullscreen == false
       auto
     end
@@ -70,7 +68,7 @@ class Scene_Title
         $lang = "it"
       end
 
-      save_language
+      $locale.save_language
       $game_started = true
     end
   end
@@ -83,19 +81,5 @@ class Scene_Title
     keybd.call(0xA4, 0, 2, 0)
     $fullscreen = true
     # $game_started = true
-  end
-
-  def load_language
-    if File.file?(ADDON::SETTINGS_FILENAME)
-      file = File.open(ADDON::SETTINGS_FILENAME, "r")
-      $lang = Marshal.load(file)
-      file.close
-    end
-  end
-
-  def save_language
-    file = File.open(ADDON::SETTINGS_FILENAME, "w")
-    Marshal.dump($lang, file)
-    file.close
   end
 end

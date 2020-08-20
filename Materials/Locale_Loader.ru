@@ -1,20 +1,26 @@
 #==============================================================================
-# CSV Reader script
+# Locale Loader script
 # Author: Ste
 #==============================================================================
 module LOCSETT
   PATH = "Data/Locale/"
   LAST_MAP = 91
+  SETTINGS_FILENAME = "Settings.rvdata"
 end
 
 class Locale_Loader
+  $maps_data = []
+  $common_data = []
+  $vocabs_data = []
+
   def initialize
+    load_language
     load_maps_data
+    load_common_data
+    load_vocabs_data
   end
 
   def load_maps_data
-    $maps_data = []
-
     for i in 0..LOCSETT::LAST_MAP
       map_data = []
       data_path = "#{LOCSETT::PATH}map#{i}.csv"
@@ -29,6 +35,43 @@ class Locale_Loader
       $maps_data.push(map_data)
     end
   end
+
+  def load_common_data
+    data_path = "#{LOCSETT::PATH}common.csv"
+
+    if File.file?(data_path)
+      data = load_data(data_path)
+      data.split(/\r?\n/).each do |line|
+        $common_data.push(line)
+      end
+    end
+  end
+
+  def load_vocabs_data
+    data_path = "#{LOCSETT::PATH}vocabs.csv"
+
+    if File.file?(data_path)
+      data = load_data(data_path)
+      data.split(/\r?\n/).each do |line|
+        $vocabs_data.push(line)
+      end
+    end
+  end
+
+  def load_language
+    if File.file?(LOCSETT::SETTINGS_FILENAME)
+      file = File.open(LOCSETT::SETTINGS_FILENAME, "r")
+      $lang = Marshal.load(file)
+      file.close
+    end
+  end
+
+  def save_language
+    file = File.open(LOCSETT::SETTINGS_FILENAME, "w")
+    Marshal.dump($lang, file)
+    file.close
+  end
+
 end
 
 class << Marshal
@@ -45,4 +88,4 @@ class << Marshal
   end
 end unless Marshal.respond_to?(:th_core_load)
 
-Locale_Loader.new()
+$locale = Locale_Loader.new()

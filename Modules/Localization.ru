@@ -5,11 +5,87 @@
 class Localization
   $default_language = ""
   $msg_var = [61,62,63,64]
+  $param_var = 79
 
   LANG_INDEX = {
     "en" => 0,
     "it" => 1,
     "es" => 2
+  }
+
+  COMMON_INDEXES = {
+    "skill-electric-1" => 1,
+    "skill-electric-2" => 2,
+    "skill-ice-1" => 3,
+    "skill-ice-2" => 4,
+    "skill-fire-1" => 5,
+    "skill-fire-2" => 6,
+    "skill-magic-1" => 7,
+    "skill-magic-2" => 8,
+    "skill-all-1" => 9,
+    "skill-all-2" => 10,
+    "cannot-control" => 11,
+    "end-mission-1" => 12,
+    "end-mission-2" => 13,
+    "end-mission-3" => 14,
+    "door-closed" => 15,
+    "door-locked" => 16,
+    "gate-locked" => 17,
+    "door-sealed" => 18,
+    "controlled-enemy" => 19,
+    "no-weapon" => 20,
+    "no-dindini" => 21
+  }
+
+  VOCABS_INDEXES = {
+    "cannot_save" => 1,
+    "empty" => 2,
+    "playtime" => 3,
+    "location" => 4,
+    "currency" => 5,
+    "ask_overwrite" => 6,
+    "cancel" => 7,
+    "save_message" => 8,
+    "load_message" => 9,
+    "possession" => 10,
+    "shop_buy" => 11,
+    "shop_sell" => 12,
+    "shop_cancel" => 13,
+    "new_game" => 14,
+    "continue" => 15,
+    "shutdown" => 16,
+    "game_end" => 17,
+    "to_title" => 18,
+    "save" => 19,
+    "item" => 20,
+    "equip" => 21,
+    "level" => 22,
+    "hp" => 23,
+    "mp" => 24,
+    "atk" => 25,
+    "weapon" => 26,
+    "armor1" => 27,
+    "armor2" => 28,
+    "armor3" => 29,
+    "armor4" => 30,
+    "attack" => 31,
+    "skill" => 32,
+    "guard" => 33,
+    "quit" => 34,
+    "exp_next" => 35,
+    "exp_total" => 36,
+    "website" => 37,
+    "menu_language" => 38,
+    "back-king" => 39,
+    "go-back" => 40,
+    "defeat-monster" => 41,
+    "go-king" => 42,
+    "find-book" => 43,
+    "find" => 44,
+    "gave" => 45,
+    "got" => 46,
+    "act" => 47,
+    "act-completed" => 48
   }
 
   @messages = nil
@@ -24,62 +100,29 @@ class Localization
     when "it"
       $lang = "en"
     when "en"
+      $lang = "es"
+    when "es"
       $lang = "it"
     end
 
-    Scene_Title.new().save_language
+    $locale.save_language
   end
 
-  def get_name(id)
-    text = nil
+  def reset_msg_vars
+    for i in 0..3
+      $game_variables[$msg_var[i]] = ""
+    end
+  end
 
-    case id
-    when 1
-      text = $data_actors[1].name
-
-    when 2
-      case $lang
-      when "it"
-        text = "Re"
-      when "en"
-        text = "King"
-      when "es"
-        text = "TRADUCCIÓN"
-      end
-
-    when 3
-      case $lang
-      when "it"
-        text = "Saggio"
-      when "en"
-        text = "Sage"
-      when "es"
-        text = "TRADUCCIÓN"
-      end
-
-    when 4
-      case $lang
-      when "it"
-        text = "Saggi"
-      when "en"
-        text = "Sages"
-      when "es"
-        text = "TRADUCCIÓN"
-      end
-
-    when 5
-      case $lang
-      when "it"
-        text = "Bossfinale"
-      when "en"
-        text = "Finalboss"
-      when "es"
-        text = "TRADUCCIÓN"
-      end
-
+  def set_msg_vars
+    if (@messages == nil)
+      return
     end
 
-    return text.upcase
+    for i in 0..3
+      @messages[i] = @messages[i] == nil ? "" : @messages[i]
+      $game_variables[$msg_var[i]] = @messages[i]
+    end
   end
 
   def get_map_name(name)
@@ -261,390 +304,12 @@ class Localization
     return text
   end
 
-  def set_common_msg(name, param = nil)
-    reset_msg_vars
-
-    case name
-    when "skill-electric-1"
-      case $lang
-      when "it"
-        @messages = [
-          "L'eroe ha imparato l'abilità",
-          "\\c[2]Scarica Elettrica!"
-        ]
-      when "en"
-        @messages = [
-          "The hero learned the skill",
-          "\\c[2]Electric Shock!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-electric-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\c[2]Equipaggia la Spada Elettrica per usare",
-          "questa abilità!"
-        ]
-      when "en"
-        @messages = [
-          "\\c[2]Equip the Electric Sword to use this skill!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-ice-1"
-      case $lang
-      when "it"
-        @messages = [
-          "L'eroe ha imparato l'abilità",
-          "\\c[2]Tempesta Gelida!"
-        ]
-      when "en"
-        @messages = [
-          "The hero learned the skill",
-          "\\c[2]Icy Storm!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-ice-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\c[2]Equipaggia la Spada Ghiacciata per usare",
-          "questa abilità!"
-        ]
-      when "en"
-        @messages = [
-          "\\c[2]Equip the Icy Sword to use this skill!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-fire-1"
-      case $lang
-      when "it"
-        @messages = [
-          "L'eroe ha imparato l'abilità",
-          "\\c[2]Bomba di Fuoco!"
-        ]
-      when "en"
-        @messages = [
-          "The hero learned the skill",
-          "\\c[2]Fire Bomb!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-fire-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\c[2]Equipaggia la Spada Infuocata per usare",
-          "questa abilità!"
-        ]
-      when "en"
-        @messages = [
-          "\\c[2]Equip the Flaming Sword to use this skill!"
-        ]
-      end
-
-    when "skill-magic-1"
-      case $lang
-      when "it"
-        @messages = [
-          "L'eroe ha imparato l'abilità",
-          "\\c[2]Attacco Magico!"
-        ]
-      when "en"
-        @messages = [
-          "The hero learned the skill",
-          "\\c[2]Magic Attack!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-magic-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\c[2]Equipaggia la Spada di Bossfinale per usare",
-          "questa abilità!"
-        ]
-      when "en"
-        @messages = [
-          "\\c[2]Equip the Finalboss Sword to use this skill!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-all-1"
-      case $lang
-      when "it"
-        @messages = [
-          "L'eroe ha imparato \\c[2]tutte le abilità!",
-        ]
-      when "en"
-        @messages = [
-          "The hero learned \\c[2]all the skills!",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "skill-all-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\c[2]Equipaggia la Spada dell'Eroe Leggendario",
-          "per usare queste abilità!"
-        ]
-      when "en"
-        @messages = [
-          "\\c[2]Equip the Sword of the Legendary Hero to use",
-          "these skills!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "cannot-control"
-      case $lang
-      when "it"
-        @messages = [
-          "Non c'è nessun elemento controllabile in",
-          "questo posto o non c'è abbastanza energia per",
-          "utilizzare il Cristallo Controllore qui.\\|\\.\\.\\^"
-        ]
-      when "en"
-        @messages = [
-          "No suitable enemies nearby to control or",
-          "not enough energy.\\|\\^"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "end-mission-1"
-      case $lang
-      when "it"
-        @messages = [
-          "\\nb[#{get_name(1)}]Dovrei aver distrutto tutte quante le",
-          "casse in questa foresta!"
-        ]
-      when "en"
-        @messages = [
-          "\\nb[#{get_name(1)}]This should be the last of the crates in",
-          "the forest!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "end-mission-2"
-      case $lang
-      when "it"
-        @messages = [
-          "\\nb[#{get_name(1)}]Ho eliminato tutti quanti i cattivi!",
-        ]
-      when "en"
-        @messages = [
-          "\\nb[#{get_name(1)}]I defeated all the baddies!",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "end-mission-3"
-      case $lang
-      when "it"
-        @messages = [
-          "\\nb[#{get_name(1)}]Ho spento tutte le fiamme!",
-        ]
-      when "en"
-        @messages = [
-          "\\nb[#{get_name(1)}]I put out all the flames!",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "door-closed"
-      case $lang
-      when "it"
-        @messages = [
-          "La porta è chiusa.",
-        ]
-      when "en"
-        @messages = [
-          "The door is closed.",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "door-locked"
-      case $lang
-      when "it"
-        @messages = [
-          "La porta è chiusa a chiave.",
-        ]
-      when "en"
-        @messages = [
-          "The door is locked.",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "gate-locked"
-      case $lang
-      when "it"
-        @messages = [
-          "Il cancello è chiuso a chiave.",
-        ]
-      when "en"
-        @messages = [
-          "The gate is locked.",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "door-sealed"
-      case $lang
-      when "it"
-        @messages = [
-          "La porta è sigillata.",
-        ]
-      when "en"
-        @messages = [
-          "The door is sealed.",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "controlled-enemy"
-      case $lang
-      when "it"
-        @messages = [
-          "\\nb[#{get_name(1)}]Ohi! Sei vivo?",
-        ]
-      when "en"
-        @messages = [
-          "\\nb[#{get_name(1)}]Hey! Are you alive?",
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    when "no-weapon"
-      case $lang
-      when "it"
-        @messages = [
-          "Non hai una #{param}!"
-        ]
-      when "en"
-        @messages = [
-          "You don't have a #{param}!"
-        ]
-      when "es"
-        @messages = [
-          "TRADUCCIÓN"
-        ]
-      end
-
-    else
-      @messages = [
-        "#{get_text(name)}",
-      ]
-
-    end
-    
-    set_msg_vars
-  end
-
   def set_action(action, item, value, item2 = nil, value2 = nil)
     reset_msg_vars
     @messages = []
-
-    case action
-    when "find"
-      case $lang
-      when "it"
-        @messages.push("\\c[6]Trovi")
-      when "en"
-        @messages.push("\\c[6]You find")
-      when "es"
-        @messages.push("TRADUCCIÓN")
-      end
-
-    when "gave"
-      case $lang
-      when "it"
-        @messages.push("\\c[6]Consegni")
-      when "en"
-        @messages.push("\\c[6]You gave away")
-      when "es"
-        @messages.push("TRADUCCIÓN")
-      end
-
-    when "got"
-      case $lang
-      when "it"
-        @messages.push("\\c[6]Ricevi")
-      when "en"
-        @messages.push("\\c[6]You got")
-      when "es"
-        @messages.push("TRADUCCIÓN")
-      end
-    end
+    
+    text = get_text(action)
+    @messages.push(text)
 
     amount = value > 0 ? value.to_s + " " : ""
     @messages.push("#{amount}#{item}!")
@@ -663,14 +328,8 @@ class Localization
     reset_msg_vars
     @messages = []
 
-    case $lang
-    when "it"
-      @messages.push("\\c[14]Atto \\v[10]:")
-    when "en"
-      @messages.push("\\c[14]Act \\v[10]:")
-    when "es"
-      @messages.push("TRADUCCIÓN")
-    end
+    text = get_text("act")
+    @messages.push(text)
 
     case index
     when 1
@@ -765,14 +424,8 @@ class Localization
 
     end
 
-    case $lang
-    when "it"
-      @messages.push("\\c[10]Completato!\\|\\|\\|\\|\\|\\^")
-    when "en"
-      @messages.push("\\c[10]Completed!\\|\\|\\|\\|\\|\\^")
-    when "es"
-      @messages.push("TRADUCCIÓN")
-    end
+    text = get_text("act-completed")
+    @messages.push(text)
 
     $msg_params = ["transparent", "middle"]
 
@@ -801,23 +454,6 @@ class Localization
     $msg_params = ["dark", "middle"]
 
     set_msg_vars
-  end
-
-  def reset_msg_vars
-    for i in 0..3
-      $game_variables[$msg_var[i]] = ""
-    end
-  end
-
-  def set_msg_vars
-    if (@messages == nil)
-      return
-    end
-
-    for i in 0..3
-      @messages[i] = @messages[i] == nil ? "" : @messages[i]
-      $game_variables[$msg_var[i]] = @messages[i]
-    end
   end
 
   def get_db_object(name)
@@ -1448,458 +1084,12 @@ class Localization
   end
 
   def get_text(name)
-    text = nil
+    @messages = []
+    index = VOCABS_INDEXES[name]
+    line_data = $vocabs_data[index]
+    split_data(line_data)
 
-    case name
-      when "cannot_save"
-        case $lang
-        when "it"
-          text = "Non puoi salvare in questo slot."
-        when "en"
-          text = "You can not save in this slot."
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "empty"
-        case $lang
-        when "it"
-          text = "-Vuoto-"
-        when "en"
-          text = "-Empty-"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "playtime"
-        case $lang
-        when "it"
-          text = "Tempo di gioco"
-        when "en"
-          text = "Playtime"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "location"
-        case $lang
-        when "it"
-          text = "Posizione"
-        when "en"
-          text = "Location"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "currency"
-        case $lang
-        when "it"
-          text = "Dindini"
-        when "en"
-          text = "Dindini"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "ask_overwrite"
-        case $lang
-        when "it"
-          text = "Sovrascrivere il file?"
-        when "en"
-          text = "Overwrite the file?"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "cancel"
-        case $lang
-        when "it"
-          text = "Annulla"
-        when "en"
-          text = "Cancel"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "save_message"
-        case $lang
-        when "it"
-          text = "Scegli uno slot in cui salvare la partita."
-        when "en"
-          text = "Choose a slot to save the game."
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "load_message"
-        case $lang
-        when "it"
-          text = "Scegli una partita da caricare."
-        when "en"
-          text = "Choose a slot to load the game."
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "possession"
-        case $lang
-        when "it"
-          text = "Ne hai"
-        when "en"
-          text = "Owned"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "shop_buy"
-        case $lang
-        when "it"
-          text = "Compra"
-        when "en"
-          text = "Buy"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "shop_sell"
-        case $lang
-        when "it"
-          text = "Vendi"
-        when "en"
-          text = "Sell"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "shop_cancel"
-        case $lang
-        when "it"
-          text = "Ciao..."
-        when "en"
-          text = "Bye..."
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "new_game"
-        case $lang
-        when "it"
-          text = "Nuovo Gioco"
-        when "en"
-          text = "New Game"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "continue"
-        case $lang
-        when "it"
-          text = "Continua"
-        when "en"
-          text = "Continue"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "shutdown"
-        case $lang
-        when "it"
-          text = "Chiudi il gioco"
-        when "en"
-          text = "Quit the game"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "game_end"
-        case $lang
-        when "it"
-          text = "Chiudi il gioco"
-        when "en"
-          text = "Quit the game"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "to_title"
-        case $lang
-        when "it"
-          text = "Torna ai Titoli"
-        when "en"
-          text = "Back to Title"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "save"
-        case $lang
-        when "it"
-          text = "Salva"
-        when "en"
-          text = "Save"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "item"
-        case $lang
-        when "it"
-          text = "Oggetti"
-        when "en"
-          text = "Items"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "equip"
-        case $lang
-        when "it"
-          text = "Equip"
-        when "en"
-          text = "Equip"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "level"
-        case $lang
-        when "it"
-          text = "Livello"
-        when "en"
-          text = "Level"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "hp"
-        case $lang
-        when "it"
-          text = "PV"
-        when "en"
-          text = "HP"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "mp"
-        case $lang
-        when "it"
-          text = "PM"
-        when "en"
-          text = "MP"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "atk"
-        case $lang
-        when "it"
-          text = "PM"
-        when "en"
-          text = "MP"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "weapon"
-        case $lang
-        when "it"
-          text = "Arma"
-        when "en"
-          text = "Weapon"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "armor1"
-        case $lang
-        when "it"
-          text = "Acc. di Difesa"
-        when "en"
-          text = "Guard Accessory"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "armor2"
-        case $lang
-        when "it"
-          text = "Acc. d'Attacco"
-        when "en"
-          text = "Attack Accessory"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "armor3"
-        case $lang
-        when "it"
-          text = "Special"
-        when "en"
-          text = "Special"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "armor4"
-        case $lang
-        when "it"
-          text = "Oggetto"
-        when "en"
-          text = "Item"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "attack"
-        case $lang
-        when "it"
-          text = "Attacco"
-        when "en"
-          text = "Attack"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "skill"
-        case $lang
-        when "it"
-          text = "Abilità"
-        when "en"
-          text = "Skills"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "guard"
-        case $lang
-        when "it"
-          text = "Difesa"
-        when "en"
-          text = "Guard"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "quit"
-        case $lang
-        when "it"
-          text = "Esci"
-        when "en"
-          text = "Exit"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "exp_next"
-        case $lang
-        when "it"
-          text = "Prossimo Lv"
-        when "en"
-          text = "Next Level"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "exp_total"
-        case $lang
-        when "it"
-          text = "Esperienza"
-        when "en"
-          text = "Experience"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "website"
-        case $lang
-        when "it"
-          text = "Sito Web"
-        when "en"
-          text = "Website"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "menu_language"
-        case $lang
-        when "it"
-          text = "Lingua: ITA"
-        when "en"
-          text = "Language: ENG"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "back-king"
-        case $lang
-        when "it"
-          text = "Torna dal Re!"
-        when "en"
-          text = "Go back to the King!"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "go-back"
-        case $lang
-        when "it"
-          text = "Torna indietro!"
-        when "en"
-          text = "Go back!"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "defeat-monster"
-        case $lang
-        when "it"
-          text = "Sconfiggi il mostro!"
-        when "en"
-          text = "Defeat the monster!"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "go-king"
-        case $lang
-        when "it"
-          text = "Vai dal Re!"
-        when "en"
-          text = "Go to the King!"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "find-book"
-        case $lang
-        when "it"
-          text = "Trova il libro!"
-        when "en"
-          text = "Find the book!"
-        when "es"
-          text = "TRADUCCIÓN"
-        end
-
-      when "no-dindini"
-        case $lang
-        when "it"
-          @messages = [
-            "Non hai abbastanza Dindini!",
-          ]
-        when "en"
-          @messages = [
-            "You don't have enough Dindini!",
-          ]
-        when "es"
-          @messages = [
-            "TRADUCCIÓN",
-          ]
-        end
-
-    end
-
-    return text
+    return @messages[0]
   end
 
   def set_msg(map_id, index)
@@ -1907,19 +1097,40 @@ class Localization
     @messages = []
     map_id = map_id == nil ? $game_map.map_id : map_id
 
-    cells = []
     line_data = $maps_data[map_id][index]
-    line_data.split(";").each do |cell|
+    split_data(line_data)
+
+    set_msg_vars
+  end
+
+  def set_common_msg(name)
+    reset_msg_vars
+    @messages = []
+
+    index = COMMON_INDEXES[name]
+    line_data = $common_data[index]
+    split_data(line_data)
+
+    set_msg_vars
+  end
+
+  def split_data(data)
+    if $lang == nil || $lang == ""
+      return
+    end
+
+    cells = []
+    data.split(";").each do |cell|
       cells.push(cell)
     end
 
     lang_id = LANG_INDEX[$lang]
     msg_block = cells[lang_id]
-    msg_block.split("-").each do |msg|
-      @messages.push(msg.to_s)
+    if msg_block != nil
+      msg_block.split("-").each do |msg|
+        @messages.push(msg.to_s)
+      end
     end
-
-    set_msg_vars
   end
 
 end
