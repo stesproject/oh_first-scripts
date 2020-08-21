@@ -15,6 +15,7 @@ begin
   #  true= abilita corsivo, false= disabilita corsivo
   Font.default_shadow = true
   #  true= abilita ombra testo, false= disabilita ombra testo
+    $TEST = false
     Graphics.freeze
     $scene = Scene_Title.new
     $scene.main while $scene != nil

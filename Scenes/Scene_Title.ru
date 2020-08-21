@@ -9,7 +9,7 @@ WEBSITE_URL = "https://stesproject.com"
 class Scene_Title < Scene_Base
   attr_accessor :title_commands
   def initialize
-    initialize_commands
+    # initialize_commands
   end
 
   def initialize_commands

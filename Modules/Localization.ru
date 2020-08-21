@@ -1115,10 +1115,6 @@ class Localization
   end
 
   def split_data(data)
-    if $lang == nil || $lang == ""
-      return
-    end
-
     cells = []
     data.split(";").each do |cell|
       cells.push(cell)

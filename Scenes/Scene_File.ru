@@ -5,8 +5,8 @@
 #==============================================================================
 
 class Scene_File < Scene_Base
-  save_message = $local.get_text("save_message")
-  load_message = $local.get_text("load_message")
+  # save_message = $local.get_text("save_message")
+  # load_message = $local.get_text("load_message")
   #--------------------------------------------------------------------------
   # * Object Initialization
   #     saving     : save flag (if false, load screen)
