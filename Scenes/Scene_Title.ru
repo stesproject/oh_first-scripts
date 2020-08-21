@@ -25,6 +25,15 @@ class Scene_Title < Scene_Base
       @title_commands.delete_at(3)
     end
   end
+
+  def translate_db
+    localize_items($data_skills)
+    localize_items($data_items)
+    localize_items($data_weapons)
+    localize_items($data_armors)
+    localize_actors
+  end
+
   #--------------------------------------------------------------------------
   # * Main Processing
   #--------------------------------------------------------------------------
@@ -114,12 +123,6 @@ class Scene_Title < Scene_Base
     $data_common_events = load_data("Data/CommonEvents.rvdata")
     $data_system        = load_data("Data/System.rvdata")
     $data_areas         = load_data("Data/Areas.rvdata")
-
-    localize_items($data_skills)
-    localize_items($data_items)
-    localize_items($data_weapons)
-    localize_items($data_armors)
-    localize_actors
   end
   #--------------------------------------------------------------------------
   # * Load Battle Test Database
@@ -173,6 +176,7 @@ class Scene_Title < Scene_Base
   def dispose_title_graphic
     @sprite.bitmap.dispose
     @sprite.dispose
+    translate_db
   end
   #--------------------------------------------------------------------------
   # * Create Command Window
@@ -278,7 +282,7 @@ class Scene_Title < Scene_Base
     $local.switch_language
     dispose_command_window
     create_command_window
-    load_database
+    localize_actors
   end
   #--------------------------------------------------------------------------
   # * Command: Shutdown
@@ -321,13 +325,11 @@ class Scene_Title < Scene_Base
   #--------------------------------------------------------------------------
   def localize_actors
     for i in 1...$data_actors.size
-      item_name = $data_actors[i].name
-      $data_actors[i].name = $local.get_db_actor(item_name)
+      $data_actors[i].name = $local.get_text("ourhero")
     end
 
     for i in 1...$data_classes.size
-      item_name = $data_classes[i].name
-      $data_classes[i].name = $local.get_db_actor(item_name)
+      $data_classes[i].name = ""
     end
   end
 end

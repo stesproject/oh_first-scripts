@@ -12,12 +12,17 @@ class Locale_Loader
   $maps_data = []
   $common_data = []
   $vocabs_data = []
+  $map_names_data = []
+  $db_data = []
 
   def initialize
     load_language
+
     load_maps_data
     load_common_data
     load_vocabs_data
+    load_map_names_data
+    load_db_data
   end
 
   def load_maps_data
@@ -54,6 +59,28 @@ class Locale_Loader
       data = load_data(data_path)
       data.split(/\r?\n/).each do |line|
         $vocabs_data.push(line)
+      end
+    end
+  end
+
+  def load_map_names_data
+    data_path = "#{LOCSETT::PATH}maps.csv"
+
+    if File.file?(data_path)
+      data = load_data(data_path)
+      data.split(/\r?\n/).each do |line|
+        $map_names_data.push(line)
+      end
+    end
+  end
+
+  def load_db_data
+    data_path = "#{LOCSETT::PATH}db.csv"
+
+    if File.file?(data_path)
+      data = load_data(data_path)
+      data.split(/\r?\n/).each do |line|
+        $db_data.push(line)
       end
     end
   end
