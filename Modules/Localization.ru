@@ -91,7 +91,7 @@ class Localization
     "the-f" => 50,
     "the-m-pl" => 51,
     "the-f-pl" => 52,
-    "ourhero" => 53,
+    "Ourhero" => 53,
     "class" => 54
   }
 

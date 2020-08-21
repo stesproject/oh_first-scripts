@@ -39,7 +39,8 @@ class Game_Actor < Game_Battler
   def setup(actor_id)
     actor = $data_actors[actor_id]
     @actor_id = actor_id
-    @name = actor.name
+    actor_name = $local.get_text($data_actors[actor_id].name)
+    @name = actor_name
     @character_name = actor.character_name
     @character_index = actor.character_index
     @face_name = actor.face_name

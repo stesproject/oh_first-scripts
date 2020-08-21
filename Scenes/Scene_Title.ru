@@ -324,10 +324,6 @@ class Scene_Title < Scene_Base
   # * Translate data from Database (actors, classes)
   #--------------------------------------------------------------------------
   def localize_actors
-    for i in 1...$data_actors.size
-      $data_actors[i].name = $local.get_text("ourhero")
-    end
-
     for i in 1...$data_classes.size
       $data_classes[i].name = ""
     end
