@@ -263,6 +263,7 @@ module Crissaegrim_ABS
     attr_reader :kill_weapon
     attr_reader :kill_skill
     attr_reader :kill_item
+    attr_reader :no_jump
     attr_accessor :skill_id
     attr_accessor :deffending
     alias crissaegrim_abs_gevent_initialize initialize
@@ -290,6 +291,7 @@ module Crissaegrim_ABS
       @enemy_id = check_comment("Enemy")
       @follow_distance = check_comment("Follow")
       @erase = check_com("Die Erase")
+      @no_jump = check_com("No Jump")
       @switch_local_a = check_com("Die Switch Local A")
       @switch_local_b = check_com("Die Switch Local B")
       @switch_local_c = check_com("Die Switch Local C")
@@ -775,7 +777,9 @@ module Crissaegrim_ABS
             else
               event.enemy_called.attack_effect(@actor)
               event.damage = dmg
-              event.jump(0,0)
+              if event.no_jump != true
+                event.jump(0,0)
+              end
             end
             @right_attack_time = 15 - (@actor.agi / 100)
           end
@@ -806,7 +810,9 @@ module Crissaegrim_ABS
           else
             event.enemy_called.attack_effect(@actor)
             event.damage = dmg
-            event.jump(0,0)
+            if event.no_jump != true
+              event.jump(0,0)
+            end
           end
           @left_attack_time = 15 - (@actor.agi / 100)
         end
@@ -839,7 +845,9 @@ module Crissaegrim_ABS
             else
               event.enemy_called.effect_skill(@actor, $data_skills[@assigned_skill])
               event.damage = dmg
-              event.jump(0,0)
+              if event.no_jump != true
+                event.jump(0,0)
+              end
             end
             @skill_attack_time = 60 - (@actor.agi / 100)
           end
@@ -870,7 +878,9 @@ module Crissaegrim_ABS
            else
              event.enemy_called.effect_skill(@actor, $data_skills[@assigned_skill])
              event.damage = dmg
-             event.jump(0,0)
+             if event.no_jump != true
+              event.jump(0,0)
+            end
            end
            @skill_attack_time = 60 - (@actor.agi / 100)
          end
@@ -907,7 +917,9 @@ module Crissaegrim_ABS
           else
             event.enemy_called.effect_item(@actor, $data_items[@assigned_item])
             event.damage = dmg
-            event.jump(0,0)
+            if event.no_jump != true
+              event.jump(0,0)
+            end
           end
           @item_attack_time = 60 - (@actor.agi / 100)
         end
