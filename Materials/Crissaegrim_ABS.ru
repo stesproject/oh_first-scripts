@@ -1750,7 +1750,7 @@ module Crissaegrim_ABS
       if $skill_lock_description <= 0
         @help_window.set_text(skill == nil ? "" : skill.description)
       else
-        @help_window.set_text(skill == nil ? "" : "Skill assigned!")
+        @help_window.set_text(skill == nil ? "" : $local.get_text("skill-assigned"))
       end
     end
   end
