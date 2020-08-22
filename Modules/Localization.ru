@@ -92,7 +92,8 @@ class Localization
     "the-m-pl" => 51,
     "the-f-pl" => 52,
     "Ourhero" => 53,
-    "class" => 54
+    "class" => 54,
+    "skill-assigned" => 55
   }
 
   MAPS_INDEXES = {
@@ -222,7 +223,7 @@ class Localization
   def get_text(name)
     index = VOCABS_INDEXES[name]
     line_data = index != nil ? $vocabs_data[index] : name
-    data = split_data(line_data)
+    data = split_data(line_data, false)
 
     return data[0]
   end
@@ -253,11 +254,20 @@ class Localization
     set_msg_vars
   end
 
-  def set_action(action, item, value, item2 = nil, value2 = nil)
+  def set_action(action, item, value, item2 = nil, value2 = nil, item_data = nil)
     reset_msg_vars
     
     text = get_text(action)
     @messages.push(text)
+
+    if (item_data != nil && item_data.note != "" && value > 1)
+      plurals = []
+      item_data.note.split(/\r?\n/).each do |text|
+        plurals.push(text)
+      end
+
+      item = plurals[LANG_INDEX[$lang]]
+    end
 
     amount = value > 0 ? value.to_s + " " : ""
     @messages.push("#{amount}#{item}!")
