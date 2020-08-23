@@ -181,15 +181,18 @@ class Scene_Title < Scene_Base
   #--------------------------------------------------------------------------
   # * Create Command Window
   #--------------------------------------------------------------------------
-  def create_command_window
+  def create_command_window(index = 1)
     initialize_commands
     @command_window = Window_Command.new(172, @title_commands)
     @command_window.x = (744 - @command_window.width) / 2
     @command_window.y = 348 - (@title_commands.size * 20)
     if @continue_enabled                    # If continue is enabled
-      @command_window.index = 1             # Move cursor over command
+      @command_window.index = index         # Move cursor over command
     else                                    # If disabled
       @command_window.draw_item(1, false)   # Make command semi-transparent
+    end
+    if index != 1
+      @command_window.index = index
     end
     @command_window.openness = 0
     @command_window.open
@@ -281,7 +284,7 @@ class Scene_Title < Scene_Base
     Sound.play_decision
     $local.switch_language
     dispose_command_window
-    create_command_window
+    create_command_window(3)
     localize_actors
   end
   #--------------------------------------------------------------------------
