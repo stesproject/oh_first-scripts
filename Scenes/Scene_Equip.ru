@@ -151,7 +151,7 @@ class Scene_Equip < Scene_Base
       Sound.play_cursor
       prev_actor
     elsif Input.trigger?(Input::C)
-      if @actor.fix_equipment
+      if @actor.fix_equipment || @equip_window.index == 4
         Sound.play_buzzer
       else
         Sound.play_decision

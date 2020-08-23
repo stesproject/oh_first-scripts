@@ -54,7 +54,7 @@ class Window_Skill < Window_Selectable
     if skill != nil
       rect.width -= 4
       enabled = @actor.skill_can_use?(skill)
-      draw_item_name(skill, rect.x, rect.y, enabled)
+      draw_item_name(skill, rect.x, rect.y, true)
       self.contents.draw_text(rect, @actor.calc_mp_cost(skill), 2)
     end
   end
