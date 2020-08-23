@@ -180,8 +180,10 @@ class Scene_Equip < Scene_Base
       for item_window in @item_windows
         item_window.refresh
       end
-      Graphics.wait(15)
-      $scene = Scene_Map.new
+      if @equip_window.index == 0
+        Graphics.wait(15)
+        $scene = Scene_Map.new
+      end
     end
   end
 end
