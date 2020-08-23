@@ -1774,6 +1774,7 @@ module Crissaegrim_ABS
       end
     end
   end
+
   class Scene_Skill < Scene_Base
     alias crissaegrim_abs_sskill_start start
     alias crissaegrim_abs_sskill_update update
@@ -1790,10 +1791,12 @@ module Crissaegrim_ABS
     def update_skill_selection
       if Crissaegrim_ABS::Skill_Button[@actor.id]!= nil
         for button in Crissaegrim_ABS::Skill_Button[@actor.id].keys
-          if Input.trigger?(button)
-            Sound.play_decision
-            Crissaegrim_ABS::Skill_Button[@actor.id][button] = @skill_window.skill.id
-            $skill_lock_description = 120
+          if Input.trigger?(button) || Input.trigger?(Input::C)
+            if @actor.skills.size > 0
+              Sound.play_decision
+              Crissaegrim_ABS::Skill_Button[@actor.id][button] = @skill_window.skill.id
+              $skill_lock_description = 120
+            end
           end
         end
       end

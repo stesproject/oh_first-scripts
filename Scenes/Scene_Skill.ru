@@ -101,7 +101,7 @@ class Scene_Skill < Scene_Base
         Sound.play_decision
         determine_skill
       else
-        Sound.play_buzzer
+        # Sound.play_buzzer
       end
     end
   end
