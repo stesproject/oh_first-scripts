@@ -162,7 +162,7 @@ module Crissaegrim_ABS
   Enemy_animations[17] = [84,82,""]
   Enemy_animations[18] = [84,82,""]
   Enemy_animations[19] = [83,82,""]
-  Enemy_animations[20] = [0,13,""]
+  Enemy_animations[20] = [0,0,""]
   Enemy_animations[21] = [0,13,""]
   Enemy_animations[22] = [0,58,""]
   Enemy_animations[23] = [8,82,""]
@@ -1062,7 +1062,9 @@ module Crissaegrim_ABS
       else
         enemy.enemy_called.attack_effect($game_party.members[0])
         enemy.damage = dmg
-        enemy.jump(0,0)
+        if enemy.no_jump != true
+          enemy.jump(0,0)
+        end
       end
     end
     def hurt_enemy_weapon_left(enemy)
@@ -1083,7 +1085,9 @@ module Crissaegrim_ABS
       else
         enemy.enemy_called.attack_effect($game_party.members[0])
         enemy.damage = dmg
-        enemy.jump(0,0)
+        if enemy.no_jump != true
+          enemy.jump(0,0)
+        end
       end
     end
     def hurt_enemy_skill(enemy)
@@ -1100,7 +1104,9 @@ module Crissaegrim_ABS
       else
         enemy.enemy_called.effect_skill($game_party.members[0],$data_skills[skl])
         enemy.damage = dmg
-        enemy.jump(0,0)
+        if enemy.no_jump != true
+          enemy.jump(0,0)
+        end
       end
     end
     def hurt_enemy_item(enemy)
@@ -1117,7 +1123,9 @@ module Crissaegrim_ABS
       else
         enemy.enemy_called.effect_item($game_party.members[0],$data_items[itm])
         enemy.damage = dmg
-        enemy.jump(0,0)
+        if enemy.no_jump != true
+          enemy.jump(0,0)
+        end
       end
     end
     def guard(attacker, target)
