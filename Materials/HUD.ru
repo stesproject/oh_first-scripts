@@ -30,7 +30,7 @@ module Crissaegrim_Hud
       if Crissaegrim_ABS::Skill_Button[@actor.id] != nil
         for button in Crissaegrim_ABS::Skill_Button[@actor.id].keys
           next if button == nil
-          x = 478
+          x = 485
           y = 8
           skill = $data_skills[Crissaegrim_ABS::Skill_Button[@actor.id][button]]
           next if skill == nil
