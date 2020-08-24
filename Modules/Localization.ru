@@ -8,11 +8,7 @@ class Localization
   $param_var = 79
   @messages = nil
 
-  LANG_INDEX = {
-    "en" => 0,
-    "it" => 1,
-    "es" => 2
-  }
+  LANG = ["en", "it", "es"]
 
   COMMON_INDEXES = {
     "skill-electric-1" => 1,
@@ -169,12 +165,14 @@ class Localization
     attr_accessor :desc
   end
 
-  def switch_language()
-    case $lang
-    when "it"
-      $lang = "en"
-    when "en"
-      $lang = "it"
+  def switch_language(value = 1)
+    new_lang_index = LANG.index($lang) + value
+    if new_lang_index < 0
+      $lang = LANG.last
+    elsif new_lang_index == LANG.size
+      $lang = LANG.first
+    else
+      $lang = LANG[new_lang_index]
     end
 
     $locale.save_language
@@ -266,7 +264,7 @@ class Localization
         plurals.push(text)
       end
 
-      item = plurals[LANG_INDEX[$lang]]
+      item = plurals[LANG.index($lang)]
     end
 
     amount = value > 0 ? value.to_s + " " : ""
@@ -364,7 +362,7 @@ class Localization
       cells.push(cell)
     end
 
-    lang_id = LANG_INDEX[$lang]
+    lang_id = LANG.index($lang)
     msg_block = cells[lang_id]
     blocks = []
     if msg_block != nil

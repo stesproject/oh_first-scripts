@@ -84,6 +84,7 @@ class Scene_Title < Scene_Base
     dispose_command_window
     snapshot_for_background
     dispose_title_graphic
+    translate_db
   end
   #--------------------------------------------------------------------------
   # * Frame Update
@@ -103,6 +104,16 @@ class Scene_Title < Scene_Base
         command_website
       when 3    # Language
         command_language
+      end
+    elsif Input.trigger?(Input::RIGHT)
+      case @command_window.index
+      when 3    # Language
+        command_language(1)
+      end
+    elsif Input.trigger?(Input::LEFT)
+      case @command_window.index
+      when 3    # Language
+        command_language(-1)
       end
     end
   end
@@ -176,7 +187,29 @@ class Scene_Title < Scene_Base
   def dispose_title_graphic
     @sprite.bitmap.dispose
     @sprite.dispose
-    translate_db
+  end
+  #--------------------------------------------------------------------------
+  # * Create Language Arrows
+  #--------------------------------------------------------------------------
+  def create_lang_arrows
+    @lang_arrows = [Sprite.new, Sprite.new]
+    @lang_arrows[0].bitmap = Cache.system("arrow-left")
+    @lang_arrows[1].bitmap = Cache.system("arrow-right")
+    @lang_arrows[0].x = 291
+    @lang_arrows[1].x = 446
+    @lang_arrows.each do |lang_arrow|
+      lang_arrow.y = 341
+      lang_arrow.z = 100
+    end
+  end
+  #--------------------------------------------------------------------------
+  # * Dispose of Lang Arrows
+  #--------------------------------------------------------------------------
+  def dispose_lang_arrows
+    @lang_arrows.each do |lang_arrow|
+      lang_arrow.bitmap.dispose
+      lang_arrow.dispose
+    end
   end
   #--------------------------------------------------------------------------
   # * Create Command Window
@@ -212,12 +245,14 @@ class Scene_Title < Scene_Base
       @command_window.update
       Graphics.update
     end until @command_window.openness == 255
+    create_lang_arrows
   end
   #--------------------------------------------------------------------------
   # * Close Command Window
   #--------------------------------------------------------------------------
   def close_command_window
     @command_window.close
+    dispose_lang_arrows
     begin
       @command_window.update
       Graphics.update
@@ -280,9 +315,9 @@ class Scene_Title < Scene_Base
     #--------------------------------------------------------------------------
   # * Command: Language
   #--------------------------------------------------------------------------
-  def command_language
+  def command_language(value = 1)
     Sound.play_decision
-    $local.switch_language
+    $local.switch_language(value)
     dispose_command_window
     create_command_window(3)
     localize_actors
