@@ -1,6 +1,6 @@
 module ADDON
-  ASK_LANGUAGE = $default_language == "" # if set to false it wont ask you and it'll go straight to # fullscreen
-  CHOICES = ["English", "Italiano"]
+  ASK_LANGUAGE = $default_language == "" # if set to false it wont ask you and it'll go straight to fullscreen
+  TEXT = "Select your language:"
 end
 
 class Window_Text < Window_Base
@@ -10,7 +10,7 @@ class Window_Text < Window_Base
   end
   def refresh
     self.contents.clear
-    self.contents.draw_text(0, 0, 544, 32, "Select your language")
+    self.contents.draw_text(0, 0, 544, 32, ADDON::TEXT)
   end
 end
 
@@ -33,7 +33,12 @@ class Scene_Title
         @text_window = Window_Text.new(92, 128)
         @text_window.back_opacity = 0
         @text_window.opacity = 0
-        @window = Window_Command.new(96, ADDON::CHOICES)
+        choices = []
+        Localization::LANG.each do |lang|
+          choices.push(Localization::LANGUAGES[lang])
+        end
+        @window = Window_Command.new(96, choices)
+        @window.windowskin = Cache.system("Window2")
         @window.x = 92
         @window.y = 240 - @window.height / 2
         @window.opacity = 0
@@ -60,13 +65,8 @@ class Scene_Title
   
   def update_window
     if Input.trigger?(Input::C)
-      if @window.index == 0
-        Sound.play_decision
-        $lang = "en"
-      else
-        Sound.play_decision
-        $lang = "it"
-      end
+      Sound.play_decision
+      $lang = Localization::LANG[@window.index]
 
       $locale.save_language
       $game_started = true

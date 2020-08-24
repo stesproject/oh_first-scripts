@@ -9,6 +9,11 @@ class Localization
   @messages = nil
 
   LANG = ["en", "it", "es"]
+  LANGUAGES = {
+    "en" => "English",
+    "it" => "Italiano",
+    "es" => "Español"
+  }
 
   COMMON_INDEXES = {
     "skill-electric-1" => 1,
