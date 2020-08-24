@@ -26,15 +26,16 @@ class Locale_Loader
   end
 
   def load_maps_data
-    for i in 0..LOCSETT::LAST_MAP
+    for i in 1..LOCSETT::LAST_MAP
       map_data = []
       data_path = "#{LOCSETT::PATH}map#{i}.csv"
-
-      if File.file?(data_path)
+      begin
         data = load_data(data_path)
         data.split(/\r?\n/).each do |line|
           map_data.push(line)
         end
+      rescue
+        # File does not exist, skip to next map.
       end
 
       $maps_data.push(map_data)
@@ -44,44 +45,36 @@ class Locale_Loader
   def load_common_data
     data_path = "#{LOCSETT::PATH}common.csv"
 
-    if File.file?(data_path)
-      data = load_data(data_path)
-      data.split(/\r?\n/).each do |line|
-        $common_data.push(line)
-      end
+    data = load_data(data_path)
+    data.split(/\r?\n/).each do |line|
+      $common_data.push(line)
     end
   end
 
   def load_vocabs_data
     data_path = "#{LOCSETT::PATH}vocabs.csv"
 
-    if File.file?(data_path)
-      data = load_data(data_path)
-      data.split(/\r?\n/).each do |line|
-        $vocabs_data.push(line)
-      end
+    data = load_data(data_path)
+    data.split(/\r?\n/).each do |line|
+      $vocabs_data.push(line)
     end
   end
 
   def load_map_names_data
     data_path = "#{LOCSETT::PATH}maps.csv"
 
-    if File.file?(data_path)
-      data = load_data(data_path)
-      data.split(/\r?\n/).each do |line|
-        $map_names_data.push(line)
-      end
+    data = load_data(data_path)
+    data.split(/\r?\n/).each do |line|
+      $map_names_data.push(line)
     end
   end
 
   def load_db_data
     data_path = "#{LOCSETT::PATH}db.csv"
 
-    if File.file?(data_path)
-      data = load_data(data_path)
-      data.split(/\r?\n/).each do |line|
-        $db_data.push(line)
-      end
+    data = load_data(data_path)
+    data.split(/\r?\n/).each do |line|
+      $db_data.push(line)
     end
   end
 

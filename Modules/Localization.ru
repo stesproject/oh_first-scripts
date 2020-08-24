@@ -355,6 +355,11 @@ class Localization
 
   def split_data(data, split_block = true)
     cells = []
+
+    if (data == nil)
+      return []
+    end
+
     data.split(";").each do |cell|
       cells.push(cell)
     end
