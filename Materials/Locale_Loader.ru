@@ -26,16 +26,17 @@ class Locale_Loader
   end
 
   def load_maps_data
-    for i in 1..LOCSETT::LAST_MAP
+    for i in 0..LOCSETT::LAST_MAP
       map_data = []
       data_path = "#{LOCSETT::PATH}map#{i}.csv"
       begin
         data = load_data(data_path)
+      rescue
+        # File does not exist, skip to next map.
+      else
         data.split(/\r?\n/).each do |line|
           map_data.push(line)
         end
-      rescue
-        # File does not exist, skip to next map.
       end
 
       $maps_data.push(map_data)
