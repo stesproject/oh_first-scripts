@@ -8,11 +8,12 @@ class Localization
   $param_var = 79
   @messages = nil
 
-  LANG = ["en", "it", "es"]
+  LANG = ["en", "it", "es", "fr"]
   LANGUAGES = {
     "en" => "English",
     "it" => "Italiano",
-    "es" => "Español"
+    "es" => "Español",
+    "fr" => "Français"
   }
 
   COMMON_INDEXES = {
