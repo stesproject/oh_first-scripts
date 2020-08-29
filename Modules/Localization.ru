@@ -227,7 +227,7 @@ class Localization
   def get_text(name)
     index = VOCABS_INDEXES[name]
     line_data = index != nil ? $vocabs_data[index] : name
-    data = split_data(line_data, false)
+    data = split_data(line_data)
 
     return data[0]
   end
@@ -357,7 +357,7 @@ class Localization
     set_msg_vars
   end
 
-  def split_data(data, split_block = true)
+  def split_data(data)
     cells = []
 
     if (data == nil)
@@ -372,12 +372,8 @@ class Localization
     msg_block = cells[lang_id]
     blocks = []
     if msg_block != nil
-      if split_block == true
-        msg_block.split("-").each do |msg|
-          blocks.push(msg.to_s)
-        end
-      else
-        blocks.push(msg_block.to_s)
+      msg_block.split("§").each do |msg|
+        blocks.push(msg.to_s)
       end
     end
 
