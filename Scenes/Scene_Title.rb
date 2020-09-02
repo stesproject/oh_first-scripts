@@ -103,7 +103,7 @@ class Scene_Title < Scene_Base
       when 2    # Website
         command_website
       when 3    # Language
-        command_language
+        # command_language
       end
     elsif Input.trigger?(Input::RIGHT)
       case @command_window.index
