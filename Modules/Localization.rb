@@ -95,7 +95,8 @@ class Localization
     "the-f-pl" => 52,
     "Ourhero" => 53,
     "class" => 54,
-    "skill-assigned" => 55
+    "skill-assigned" => 55,
+    "lv" => 56
   }
 
   MAPS_INDEXES = {

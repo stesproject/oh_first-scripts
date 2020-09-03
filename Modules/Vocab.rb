@@ -81,7 +81,7 @@ module Vocab
 
   # Level (Abbreviation)
   def self.level_a
-    return $data_system.terms.level_a
+    return $local.get_text("lv")
   end
 
   # HP
