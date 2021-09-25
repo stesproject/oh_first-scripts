@@ -31,7 +31,7 @@ module GameBaker
   JumpSE = RPG::SE.new('Jump1')
 end
 class Game_Player < Game_Character
-  WAIT_TIME = 30 # Tempo di attesa tra un salto e l'altro (by Ste)
+  WAIT_TIME = 25 # Tempo di attesa tra un salto e l'altro (by Ste)
   SWITCHSALTO = 6 # Switch che attiva/disattiva il salto
 
   alias jump_initialize initialize
