@@ -31,14 +31,26 @@ module GameBaker
   JumpSE = RPG::SE.new('Jump1')
 end
 class Game_Player < Game_Character
+  WAIT_TIME = 30 # Tempo di attesa tra un salto e l'altro (by Ste)
+  SWITCHSALTO = 6 # Switch che attiva/disattiva il salto
 
-  SWITCHSALTO = 6     # Switch che attiva/disattiva il salto alla pressione
-                      # del tasto Z
+  alias jump_initialize initialize
+  alias jump_update update
+
+  def initialize
+    jump_initialize
+    @jump_time = 0
+  end
+
+  def update
+    jump_update
+    @jump_time -= 1 if @jump_time > 0
+  end
 
   alias_method :salto_move_by_input, :move_by_input
   def move_by_input
     salto_move_by_input
-    if Input.press?(Input::Letters["A"]) and $game_switches[SWITCHSALTO] and movable?
+    if Input.press?(Input::Letters["A"]) and $game_switches[SWITCHSALTO] and @jump_time <= 0
       case @direction
       when 2
         if passable?(@x,@y+2)
@@ -47,6 +59,7 @@ class Game_Player < Game_Character
             @jump_peak = 10 + distance - @move_speed
             @jump_count = @jump_peak * 2
             @stop_count = 0
+            @jump_time = WAIT_TIME
             GameBaker::JumpSE.play
             straighten
         elsif passable?(@x,@y+1)
@@ -55,6 +68,7 @@ class Game_Player < Game_Character
           @jump_peak = 10 + distance - @move_speed
           @jump_count = @jump_peak * 2
           @stop_count = 0
+          @jump_time = WAIT_TIME
           straighten
         end
       when 4
@@ -64,6 +78,7 @@ class Game_Player < Game_Character
             @jump_peak = 10 + distance - @move_speed
             @jump_count = @jump_peak * 2
             @stop_count = 0
+            @jump_time = WAIT_TIME
             GameBaker::JumpSE.play
             straighten
         elsif passable?(@x-1,@y)
@@ -72,6 +87,7 @@ class Game_Player < Game_Character
           @jump_peak = 10 + distance - @move_speed
           @jump_count = @jump_peak * 2
           @stop_count = 0
+          @jump_time = WAIT_TIME
           straighten
         end
       when 6
@@ -81,6 +97,7 @@ class Game_Player < Game_Character
             @jump_peak = 10 + distance - @move_speed
             @jump_count = @jump_peak * 2
             @stop_count = 0
+            @jump_time = WAIT_TIME
             GameBaker::JumpSE.play
             straighten
         elsif passable?(@x+1,@y)
@@ -89,6 +106,7 @@ class Game_Player < Game_Character
           @jump_peak = 10 + distance - @move_speed
           @jump_count = @jump_peak * 2
           @stop_count = 0
+          @jump_time = WAIT_TIME
           straighten
         end
       when 8
@@ -98,6 +116,7 @@ class Game_Player < Game_Character
             @jump_peak = 10 + distance - @move_speed
             @jump_count = @jump_peak * 2
             @stop_count = 0
+            @jump_time = WAIT_TIME
             GameBaker::JumpSE.play
             straighten
         elsif passable?(@x,@y-1)
@@ -106,6 +125,7 @@ class Game_Player < Game_Character
           @jump_peak = 10 + distance - @move_speed
           @jump_count = @jump_peak * 2
           @stop_count = 0
+          @jump_time = WAIT_TIME
           straighten
         end
       end
