@@ -5,6 +5,23 @@
 #==============================================================================
 
 WEBSITE_URL = "https://stesproject.com"
+GAME_VERSION = "1.1.3"
+
+class Window_TitleText < Window_Base
+  def initialize
+    super(-12, 374, 544, 64)
+    refresh
+  end
+  def refresh
+    self.contents.clear
+    self.contents.font.size = 13
+    self.contents.font.italic = false
+    self.contents.font.shadow = false
+    self.contents.font.color = text_color(15)
+    self.contents.font.color.alpha = 164
+    self.contents.draw_text(0, 0, 544, 32, "#{GAME_VERSION}")
+  end
+end
 
 class Scene_Title < Scene_Base
   attr_accessor :title_commands
@@ -178,6 +195,7 @@ class Scene_Title < Scene_Base
   # * Create Title Graphic
   #--------------------------------------------------------------------------
   def create_title_graphic
+    draw_version_text
     @sprite = Sprite.new
     @sprite.bitmap = Cache.system("Title")
   end
@@ -365,5 +383,11 @@ class Scene_Title < Scene_Base
     for i in 1...$data_classes.size
       $data_classes[i].name = ""
     end
+  end
+
+  def draw_version_text
+    @text_window = Window_TitleText.new
+    @text_window.back_opacity = 0
+    @text_window.opacity = 0
   end
 end
