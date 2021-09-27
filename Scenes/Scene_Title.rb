@@ -203,6 +203,7 @@ class Scene_Title < Scene_Base
   # * Dispose of Title Graphic
   #--------------------------------------------------------------------------
   def dispose_title_graphic
+    @text_window.dispose
     @sprite.bitmap.dispose
     @sprite.dispose
   end
