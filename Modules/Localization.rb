@@ -96,7 +96,9 @@ class Localization
     "Ourhero" => 53,
     "class" => 54,
     "skill-assigned" => 55,
-    "lv" => 56
+    "lv" => 56,
+    "fullscreen" => 57,
+    "windowed" => 58,
   }
 
   MAPS_INDEXES = {
