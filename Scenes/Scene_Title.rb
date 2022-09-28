@@ -5,7 +5,7 @@
 #==============================================================================
 
 WEBSITE_URL = "https://stesproject.com"
-GAME_VERSION = "1.2.0"
+GAME_VERSION = "1.2.1"
 
 class Window_TitleText < Window_Base
   def initialize
